@@ -4,7 +4,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
+import { Bars3Icon, XMarkIcon, ChevronDownIcon } from '@heroicons/react/24/outline';
 import { useLocale } from '@/hooks/useLocale';
 
 const navigation = {
@@ -40,6 +40,7 @@ const navigation = {
 
 export function Navigation() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
   const { lang } = useLocale();
   const pathname = usePathname();
 
@@ -89,17 +90,53 @@ export function Navigation() {
         {/* Desktop navigation */}
         <div className="hidden lg:flex lg:gap-x-12">
           {localizedNavigation.main.map((item) => (
-            <Link
-              key={item.name}
-              href={item.href}
-              className={`text-sm font-semibold leading-6 ${
-                pathname === item.href
-                  ? 'text-secondary'
-                  : 'text-gray-900 hover:text-secondary'
-              }`}
-            >
-              {item.name}
-            </Link>
+            <div key={item.name} className="relative" onMouseLeave={() => setActiveDropdown(null)}>
+              <div
+                className="flex items-center gap-1 cursor-pointer"
+                onMouseEnter={() => item.submenu && setActiveDropdown(item.name)}
+              >
+                <Link
+                  href={item.href}
+                  className={`text-sm font-semibold leading-6 ${
+                    pathname === item.href
+                      ? 'text-secondary'
+                      : 'text-gray-900 hover:text-secondary'
+                  }`}
+                >
+                  {item.name}
+                </Link>
+                {item.submenu && (
+                  <ChevronDownIcon className="h-4 w-4 text-gray-500" aria-hidden="true" />
+                )}
+              </div>
+              
+              {/* Desktop dropdown menu */}
+              <AnimatePresence>
+                {activeDropdown === item.name && item.submenu && (
+                  <motion.div
+                    initial={{ opacity: 0, y: 10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: 10 }}
+                    transition={{ duration: 0.2 }}
+                    className="absolute left-0 mt-2 w-48 rounded-md bg-white py-2 shadow-lg ring-1 ring-black ring-opacity-5"
+                  >
+                    {item.submenu.map((subItem) => (
+                      <Link
+                        key={subItem.name}
+                        href={subItem.href}
+                        className={`block px-4 py-2 text-sm ${
+                          pathname === subItem.href
+                            ? 'bg-gray-50 text-secondary'
+                            : 'text-gray-700 hover:bg-gray-50'
+                        }`}
+                      >
+                        {subItem.name}
+                      </Link>
+                    ))}
+                  </motion.div>
+                )}
+              </AnimatePresence>
+            </div>
           ))}
         </div>
 
@@ -126,25 +163,44 @@ export function Navigation() {
         {mobileMenuOpen && (
           <motion.div
             initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: 'auto' }}
+            animate={{ opacity: 1, height: '100vh' }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.2 }}
-            className="lg:hidden"
+            className="lg:hidden fixed bg-white w-full z-50"
           >
             <div className="space-y-1 px-4 pb-3 pt-2">
               {localizedNavigation.main.map((item) => (
-                <Link
-                  key={item.name}
-                  href={item.href}
-                  className={`block rounded-md px-3 py-2 text-base font-medium ${
-                    pathname === item.href
-                      ? 'bg-gray-50 text-secondary'
-                      : 'text-gray-900 hover:bg-gray-50'
-                  }`}
-                  onClick={() => setMobileMenuOpen(false)}
-                >
-                  {item.name}
-                </Link>
+                <div key={item.name}>
+                  <Link
+                    href={item.href}
+                    className={`block rounded-md px-3 py-2 text-base font-medium ${
+                      pathname === item.href
+                        ? 'bg-gray-50 text-secondary'
+                        : 'text-gray-900 hover:bg-gray-50'
+                    }`}
+                    onClick={() => !item.submenu && setMobileMenuOpen(false)}
+                  >
+                    {item.name}
+                  </Link>
+                  {item.submenu && (
+                    <div className="ml-4 space-y-1">
+                      {item.submenu.map((subItem) => (
+                        <Link
+                          key={subItem.name}
+                          href={subItem.href}
+                          className={`block rounded-md px-3 py-2 text-sm font-medium ${
+                            pathname === subItem.href
+                              ? 'bg-gray-50 text-secondary'
+                              : 'text-gray-700 hover:bg-gray-50'
+                          }`}
+                          onClick={() => setMobileMenuOpen(false)}
+                        >
+                          {subItem.name}
+                        </Link>
+                      ))}
+                    </div>
+                  )}
+                </div>
               ))}
               <div className="border-t border-gray-200 my-4" />
               <div className="flex justify-center gap-x-4 py-2">
