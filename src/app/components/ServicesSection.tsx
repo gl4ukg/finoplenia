@@ -1,53 +1,64 @@
+'use client';
 import { motion } from 'framer-motion';
 
-interface ServiceCategory {
+interface Service {
   title: string;
   services: string[];
 }
 
 interface ServicesSectionProps {
-  title: string;
-  categories: ServiceCategory[];
+  title?: string;
+  services: Service[];
 }
 
-export function ServicesSection({ title, categories }: ServicesSectionProps) {
+export function ServicesSection({ title = 'Unsere Dienstleistungen', services }: ServicesSectionProps) {
   return (
-    <section id="services" className="py-16 sm:py-24 bg-gray-50">
+    <section id="services" className="py-16 sm:py-24">
       <div className="container">
         <h2 className="text-3xl font-bold tracking-tight text-primary text-center sm:text-4xl mb-16">
           {title}
         </h2>
         <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
-          {categories.map((category, index) => (
+          {services.map((category, index) => (
             <motion.div
               key={category.title}
-              initial={{ opacity: 0, x: index % 2 === 0 ? -20 : 20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5 }}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
+              className="relative rounded-2xl bg-white p-8 shadow-sm hover:shadow-md transition-shadow duration-300"
             >
-              <div className="bg-white rounded-2xl shadow-sm p-8">
-                <h3 className="text-xl font-semibold text-primary mb-6">{category.title}</h3>
-                <ul className="space-y-4">
-                  {category.services.map((service) => (
-                    <li key={service} className="flex items-center text-gray-600">
-                      <svg
-                        className="h-5 w-5 text-secondary mr-2"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
-                          clipRule="evenodd"
-                        />
-                      </svg>
-                      {service}
-                    </li>
-                  ))}
-                </ul>
-              </div>
+              <h3 className="text-xl font-semibold leading-7 text-gray-900 mb-6">
+                {category.title}
+              </h3>
+              <ul className="space-y-4">
+                {category.services.map((service, serviceIndex) => (
+                  <motion.li
+                    key={service}
+                    initial={{ opacity: 0, x: -10 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{
+                      duration: 0.3,
+                      delay: index * 0.1 + serviceIndex * 0.05,
+                    }}
+                    className="flex items-start"
+                  >
+                    <svg
+                      className="h-6 w-6 flex-shrink-0 text-secondary"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth={2}
+                      stroke="currentColor"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                      />
+                    </svg>
+                    <span className="ml-3 text-base text-gray-600">{service}</span>
+                  </motion.li>
+                ))}
+              </ul>
             </motion.div>
           ))}
         </div>

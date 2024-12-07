@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 
 interface HeroSectionProps {
   title: string;
+  subtitle?: string;
   description: string;
   primaryButtonText?: string;
   secondaryButtonText?: string;
@@ -16,6 +17,7 @@ interface HeroSectionProps {
 
 export function HeroSection({
   title,
+  subtitle,
   description,
   primaryButtonText,
   secondaryButtonText,
@@ -25,51 +27,52 @@ export function HeroSection({
   className = '',
 }: HeroSectionProps) {
   return (
-    <section className={`relative pt-32 pb-16 sm:pt-40 sm:pb-24 lg:pb-32 bg-gradient-to-b from-primary to-primary-light text-white ${className}`}>
-      <div className="container">
+    <section className={`relative isolate overflow-hidden bg-white pt-14 ${className}`}>
+      <div className="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
-          <motion.div
+          <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
+            className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl"
           >
-            <h1 className="text-4xl font-bold tracking-tight sm:text-6xl">
-              {title}
-            </h1>
-          </motion.div>
-          <motion.div
+            {title}
+          </motion.h1>
+          {subtitle && (
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.1 }}
+              className="mt-4 text-xl text-gray-600"
+            >
+              {subtitle}
+            </motion.p>
+          )}
+          <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
+            className="mt-6 text-lg leading-8 text-gray-600"
           >
-            <p className="mt-6 text-lg leading-8 text-gray-200">
-              {description}
-            </p>
-          </motion.div>
-          {showButtons && (
+            {description}
+          </motion.p>
+          {showButtons && (primaryButtonText || secondaryButtonText) && (
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.4 }}
+              transition={{ duration: 0.5, delay: 0.3 }}
+              className="mt-10 flex items-center justify-center gap-x-6"
             >
-              <div className="mt-10 flex items-center justify-center gap-x-6">
-                {primaryButtonHref && (
-                  <Link
-                    href={primaryButtonHref}
-                    className="btn bg-white text-primary hover:bg-gray-100"
-                  >
-                    {primaryButtonText}
-                  </Link>
-                )}
-                {secondaryButtonHref && (
-                  <Link
-                    href={secondaryButtonHref}
-                    className="btn text-white border-2 border-white hover:bg-white hover:text-primary"
-                  >
-                    {secondaryButtonText}
-                  </Link>
-                )}
-              </div>
+              {primaryButtonText && primaryButtonHref && (
+                <Link href={primaryButtonHref} className="btn btn-primary">
+                  {primaryButtonText}
+                </Link>
+              )}
+              {secondaryButtonText && secondaryButtonHref && (
+                <Link href={secondaryButtonHref} className="btn btn-outline">
+                  {secondaryButtonText}
+                </Link>
+              )}
             </motion.div>
           )}
         </div>

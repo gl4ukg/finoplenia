@@ -117,8 +117,8 @@ export default function RetirementPage() {
       />
 
       <ServicesSection
-        title="Unsere Ruhestandsdienste"
-        categories={retirementServices}
+        title="Unsere Altersvorsorge-Dienstleistungen"
+        services={retirementServices}
       />
 
       <ProcessSection

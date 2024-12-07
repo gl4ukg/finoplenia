@@ -118,7 +118,7 @@ export default function RetirementPage() {
 
       <ServicesSection
         title="Our Retirement Services"
-        categories={retirementServices}
+        services={retirementServices}
       />
 
       <ProcessSection

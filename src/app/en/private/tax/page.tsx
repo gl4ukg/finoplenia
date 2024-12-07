@@ -118,7 +118,7 @@ export default function TaxPage() {
 
       <ServicesSection
         title="Our Tax Services"
-        categories={taxServices}
+        services={taxServices}
       />
 
       <ProcessSection

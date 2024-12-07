@@ -117,8 +117,8 @@ export default function TaxPage() {
       />
 
       <ServicesSection
-        title="Unsere Steuerberatungsdienste"
-        categories={taxServices}
+        title="Unsere Steuerdienstleistungen"
+        services={taxServices}
       />
 
       <ProcessSection

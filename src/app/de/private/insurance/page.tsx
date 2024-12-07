@@ -118,7 +118,7 @@ export default function InsurancePage() {
 
       <ServicesSection
         title="Unsere Versicherungsdienstleistungen"
-        categories={insuranceServices}
+        services={insuranceServices}
       />
 
       <ProcessSection

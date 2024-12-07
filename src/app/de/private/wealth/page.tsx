@@ -117,8 +117,8 @@ export default function WealthPage() {
       />
 
       <ServicesSection
-        title="Unsere Vermögensverwaltungsdienste"
-        categories={wealthServices}
+        title="Unsere Vermögensverwaltungsdienstleistungen"
+        services={wealthServices}
       />
 
       <ProcessSection

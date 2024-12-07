@@ -117,8 +117,8 @@ export default function PropertyPage() {
       />
 
       <ServicesSection
-        title="Our Property & Mortgage Services"
-        categories={propertyServices}
+        title="Our Property Services"
+        services={propertyServices}
       />
 
       <ProcessSection

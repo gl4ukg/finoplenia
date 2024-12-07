@@ -118,7 +118,7 @@ export default function CorporateTaxPage() {
 
       <ServicesSection
         title="Our Corporate Tax Services"
-        categories={taxServices}
+        services={taxServices}
       />
 
       <ProcessSection

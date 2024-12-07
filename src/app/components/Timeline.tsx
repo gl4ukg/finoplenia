@@ -17,7 +17,7 @@ export function Timeline({ events, isGerman = false }: TimelineProps) {
   return (
     <div className="relative container mx-auto w-full">
       {/* Center line for desktop, left line for mobile */}
-      <div className="absolute w-1 h-full bg-primary/20 md:left-1/2 left-4 md:transform md:-translate-x-1/2"></div>
+      <div className="absolute w-1 h-full bg-primary md:left-1/2 left-4 md:transform md:-translate-x-1/2"></div>
 
       {events.map((event, index) => (
         <div

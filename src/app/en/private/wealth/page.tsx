@@ -118,7 +118,7 @@ export default function WealthPage() {
 
       <ServicesSection
         title="Our Wealth Management Services"
-        categories={wealthServices}
+        services={wealthServices}
       />
 
       <ProcessSection

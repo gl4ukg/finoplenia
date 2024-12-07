@@ -118,7 +118,7 @@ export default function CorporateAdvisoryPage() {
 
       <ServicesSection
         title="Our Advisory Services"
-        categories={advisoryServices}
+        services={advisoryServices}
       />
 
       <ProcessSection

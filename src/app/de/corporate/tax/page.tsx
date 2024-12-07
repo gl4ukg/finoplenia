@@ -1,10 +1,10 @@
-import { Navigation } from '../../../components/Navigation';
-import { Footer } from '../../../components/Footer';
-import { HeroSection } from '../../../components/HeroSection';
-import { BenefitsSection } from '../../../components/BenefitsSection';
-import { ServicesSection } from '../../../components/ServicesSection';
-import { ProcessSection } from '../../../components/ProcessSection';
-import { CTASection } from '../../../components/CTASection';
+import { Navigation } from '@/app/components/Navigation';
+import { Footer } from '@/app/components/Footer';
+import { HeroSection } from '@/app/components/HeroSection';
+import { BenefitsSection } from '@/app/components/BenefitsSection';
+import { ServicesSection } from '@/app/components/ServicesSection';
+import { ProcessSection } from '@/app/components/ProcessSection';
+import { CTASection } from '@/app/components/CTASection';
 
 const taxServices = [
   {
@@ -20,122 +20,75 @@ const taxServices = [
   {
     title: 'Steuercompliance',
     services: [
-      'Unternehmenssteuererklärungen',
-      'Umsatzsteuer-Compliance',
-      'Steuerrisikomanagement',
-      'Steuerprüfungsverteidigung',
-      'Regulatorische Berichterstattung',
+      'Steuererklärungen',
+      'Steuerberichterstattung',
+      'Steuerprüfungen',
+      'Digitale Steuerlösungen',
     ],
   },
   {
-    title: 'Spezielle Dienstleistungen',
+    title: 'Spezialberatung',
     services: [
-      'Grenzüberschreitende Transaktionen',
-      'Konzernsteueroptimierung',
-      'F&E-Steuergutschriften',
-      'Investitionsanreize',
-      'Digitale Unternehmensbesteuerung',
+      'Umsatzsteuer',
+      'Grundsteuer',
+      'Erbschaftssteuer',
+      'Zoll und Verbrauchsteuern',
     ],
   },
 ];
 
 const benefits = [
   {
-    title: 'Strategischer Ansatz',
-    description: 'Umfassende Steuerstrategien, die auf Ihre Unternehmensziele und Wachstumspläne abgestimmt sind.',
+    title: 'Expertise',
+    description: 'Jahrzehntelange Erfahrung in der Steuerberatung für Unternehmen aller Größen',
   },
   {
-    title: 'Risikomanagement',
-    description: 'Proaktive Identifizierung und Minderung von Steuerrisiken über Jurisdiktionen hinweg.',
+    title: 'Digitalisierung',
+    description: 'Modernste digitale Tools und Prozesse für effiziente Steuerverwaltung',
   },
   {
-    title: 'Kosteneffizienz',
-    description: 'Optimierung Ihrer Steuerposition bei vollständiger Compliance.',
-  },
-  {
-    title: 'Globale Expertise',
-    description: 'Zugang zu internationaler Steuerexpertise und grenzüberschreitenden Planungsmöglichkeiten.',
+    title: 'Compliance',
+    description: 'Sicherstellung der Einhaltung aller steuerlichen Vorschriften und Regularien',
   },
 ];
 
 const process = [
-  {
-    title: 'Steuerbeurteilung',
-    description: 'Wir analysieren Ihre aktuelle Steuerstruktur und identifizieren Optimierungsmöglichkeiten.',
-    icon: (
-      <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-      </svg>
-    ),
-  },
-  {
-    title: 'Strategieentwicklung',
-    description: 'Wir erstellen eine umfassende Steuerstrategie, die auf Ihre Unternehmensziele abgestimmt ist.',
-    icon: (
-      <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
-      </svg>
-    ),
-  },
-  {
-    title: 'Umsetzung',
-    description: 'Wir setzen die Strategie um und stellen dabei eine ordnungsgemäße Dokumentation und Compliance sicher.',
-    icon: (
-      <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-      </svg>
-    ),
-  },
-  {
-    title: 'Überwachung & Überprüfung',
-    description: 'Wir überwachen kontinuierlich die Steuerpositionen und passen uns an regulatorische Änderungen an.',
-    icon: (
-      <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-      </svg>
-    ),
-  },
+  'Analyse der aktuellen Steuersituation',
+  'Entwicklung einer maßgeschneiderten Steuerstrategie',
+  'Implementierung der Steueroptimierung',
+  'Kontinuierliche Überwachung und Anpassung',
 ];
 
 export default function CorporateTaxPage() {
   return (
-    <main className="flex min-h-screen flex-col">
+    <main className="min-h-screen">
       <Navigation />
-
       <HeroSection
-        title="Unternehmenssteuerberatung"
-        description="Strategische Steuerplanung und Compliance-Lösungen für Unternehmen. Wir helfen bei der Optimierung Ihrer Unternehmenssteuerposition unter Gewährleistung der regulatorischen Compliance über Jurisdiktionen hinweg."
-        primaryButtonText="Jetzt Starten"
-        secondaryButtonText="Unsere Dienste"
+        title="Steuerberatung für Unternehmen"
+        subtitle="Optimieren Sie Ihre Steuerstrategie mit unserer Expertise"
+        description="Unsere Steuerexperten unterstützen Sie bei der Entwicklung und Umsetzung einer effizienten Steuerstrategie für Ihr Unternehmen."
+        primaryButtonText="Jetzt beraten lassen"
         primaryButtonHref="/de/contact"
-        secondaryButtonHref="#services"
       />
-
       <BenefitsSection
-        title="Warum unsere Unternehmenssteuerberatung wählen?"
+        title="Warum uns wählen?"
         benefits={benefits}
       />
-
       <ServicesSection
-        title="Unsere Unternehmenssteuerberatungsdienste"
-        categories={taxServices}
+        title="Unsere Steuerberatungsdienste"
+        services={taxServices}
       />
-
       <ProcessSection
-        title="Unser Prozess"
-        description="Wir folgen einem strukturierten Ansatz zur Optimierung Ihrer Unternehmenssteuerposition bei gleichzeitiger Einhaltung der Compliance."
+        title="Unser Steuerberatungsprozess"
+        description="Wir folgen einem strukturierten Ansatz zur Optimierung Ihrer Steuerstrategie"
         steps={process}
       />
-
       <CTASection
-        title="Bereit Ihre Unternehmenssteuerstrategie zu optimieren?"
-        description="Kontaktieren Sie uns noch heute für eine Beratung und erfahren Sie, wie wir Ihre Unternehmenssteuerstruktur optimieren können."
-        primaryButtonText="Beratung Planen"
-        secondaryButtonText="Kontakt"
+        title="Optimieren Sie Ihre Steuerstrategie"
+        description="Kontaktieren Sie uns für ein unverbindliches Beratungsgespräch"
+        primaryButtonText="Jetzt beraten lassen"
         primaryButtonHref="/de/contact"
-        secondaryButtonHref="/de/contact"
       />
-
       <Footer />
     </main>
   );
