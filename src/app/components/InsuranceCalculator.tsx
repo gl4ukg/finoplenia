@@ -106,7 +106,7 @@ export function InsuranceCalculator({ language }: Props) {
       <h2 className="text-3xl font-bold text-center mb-2">{t.title}</h2>
       <p className="text-gray-600 text-center mb-8">{t.subtitle}</p>
 
-      <div className="relative">
+      <div className="relative pt-2">
         <div className="absolute top-0 left-0 w-full">
           <div className="h-2 bg-gray-200 rounded">
             <div
@@ -132,12 +132,12 @@ export function InsuranceCalculator({ language }: Props) {
                     <button
                       key={option.id}
                       onClick={() => handleInsuranceSelect(option.id)}
-                      className="p-6 border rounded-lg hover:border-primary hover:bg-primary/5 transition-colors text-left"
+                      className="p-6 border rounded-lg hover:border-secondary hover:bg-secondary/5 transition-colors text-left"
                     >
                       <div className="flex items-center gap-4">
-                        <IconComponent className="w-8 h-8 text-primary" />
+                        <IconComponent className="w-8 h-8 text-secondary" />
                         <div>
-                          <h3 className="font-semibold text-lg">
+                          <h3 className="font-semibold text-lg text-secondary">
                             {option.title[language]}
                           </h3>
                           <p className="text-gray-600 text-sm">
@@ -182,7 +182,7 @@ export function InsuranceCalculator({ language }: Props) {
                       required
                       min="18"
                       max="100"
-                      className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary"
+                      className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-secondary focus:ring-secondary"
                     />
                   </div>
 
@@ -194,7 +194,7 @@ export function InsuranceCalculator({ language }: Props) {
                       type="text"
                       name="occupation"
                       required
-                      className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary"
+                      className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-secondary focus:ring-secondary"
                     />
                   </div>
 
@@ -208,7 +208,7 @@ export function InsuranceCalculator({ language }: Props) {
                           type="radio"
                           name="preExistingConditions"
                           value="yes"
-                          className="text-primary focus:ring-primary"
+                          className="text-secondary focus:ring-secondary"
                         />
                         <span className="ml-2">{t.yes}</span>
                       </label>
@@ -218,7 +218,7 @@ export function InsuranceCalculator({ language }: Props) {
                           name="preExistingConditions"
                           value="no"
                           defaultChecked
-                          className="text-primary focus:ring-primary"
+                          className="text-secondary focus:ring-secondary"
                         />
                         <span className="ml-2">{t.no}</span>
                       </label>
@@ -235,7 +235,7 @@ export function InsuranceCalculator({ language }: Props) {
                       required
                       min="50000"
                       step="10000"
-                      className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary"
+                      className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-secondary focus:ring-secondary"
                     />
                   </div>
 
@@ -249,7 +249,7 @@ export function InsuranceCalculator({ language }: Props) {
                     </button>
                     <button
                       type="submit"
-                      className="px-4 py-2 bg-primary text-white rounded-md hover:bg-primary-dark"
+                      className="px-4 py-2 bg-secondary text-white rounded-md hover:bg-secondary-dark"
                     >
                       {t.calculate}
                     </button>
@@ -266,9 +266,9 @@ export function InsuranceCalculator({ language }: Props) {
                 exit={{ opacity: 0, x: -20 }}
                 className="max-w-xl mx-auto text-center"
               >
-                <div className="bg-primary/5 rounded-lg p-8 mb-6">
-                  <h3 className="text-xl font-semibold mb-4">{t.estimatedPrice}</h3>
-                  <p className="text-4xl font-bold text-primary">
+                <div className="bg-secondary/5 rounded-lg p-8 mb-6">
+                  <h3 className="text-xl font-semibold mb-4 text-secondary">{t.estimatedPrice}</h3>
+                  <p className="text-4xl font-bold text-secondary">
                     €{state.estimatedPrice.toFixed(2)}
                     <span className="text-base font-normal text-gray-600">/month</span>
                   </p>
@@ -276,7 +276,7 @@ export function InsuranceCalculator({ language }: Props) {
 
                 <button
                   onClick={handleRestart}
-                  className="px-6 py-3 bg-primary text-white rounded-md hover:bg-primary-dark"
+                  className="px-6 py-3 bg-secondary text-white rounded-md hover:bg-secondary-dark"
                 >
                   {t.restart}
                 </button>

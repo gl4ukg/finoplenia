@@ -139,7 +139,7 @@ export function Navigation() {
           ))}
           <Link
             href={`/${lang}${navigation.calculator.href}`}
-            className="rounded-full bg-primary px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-primary-dark focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+            className="rounded-full bg-secondary px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-secondary-dark focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary"
           >
             {translations.calculator[lang]}
           </Link>

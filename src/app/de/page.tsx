@@ -83,10 +83,10 @@ export default function Home() {
               für Privatkunden und Unternehmen.
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
-              <Link href="/de/contact" className="btn btn-primary">
+              <Link href="/de/contact" className="btn btn-secondary">
                 Jetzt Starten
               </Link>
-              <Link href="/de/calculator" className="btn btn-primary">
+              <Link href="/de/calculator" className="btn btn-secondary">
                 Versicherungsrechner
               </Link>
               <Link href="/de/about" className="btn btn-outline">

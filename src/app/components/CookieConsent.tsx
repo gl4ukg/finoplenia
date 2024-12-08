@@ -187,7 +187,7 @@ export function CookieConsent() {
                   <button onClick={rejectAll} className="btn btn-outline">
                     {translations.rejectAll[lang]}
                   </button>
-                  <button onClick={acceptAll} className="btn btn-primary">
+                  <button onClick={acceptAll} className="btn btn-secondary">
                     {translations.acceptAll[lang]}
                   </button>
                 </>
@@ -199,7 +199,7 @@ export function CookieConsent() {
                   >
                     {translations.customize[lang]}
                   </button>
-                  <button onClick={handleSave} className="btn btn-primary">
+                  <button onClick={handleSave} className="btn btn-secondary">
                     {translations.save[lang]}
                   </button>
                 </>

@@ -82,7 +82,7 @@ export function Testimonials({ testimonials, isGerman = false }: TestimonialsPro
               </motion.div>
 
               {/* Navigation Buttons */}
-              <div className="absolute top-1/2 -translate-y-1/2 left-0 right-0 flex justify-between">
+              {/* <div className="absolute top-1/2 -translate-y-1/2 left-0 right-0 flex justify-between">
                 <button
                   onClick={prevTestimonial}
                   className="p-2 rounded-full bg-white shadow-lg hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-primary"
@@ -101,7 +101,7 @@ export function Testimonials({ testimonials, isGerman = false }: TestimonialsPro
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                   </svg>
                 </button>
-              </div>
+              </div> */}
 
               {/* Dots */}
               <div className="mt-8 flex justify-center gap-2">
