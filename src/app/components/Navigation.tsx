@@ -36,6 +36,16 @@ const navigation = {
     { name: 'Blog', href: '/blog' },
     { name: 'Contact', href: '/contact' },
   ],
+  calculator: {
+    href: '/calculator'
+  }
+};
+
+const translations: { calculator: { [key: string]: string } } = {
+  calculator: {
+    en: 'Calculator',
+    de: 'Rechner'
+  }
 };
 
 export function Navigation() {
@@ -57,104 +67,82 @@ export function Navigation() {
   };
 
   return (
-    <header className="fixed inset-x-0 top-0 z-50 bg-white/80 backdrop-blur-sm">
-      <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
-        {/* Logo */}
-        <motion.div
-          initial={{ opacity: 0, x: -20 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.5 }}
-          className="flex lg:flex-1"
-        >
-          <Link href={`/${lang}`} className="-m-1.5 p-1.5">
-            <span className="text-xl font-bold text-primary">Finoplenia</span>
+    <header className="fixed inset-x-0 top-0 z-50 bg-white/80 backdrop-blur-lg">
+      <nav className="container flex items-center justify-between py-6" aria-label="Global">
+        <div className="flex lg:flex-1">
+          <Link href={`/${lang}`} className="-m-1.5 p-1.5 text-2xl font-bold">
+            Finoplenia
           </Link>
-        </motion.div>
-
-        {/* Mobile menu button */}
+        </div>
         <div className="flex lg:hidden">
           <button
             type="button"
             className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
-            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            onClick={() => setMobileMenuOpen(true)}
           >
-            <span className="sr-only">Toggle menu</span>
-            {mobileMenuOpen ? (
-              <XMarkIcon className="h-6 w-6" aria-hidden="true" />
-            ) : (
-              <Bars3Icon className="h-6 w-6" aria-hidden="true" />
-            )}
+            <span className="sr-only">Open main menu</span>
+            <Bars3Icon className="h-6 w-6" aria-hidden="true" />
           </button>
         </div>
-
-        {/* Desktop navigation */}
-        <div className="hidden lg:flex lg:gap-x-12">
+        <div className="hidden lg:flex lg:gap-x-8">
           {localizedNavigation.main.map((item) => (
-            <div key={item.name} className="relative" onMouseLeave={() => setActiveDropdown(null)}>
-              <div
-                className="flex items-center gap-1 cursor-pointer"
-                onMouseEnter={() => item.submenu && setActiveDropdown(item.name)}
-              >
+            <div key={item.name} className="relative">
+              {item.submenu ? (
+                <button
+                  onClick={() => setActiveDropdown(activeDropdown === item.name ? null : item.name)}
+                  className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900"
+                >
+                  {item.name}
+                  <ChevronDownIcon
+                    className={`h-4 w-4 transition-transform ${
+                      activeDropdown === item.name ? 'rotate-180' : ''
+                    }`}
+                  />
+                </button>
+              ) : (
                 <Link
                   href={item.href}
-                  className={`text-sm font-semibold leading-6 ${
-                    pathname === item.href
-                      ? 'text-secondary'
-                      : 'text-gray-900 hover:text-secondary'
-                  }`}
+                  className="text-sm font-semibold leading-6 text-gray-900"
                 >
                   {item.name}
                 </Link>
-                {item.submenu && (
-                  <ChevronDownIcon className="h-4 w-4 text-gray-500" aria-hidden="true" />
-                )}
-              </div>
-              
-              {/* Desktop dropdown menu */}
-              <AnimatePresence>
-                {activeDropdown === item.name && item.submenu && (
-                  <motion.div
-                    initial={{ opacity: 0, y: 10 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    exit={{ opacity: 0, y: 10 }}
-                    transition={{ duration: 0.2 }}
-                    className="absolute left-0 mt-2 w-48 rounded-md bg-white py-2 shadow-lg ring-1 ring-black ring-opacity-5"
-                  >
-                    {item.submenu.map((subItem) => (
+              )}
+              {item.submenu && activeDropdown === item.name && (
+                <div className="absolute left-0 z-10 mt-3 w-48 origin-top-left rounded-xl bg-white shadow-lg ring-1 ring-gray-900/5">
+                  <div className="p-2">
+                    {item.submenu.map((subitem) => (
                       <Link
-                        key={subItem.name}
-                        href={subItem.href}
-                        className={`block px-4 py-2 text-sm ${
-                          pathname === subItem.href
-                            ? 'bg-gray-50 text-secondary'
-                            : 'text-gray-700 hover:bg-gray-50'
-                        }`}
+                        key={subitem.name}
+                        href={subitem.href}
+                        className="block rounded-lg px-3 py-2 text-sm font-semibold leading-6 text-gray-900 hover:bg-gray-50"
                       >
-                        {subItem.name}
+                        {subitem.name}
                       </Link>
                     ))}
-                  </motion.div>
-                )}
-              </AnimatePresence>
+                  </div>
+                </div>
+              )}
             </div>
           ))}
         </div>
-
-        {/* Language switcher */}
-        <div className="hidden lg:flex lg:flex-1 lg:justify-end lg:gap-x-4">
-          {localizedNavigation.languages.map((lang) => (
+        <div className="hidden lg:flex lg:flex-1 lg:items-center lg:justify-end lg:gap-x-8">
+          {localizedNavigation.languages.map((l) => (
             <Link
-              key={lang.code}
-              href={pathname.replace(/^\/[^/]+/, `/${lang.code}`)}
+              key={l.code}
+              href={pathname.replace(`/${lang}`, `/${l.code}`)}
               className={`text-sm font-semibold ${
-                pathname.startsWith(`/${lang.code}`)
-                  ? 'text-secondary'
-                  : 'text-gray-900 hover:text-secondary'
+                l.code === lang ? 'text-primary' : 'text-gray-900'
               }`}
             >
-              {lang.name}
+              {l.name}
             </Link>
           ))}
+          <Link
+            href={`/${lang}${navigation.calculator.href}`}
+            className="rounded-full bg-primary px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-primary-dark focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+          >
+            {translations.calculator[lang]}
+          </Link>
         </div>
       </nav>
 
@@ -202,6 +190,17 @@ export function Navigation() {
                   )}
                 </div>
               ))}
+              <Link
+                href={`/${lang}${navigation.calculator.href}`}
+                className={`block rounded-md px-3 py-2 text-base font-medium ${
+                  pathname === `/${lang}${navigation.calculator.href}`
+                    ? 'bg-gray-50 text-secondary'
+                    : 'text-gray-900 hover:bg-gray-50'
+                }`}
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                {translations.calculator[lang]}
+              </Link>
               <div className="border-t border-gray-200 my-4" />
               <div className="flex justify-center gap-x-4 py-2">
                 {localizedNavigation.languages.map((lang) => (

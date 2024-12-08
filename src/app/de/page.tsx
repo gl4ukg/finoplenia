@@ -84,10 +84,13 @@ export default function Home() {
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <Link href="/de/contact" className="btn btn-primary">
-                Loslegen
+                Jetzt Starten
+              </Link>
+              <Link href="/de/calculator" className="btn btn-primary">
+                Versicherungsrechner
               </Link>
               <Link href="/de/about" className="btn btn-outline">
-                Mehr erfahren
+                Mehr Erfahren
               </Link>
             </div>
           </div>

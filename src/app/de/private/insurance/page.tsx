@@ -5,6 +5,7 @@ import { BenefitsSection } from '../../../components/BenefitsSection';
 import { ServicesSection } from '../../../components/ServicesSection';
 import { ProcessSection } from '../../../components/ProcessSection';
 import { CTASection } from '../../../components/CTASection';
+import Link from 'next/link';
 
 const insuranceServices = [
   {
@@ -126,6 +127,15 @@ export default function InsurancePage() {
         description="Wir folgen einem strukturierten Ansatz, um sicherzustellen, dass Sie den besten Versicherungsschutz für Ihre Bedürfnisse erhalten."
         steps={process}
       />
+
+      <div className="mt-10 flex items-center justify-center gap-x-6">
+        <Link href="/de/contact" className="btn btn-primary">
+          Kontakt
+        </Link>
+        <Link href="/de/calculator" className="btn btn-primary">
+          Prämie Berechnen
+        </Link>
+      </div>
 
       <CTASection
         title="Bereit für Ihre sichere Zukunft?"

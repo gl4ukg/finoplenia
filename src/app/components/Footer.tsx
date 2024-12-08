@@ -14,6 +14,7 @@ export function Footer() {
       { name: lang === 'de' ? 'Altersvorsorge' : 'Retirement Planning', href: `/${lang}/private/retirement` },
       { name: lang === 'de' ? 'Vermögensberatung' : 'Wealth Advice', href: `/${lang}/private/wealth` },
       { name: lang === 'de' ? 'Steuerberatung' : 'Tax Advisory', href: `/${lang}/private/tax` },
+      { name: lang === 'de' ? 'Versicherungsrechner' : 'Insurance Calculator', href: `/${lang}/calculator` },
     ],
     company: [
       { name: lang === 'de' ? 'Über uns' : 'About', href: `/${lang}/about` },

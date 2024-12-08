@@ -86,6 +86,9 @@ export default function Home() {
               <Link href="/en/contact" className="btn btn-primary">
                 Get Started
               </Link>
+              <Link href="/en/calculator" className="btn btn-primary">
+                Try Our Calculator
+              </Link>
               <Link href="/en/about" className="btn btn-outline">
                 Learn More
               </Link>
