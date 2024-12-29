@@ -8,9 +8,9 @@ import { useParams } from 'next/navigation';
 interface BlogPost {
   id: number;
   title: string;
-  description: string;
+  description?: string;
   imageUrl: string;
-  date: string;
+  date?: string;
   category?: string;
   author?: string;
   readTime?: string;
@@ -35,15 +35,16 @@ export function BlogContent({ blogPosts, title, description }: Props) {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
+            className='mb-32'
           >
-            <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none">
+            <h1 className="text-3xl font-bold tracking-tighter mb-8 sm:text-4xl md:text-5xl lg:text-6xl/none">
               {title}
             </h1>
             <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400 mt-4">
               {description}
             </p>
           </motion.div>
-          <div className="grid grid-cols-1 gap-8 mt-8 md:grid-cols-2 lg:grid-cols-3">
+          <div className="grid grid-cols-1 gap-8 mt-20 md:grid-cols-2 lg:grid-cols-3">
             {blogPosts.map((post, index) => (
               <motion.div
                 key={post.id}
@@ -60,7 +61,7 @@ export function BlogContent({ blogPosts, title, description }: Props) {
                 </Link>
                 <div className="relative h-64 w-full overflow-hidden">
                   <Image
-                    src={post.imageUrl}
+                    src={post?.imageUrl}
                     alt={post.title}
                     className="object-cover transition-transform duration-300 group-hover:scale-110"
                     fill

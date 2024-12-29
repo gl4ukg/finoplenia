@@ -12,39 +12,39 @@ export function useNavigation() {
     main: [
       {
         name: 'Private',
-        href: `/${locale}/private`,
+        href: `/private`,
         submenu: [
           {
             name: locale === 'de' ? 'Versicherung' : 'Insurance',
-            href: `/${locale}/private/insurance`,
+            href: `/private/insurance`,
             description: locale === 'de'
               ? 'Umfassende Versicherungslösungen'
               : 'Comprehensive insurance solutions'
           },
           {
             name: locale === 'de' ? 'Ruhestand' : 'Retirement',
-            href: `/${locale}/private/retirement`,
+            href: `/private/retirement`,
             description: locale === 'de'
               ? 'Planung für Ihren Ruhestand'
               : 'Planning for your retirement'
           },
           {
             name: locale === 'de' ? 'Vermögen' : 'Wealth',
-            href: `/${locale}/private/wealth`,
+            href: `/private/wealth`,
             description: locale === 'de'
               ? 'Vermögensverwaltung und -planung'
               : 'Wealth management and planning'
           },
           {
             name: locale === 'de' ? 'Immobilien' : 'Property',
-            href: `/${locale}/private/property`,
+            href: `/private/property`,
             description: locale === 'de'
               ? 'Immobilieninvestments und -verwaltung'
               : 'Property investments and management'
           },
           {
             name: locale === 'de' ? 'Steuern' : 'Tax',
-            href: `/${locale}/private/tax`,
+            href: `/private/tax`,
             description: locale === 'de'
               ? 'Steuerplanung und -optimierung'
               : 'Tax planning and optimization'
@@ -53,18 +53,18 @@ export function useNavigation() {
       },
       {
         name: 'Corporate',
-        href: `/${locale}/corporate`,
+        href: `/corporate`,
         submenu: [
           {
             name: locale === 'de' ? 'Beratung' : 'Advisory',
-            href: `/${locale}/corporate/advisory`,
+            href: `/corporate/advisory`,
             description: locale === 'de'
               ? 'Professionelle Unternehmensberatung'
               : 'Professional business consulting'
           },
           {
             name: locale === 'de' ? 'Steuern' : 'Tax',
-            href: `/${locale}/corporate/tax`,
+            href: `/corporate/tax`,
             description: locale === 'de'
               ? 'Unternehmenssteuerberatung'
               : 'Corporate tax consulting'
@@ -73,20 +73,20 @@ export function useNavigation() {
       },
       { 
         name: locale === 'de' ? 'Über uns' : 'About',
-        href: `/${locale}/about`
+        href: `/about`
       },
       {
         name: 'Blog',
-        href: `/${locale}/blog`
+        href: `/blog`
       },
       {
         name: locale === 'de' ? 'Kontakt' : 'Contact',
-        href: `/${locale}/contact`
+        href: `/contact`
       }
     ],
     calculator: {
       text: locale === 'de' ? 'Rechner' : 'Calculator',
-      href: `/${locale}/calculator`
+      href: `/calculator`
     }
   };
 

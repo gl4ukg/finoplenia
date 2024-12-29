@@ -1,12 +1,13 @@
 import { Navigation } from '../../../components/Navigation';
 import { Footer } from '../../../components/Footer';
-import { getDictionary } from '../../../i18n/dictionaries';
 import { motion } from 'framer-motion';
+import { getDictionary } from '@/i18n/server';
+import { Locale } from '@/i18n/settings';
 
 export default async function TermsAndConditions({
   params: { locale }
 }: {
-  params: { locale: string }
+  params: { locale: Locale }
 }) {
   const dict = await getDictionary(locale);
 
@@ -26,7 +27,7 @@ export default async function TermsAndConditions({
 
   return (
     <main className="flex min-h-screen flex-col">
-      <Navigation locale={locale} />
+      <Navigation />
       
       <div className="flex-grow container py-32">
         <motion.div 
@@ -163,7 +164,7 @@ export default async function TermsAndConditions({
         </motion.div>
       </div>
 
-      <Footer locale={locale} />
+      <Footer />
     </main>
   );
 }

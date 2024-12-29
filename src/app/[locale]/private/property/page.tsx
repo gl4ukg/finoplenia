@@ -3,6 +3,7 @@ import { Footer } from '@/components/Footer';
 import { getDictionary } from '@/i18n/server';
 import type { Locale } from '@/i18n/settings';
 import Link from 'next/link';
+import { HeroSection } from '@/components/HeroSection';
 
 interface Props {
   params: {
@@ -18,19 +19,11 @@ export default async function PrivateProperty({ params: { locale } }: Props) {
     <main className="flex min-h-screen flex-col">
       <Navigation />
       
-      {/* Hero Section */}
-      <section className="relative pt-32 pb-16 sm:pt-40 sm:pb-24 lg:pb-32 bg-gradient-to-b from-primary/5 to-white">
-        <div className="container">
-          <div className="mx-auto max-w-3xl text-center">
-            <h1 className="text-4xl font-bold tracking-tight text-primary sm:text-6xl">
-              {hero.title}
-            </h1>
-            <p className="mt-6 text-lg leading-8 text-gray-600">
-              {hero.description}
-            </p>
-          </div>
-        </div>
-      </section>
+      <HeroSection
+        title={hero.title}
+        description={hero.description}
+        className="bg-gradient-to-b from-primary/5 to-white"
+      />
 
       {/* Services Section */}
       <section className="py-16 sm:py-24">

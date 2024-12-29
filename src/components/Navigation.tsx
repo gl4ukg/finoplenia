@@ -13,7 +13,7 @@ export function Navigation() {
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
   
   const { navigation, locale, pathname } = useNavigation();
-  const { main, callToAction, languages, calculator } = navigation;
+  const { main, languages, calculator } = navigation;
 
   return (
     <header className="fixed inset-x-0 top-0 z-50 bg-white/80 backdrop-blur">

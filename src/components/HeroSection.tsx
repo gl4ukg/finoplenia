@@ -27,14 +27,14 @@ export function HeroSection({
   className = '',
 }: HeroSectionProps) {
   return (
-    <section className={`relative isolate overflow-hidden bg-white pt-14 ${className}`}>
+    <section className={`relative isolate overflow-hidden bg-primary pt-14 ${className}`}>
       <div className="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl"
+            className="text-4xl font-bold tracking-tight text-white sm:text-6xl"
           >
             {title}
           </motion.h1>
@@ -43,7 +43,7 @@ export function HeroSection({
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.1 }}
-              className="mt-4 text-xl text-gray-600"
+              className="mt-4 text-xl text-white"
             >
               {subtitle}
             </motion.p>
@@ -52,7 +52,7 @@ export function HeroSection({
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="mt-6 text-lg leading-8 text-gray-600"
+            className="mt-6 text-lg leading-8 text-white"
           >
             {description}
           </motion.p>

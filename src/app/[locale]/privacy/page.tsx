@@ -21,7 +21,7 @@ export default async function Privacy({ params: { locale } }: Props) {
     <main className="flex min-h-screen flex-col">
       <Navigation />
 
-      <section className="relative pt-32 pb-16 sm:pt-40 sm:pb-24 lg:pb-32 bg-gradient-to-b from-primary/5 to-white">
+      <section className="relative pt-32 pb-0sm:pt-40 sm:pb-24 lg:pb-32 bg-gradient-to-b from-primary/5 to-white">
         <div className="container">
           <div className="mx-auto max-w-3xl text-center">
             <motion.h1
