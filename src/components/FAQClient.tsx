@@ -9,7 +9,10 @@ import Link from 'next/link';
 interface FAQClientProps {
   dict: {
     faq: {
-      title: string;
+      hero: {
+        title: string;
+        description: string;
+      };
       categories: {
         [key: string]: {
           title: string;
@@ -18,6 +21,11 @@ interface FAQClientProps {
             answer: string;
           }[];
         };
+      };
+      support: {
+        title: string;
+        description: string;
+        contactButton: string;
       };
     };
   };
@@ -39,7 +47,7 @@ export function FAQClient({ dict }: FAQClientProps) {
           transition={{ duration: 0.5 }}
           className="mx-auto max-w-4xl"
         >
-          <h1 className="text-4xl font-bold text-center mb-16">{t.title}</h1>
+          <h1 className="text-4xl font-bold text-center mb-16">{t.hero.title}</h1>
 
           <div className="space-y-8">
             {Object.entries(t.categories).map(([categoryId, category]) => (

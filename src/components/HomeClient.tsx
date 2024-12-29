@@ -17,6 +17,7 @@ interface Dictionary {
     hero: {
       title: string;
       subtitle: string;
+      cta: string;
     };
     privateServices: {
       title: string;
@@ -83,32 +84,106 @@ export default function HomeClient({ dict, locale, testimonials }: HomeClientPro
         initial="hidden"
         animate={isHeroInView ? "visible" : "hidden"}
         variants={staggerContainer}
-        className="relative pt-32 pb-16 sm:pt-40 sm:pb-24 lg:pb-32"
+        className="relative pt-28 pb-16 sm:pt-28 sm:pb-24 lg:pb-28"
       >
-        <div className="container">
-          <div className="mx-auto max-w-2xl text-center">
+        <div className="bg-white">
+          <div className="relative isolate overflow-hidden bg-gradient-to-b from-primary/20">
+            <div className="mx-auto max-w-7xl pb-24 pt-10 sm:pb-32 lg:grid lg:grid-cols-2 lg:gap-x-8 lg:px-8 lg:py-20">
+              <motion.div
+                initial={{ opacity: 0, x: -50 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.8, ease: "easeOut" }}
+                className="px-6 lg:px-0 lg:pt-4"
+              >
+                <div className="mx-auto max-w-2xl">
+                  <div className="max-w-lg">
+                    <motion.h1
+                      initial={{ opacity: 0, y: 20 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ duration: 0.6, delay: 0.2 }}
+                      className="mt-10 text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl"
+                    >
+                      {dict.home.hero.title}
+                    </motion.h1>
+                    <motion.p
+                      initial={{ opacity: 0, y: 20 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ duration: 0.6, delay: 0.4 }}
+                      className="mt-6 text-lg leading-8 text-gray-600"
+                    >
+                      {dict.home.hero.subtitle}
+                    </motion.p>
+                    <motion.div
+                      initial={{ opacity: 0, y: 20 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ duration: 0.6, delay: 0.6 }}
+                      className="mt-10 flex items-center gap-x-6"
+                    >
+                      <motion.div
+                        whileHover={{ scale: 1.05 }}
+                        whileTap={{ scale: 0.95 }}
+                      >
+                        <Link href={`/${locale}/contact`} className="btn btn-secondary">
+                          {dict.common.getStarted}
+                        </Link>
+                      </motion.div>
+                      
+                      <motion.div
+                        whileHover={{ scale: 1.05 }}
+                        whileTap={{ scale: 0.95 }}
+                      >
+                        <Link href={`/${locale}/calculator`} className="btn btn-secondary">
+                          {dict.common.calculator}
+                        </Link>
+                      </motion.div>
+                      
+                      <motion.div
+                        whileHover={{ 
+                          scale: 1.05,
+                          x: 10,
+                        }}
+                        whileTap={{ scale: 0.95 }}
+                      >
+                        <Link href={`/${locale}/about`} className="btn btn-outline">
+                          {dict.common.learnMore}
+                        </Link>
+                      </motion.div>
+                    </motion.div>
+                  </div>
+                </div>
+              </motion.div>
+              <motion.div
+                initial={{ opacity: 0, x: 50 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.8, ease: "easeOut", delay: 0.3 }}
+                className="mt-20 sm:mt-24 md:mx-auto md:max-w-2xl lg:mx-0 lg:mt-0 lg:w-screen"
+              >
+                <div className="md:rounded-3xl">
+                  <div className="relative px-6 md:pl-16 md:pr-0">
+                    <motion.div
+                      initial={{ scale: 0.9, opacity: 0 }}
+                      animate={{ scale: 1, opacity: 1 }}
+                      transition={{ duration: 0.8, delay: 0.5 }}
+                      className="mx-auto max-w-2xl md:mx-0 md:max-w-none relative h-[500px]"
+                    >
+                      <motion.img
+                        whileHover={{ scale: 1.03 }}
+                        transition={{ duration: 0.3 }}
+                        src="https://i.pinimg.com/736x/19/c0/e5/19c0e5503d99096e38ebeb93a718e0d2.jpg"
+                        alt="Insurance illustration"
+                        className="absolute inset-0 w-full h-full object-cover rounded-tl-xl bg-white/5 ring-1 ring-white/10"
+                      />
+                    </motion.div>
+                  </div>
+                </div>
+              </motion.div>
+            </div>
             <motion.div
-              variants={fadeInUp}
-              className="relative z-10"
-            >
-              <h1 className="text-4xl font-bold tracking-tight text-primary sm:text-6xl">
-                {dict.home.hero.title}
-              </h1>
-              <p className="mt-6 text-lg leading-8 text-gray-600">
-                {dict.home.hero.subtitle}
-              </p>
-              <div className="mt-10 flex items-center justify-center gap-x-6">
-                <Link href={`/${locale}/contact`} className="btn btn-secondary">
-                  {dict.common.getStarted}
-                </Link>
-                <Link href={`/${locale}/calculator`} className="btn btn-secondary">
-                  {dict.common.calculator}
-                </Link>
-                <Link href={`/${locale}/about`} className="btn btn-outline">
-                  {dict.common.learnMore}
-                </Link>
-              </div>
-            </motion.div>
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 1, delay: 0.8 }}
+              className="absolute inset-x-0 bottom-0 -z-10 h-24 bg-gradient-to-t from-white sm:h-32"
+            />
           </div>
         </div>
       </motion.section>
@@ -251,7 +326,7 @@ export default function HomeClient({ dict, locale, testimonials }: HomeClientPro
               variants={fadeInUp}
               className="mt-10 flex items-center justify-center gap-x-6"
             >
-              <Link href={`/${locale}/contact`} className="btn btn-primary">
+              <Link href={`/${locale}/contact`} className="btn btn-secondary">
                 Contact Us
               </Link>
             </motion.div>

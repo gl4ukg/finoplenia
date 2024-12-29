@@ -16,9 +16,8 @@ export function Footer() {
       <div className="container pb-8 pt-16 sm:pt-24">
         <div className="xl:grid xl:grid-cols-3 xl:gap-8">
           <div className="space-y-8">
-            <Link href={`/${locale}`}>
-              <span className="sr-only">Finoplenia</span>
-              <img className="h-8 w-auto" src="/logo-white.svg" alt="" />
+            <Link href={`/${locale}`} className=' text-2xl font-bold'>
+              Finoplenia
             </Link>
             <p className="text-sm leading-6 text-gray-400">
               {locale === 'de'
