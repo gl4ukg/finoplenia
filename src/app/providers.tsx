@@ -2,7 +2,7 @@
 
 import { LazyMotion, domAnimation, m as motion, AnimatePresence } from 'framer-motion';
 import { CookieProvider } from '@/contexts/CookieContext';
-import { CookieConsent } from './components/CookieConsent';
+import { CookieConsent } from '../components/CookieConsent';
 
 export function Providers({ children }: { children: React.ReactNode }) {
   return (

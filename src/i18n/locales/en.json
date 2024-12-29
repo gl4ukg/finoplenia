@@ -1,0 +1,547 @@
+{
+  "common": {
+    "getStarted": "Get Started",
+    "learnMore": "Learn More",
+    "contact": "Contact",
+    "about": "About",
+    "blog": "Blog",
+    "calculator": "Insurance Calculator",
+    "contactUs": "Contact Us",
+    "faq": "FAQ",
+    "privacy": "Privacy Policy",
+    "terms": "Terms & Conditions"
+  },
+  "contact": {
+    "hero": {
+      "title": "Contact",
+      "description": "Have questions or want to learn more about our services? Get in touch with us."
+    },
+    "info": {
+      "title": "Contact Us",
+      "description": "We're here to help and answer any questions you might have. We look forward to hearing from you.",
+      "address": {
+        "label": "Address",
+        "line1": "123 Financial District",
+        "line2": "Zurich, Switzerland"
+      },
+      "email": {
+        "label": "Email",
+        "value": "contact@finoplenia.com"
+      },
+      "phone": {
+        "label": "Phone",
+        "value": "+41 12 345 67 89"
+      }
+    },
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "phone": "Phone",
+      "subject": "Subject",
+      "message": "Message",
+      "subjects": {
+        "general": "General Inquiry",
+        "private": "Private Services",
+        "corporate": "Corporate Services",
+        "careers": "Career Opportunities"
+      },
+      "submit": {
+        "sending": "Sending...",
+        "send": "Send Message"
+      },
+      "success": "Thank you for your message! We will get back to you shortly."
+    }
+  },
+  "cookies": {
+    "title": "Cookie Settings",
+    "description": "We use cookies to enhance your browsing experience and analyze our traffic.",
+    "essential": {
+      "title": "Essential Cookies",
+      "description": "Required for the website to function properly."
+    },
+    "analytics": {
+      "title": "Analytics Cookies",
+      "description": "Help us understand how visitors interact with our website."
+    },
+    "marketing": {
+      "title": "Marketing Cookies",
+      "description": "Used to deliver personalized advertisements."
+    },
+    "actions": {
+      "customize": "Customize",
+      "acceptAll": "Accept All",
+      "rejectAll": "Reject All",
+      "save": "Save Preferences"
+    },
+    "privacyPolicy": "Privacy Policy"
+  },
+  "calculator": {
+    "hero": {
+      "title": "Insurance Calculator",
+      "subtitle": "Get an instant quote for your insurance needs"
+    },
+    "steps": {
+      "selectInsurance": "Select Insurance Type",
+      "enterDetails": "Enter Your Details",
+      "result": "Your Quote"
+    },
+    "buttons": {
+      "next": "Next",
+      "back": "Back",
+      "calculate": "Calculate",
+      "restart": "Start Over"
+    },
+    "form": {
+      "age": "Your Age",
+      "occupation": "Occupation",
+      "preExistingConditions": "Pre-existing Conditions",
+      "coverageAmount": "Coverage Amount (€)",
+      "estimatedPrice": "Estimated Monthly Premium",
+      "yes": "Yes",
+      "no": "No"
+    },
+    "insuranceTypes": {
+      "life": {
+        "title": "Life Insurance",
+        "description": "Protect your loved ones' financial future with comprehensive life insurance coverage."
+      },
+      "health": {
+        "title": "Health Insurance",
+        "description": "Get access to quality healthcare with our flexible health insurance plans."
+      },
+      "property": {
+        "title": "Property Insurance",
+        "description": "Safeguard your property against damage, theft, and natural disasters."
+      },
+      "liability": {
+        "title": "Liability Insurance",
+        "description": "Protect yourself against third-party claims and legal expenses."
+      }
+    }
+  },
+  "blog": {
+    "hero": {
+      "title": "Blog",
+      "description": "Stay informed with our latest insights, news, and expert analysis on finance and investments."
+    },
+    "posts": [
+      {
+        "id": 1,
+        "title": "Understanding Investment Strategies in 2024",
+        "excerpt": "Discover the key investment trends and strategies shaping the financial landscape in 2024.",
+        "date": "March 15, 2024",
+        "category": "Investment",
+        "imageUrl": "/images/blog/investment.jpg",
+        "author": "Sarah Johnson",
+        "readTime": "5 min read"
+      },
+      {
+        "id": 2,
+        "title": "The Future of Digital Banking",
+        "excerpt": "Learn how digital transformation is revolutionizing the banking sector and what it means for customers.",
+        "date": "March 10, 2024",
+        "category": "Digital Banking",
+        "imageUrl": "/images/blog/digital-banking.jpg",
+        "author": "Michael Chen",
+        "readTime": "4 min read"
+      },
+      {
+        "id": 3,
+        "title": "Sustainable Finance: A Growing Trend",
+        "excerpt": "Learn more about the growing importance of sustainable finance and its impact on investment decisions.",
+        "date": "March 5, 2024",
+        "category": "Sustainability",
+        "imageUrl": "/images/blog/sustainable-finance.jpg",
+        "author": "Emma Wilson",
+        "readTime": "6 min read"
+      }
+    ]
+  },
+  "cta": {
+    "title": "Ready to Get Started?",
+    "description": "Contact us today to discuss how we can help you achieve your financial goals."
+  },
+  "about": {
+    "hero": {
+      "title": "About Finoplenia",
+      "description": "We are a leading financial services provider committed to helping our clients achieve their financial goals through expert advice and innovative solutions."
+    },
+    "values": {
+      "title": "Our Values",
+      "list": {
+        "integrity": {
+          "title": "Integrity",
+          "description": "We maintain the highest standards of integrity in all our business relationships."
+        },
+        "excellence": {
+          "title": "Excellence",
+          "description": "We strive for excellence in every service we provide."
+        },
+        "innovation": {
+          "title": "Innovation",
+          "description": "We continuously evolve to meet changing financial needs."
+        },
+        "customerFocus": {
+          "title": "Customer Focus",
+          "description": "Our clients' success is at the heart of everything we do."
+        }
+      }
+    },
+    "history": {
+      "title": "Our History",
+      "description": "From our founding to today, we are committed to excellence in financial services.",
+      "timeline": {
+        "2010": {
+          "title": "Foundation",
+          "description": "Finoplenia was founded with the vision of providing comprehensive financial services for private and corporate clients."
+        },
+        "2013": {
+          "title": "Digital Transformation",
+          "description": "Introduction of our digital platform to make financial services more accessible to our clients."
+        },
+        "2015": {
+          "title": "International Expansion",
+          "description": "Extended our services to international markets with a focus on cross-border wealth management."
+        },
+        "2018": {
+          "title": "Corporate Advisory Launch",
+          "description": "Introduction of comprehensive consulting services to support companies on their growth path."
+        },
+        "2020": {
+          "title": "Sustainability Focus",
+          "description": "Integration of ESG principles into our investment strategies and corporate processes."
+        },
+        "2023": {
+          "title": "Innovation Hub",
+          "description": "Establishment of our innovation hub for developing future-oriented financial solutions."
+        }
+      }
+    }
+  },
+  "home": {
+    "hero": {
+      "title": "Your Financial Future Starts Here",
+      "subtitle": "Professional financial advisory, insurance solutions, and wealth management for private individuals and corporations."
+    },
+    "privateServices": {
+      "title": "Private Services",
+      "subtitle": "Comprehensive financial services tailored to your personal needs.",
+      "services": {
+        "wealth": {
+          "title": "Wealth Management",
+          "description": "Build and protect your wealth with personalized investment strategies."
+        },
+        "insurance": {
+          "title": "Insurance Solutions",
+          "description": "Comprehensive insurance coverage for all aspects of life."
+        },
+        "retirement": {
+          "title": "Retirement Planning",
+          "description": "Secure your future with our professional retirement planning services."
+        },
+        "tax": {
+          "title": "Tax Advisory",
+          "description": "Professional tax planning and compliance services for individuals."
+        }
+      }
+    },
+    "corporateServices": {
+      "title": "Corporate Services",
+      "subtitle": "Strategic financial solutions for businesses.",
+      "services": {
+        "tax": {
+          "title": "Corporate Tax Advisory",
+          "description": "Strategic tax planning and compliance for businesses."
+        },
+        "advisory": {
+          "title": "Strategy Consulting",
+          "description": "Professional consulting for business growth and transformation."
+        }
+      }
+    }
+  },
+  "faq": {
+    "hero": {
+      "title": "Frequently Asked Questions",
+      "description": "Find answers to common questions about our services and how we can help you."
+    },
+    "categories": {
+      "general": {
+        "title": "General Questions",
+        "questions": [
+          {
+            "question": "What is Finoplenia?",
+            "answer": "Finoplenia is a leading financial services provider offering comprehensive solutions for private individuals and businesses. We specialize in wealth management, insurance solutions, retirement planning, and corporate advisory services."
+          },
+          {
+            "question": "How can I get started with Finoplenia?",
+            "answer": "Getting started is easy. You can either contact us directly through our contact form, call us, or visit our office. Our team will guide you through the process and help you find the right solutions for your needs."
+          },
+          {
+            "question": "What areas do you serve?",
+            "answer": "We primarily serve clients in Switzerland and neighboring European countries. However, we also work with international clients for specific services, subject to local regulations."
+          }
+        ]
+      },
+      "services": {
+        "title": "Our Services",
+        "questions": [
+          {
+            "question": "What types of insurance do you offer?",
+            "answer": "We offer a wide range of insurance solutions including life insurance, health insurance, property insurance, and liability insurance. Each can be customized to meet your specific needs."
+          },
+          {
+            "question": "Do you provide investment advice?",
+            "answer": "Yes, we provide comprehensive investment advice tailored to your financial goals, risk tolerance, and time horizon. Our experts can help you build and manage a diversified investment portfolio."
+          },
+          {
+            "question": "What retirement planning services do you offer?",
+            "answer": "Our retirement planning services include pension analysis, retirement savings strategies, tax-efficient planning, and ongoing portfolio management to help you achieve your retirement goals."
+          }
+        ]
+      },
+      "corporate": {
+        "title": "Corporate Services",
+        "questions": [
+          {
+            "question": "What corporate advisory services do you provide?",
+            "answer": "We offer strategic consulting, tax planning, risk management, and financial advisory services for businesses of all sizes. Our team can help with both day-to-day operations and long-term strategic planning."
+          },
+          {
+            "question": "Can you help with international business operations?",
+            "answer": "Yes, we assist companies with their international operations, including cross-border transactions, regulatory compliance, and international tax planning."
+          },
+          {
+            "question": "Do you work with startups?",
+            "answer": "Absolutely! We have specialized services for startups, including financial planning, funding strategy, and growth advisory services."
+          }
+        ]
+      }
+    },
+    "support": {
+      "title": "Still have questions?",
+      "description": "Can't find the answer you're looking for? Please contact our support team.",
+      "contactButton": "Contact Support"
+    }
+  },
+  "privacy": {
+    "hero": {
+      "title": "Privacy Policy",
+      "description": "Learn how we protect and handle your personal information."
+    },
+    "lastUpdated": "Last updated: December 29, 2024",
+    "sections": {
+      "introduction": {
+        "title": "Introduction",
+        "content": "At Finoplenia, we take your privacy seriously. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or use our services. Please read this privacy policy carefully. If you do not agree with the terms of this privacy policy, please do not access the site."
+      },
+      "collection": {
+        "title": "Information We Collect",
+        "content": "We collect information that you provide directly to us when you:",
+        "items": [
+          "Register for an account",
+          "Fill out a form",
+          "Sign up for our newsletter",
+          "Contact us",
+          "Use our services"
+        ],
+        "dataTypes": {
+          "title": "Types of Data Collected",
+          "personal": {
+            "title": "Personal Data",
+            "content": "While using our service, we may ask you to provide us with certain personally identifiable information that can be used to contact or identify you. This may include:",
+            "items": [
+              "Name and contact details",
+              "Email address",
+              "Phone number",
+              "Address",
+              "Financial information",
+              "Identity documents"
+            ]
+          },
+          "usage": {
+            "title": "Usage Data",
+            "content": "We may also collect information about how you access and use our website, including:",
+            "items": [
+              "Browser type and version",
+              "Time and date of your visit",
+              "Time spent on pages",
+              "Unique device identifiers",
+              "Other diagnostic data"
+            ]
+          }
+        }
+      },
+      "use": {
+        "title": "How We Use Your Information",
+        "content": "We use the collected data for various purposes:",
+        "items": [
+          "To provide and maintain our service",
+          "To notify you about changes to our service",
+          "To provide customer support",
+          "To gather analysis or valuable information",
+          "To detect, prevent and address technical issues",
+          "To comply with legal obligations"
+        ]
+      },
+      "sharing": {
+        "title": "Information Sharing and Disclosure",
+        "content": "We do not sell or rent your personal information to third parties. We may share your information with:",
+        "items": [
+          "Service providers who assist in our operations",
+          "Professional advisers including lawyers and auditors",
+          "Regulatory authorities when required by law",
+          "Business partners with your consent"
+        ]
+      },
+      "security": {
+        "title": "Data Security",
+        "content": "We implement appropriate technical and organizational measures to maintain the security of your personal information, including:",
+        "items": [
+          "Encryption of data in transit and at rest",
+          "Regular security assessments",
+          "Access controls and authentication",
+          "Regular staff training on data protection",
+          "Incident response procedures"
+        ]
+      },
+      "rights": {
+        "title": "Your Rights",
+        "content": "Under applicable data protection laws, you have certain rights regarding your personal data:",
+        "items": [
+          "Right to access your data",
+          "Right to correct inaccurate data",
+          "Right to erasure ('right to be forgotten')",
+          "Right to restrict processing",
+          "Right to data portability",
+          "Right to object to processing"
+        ]
+      },
+      "cookies": {
+        "title": "Cookies and Tracking",
+        "content": "We use cookies and similar tracking technologies to track activity on our service and hold certain information. You can instruct your browser to refuse all cookies or to indicate when a cookie is being sent."
+      },
+      "children": {
+        "title": "Children's Privacy",
+        "content": "Our service does not address anyone under the age of 18. We do not knowingly collect personally identifiable information from anyone under the age of 18."
+      },
+      "changes": {
+        "title": "Changes to This Privacy Policy",
+        "content": "We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the 'last updated' date."
+      },
+      "contact": {
+        "title": "Contact Us",
+        "content": "If you have any questions about this Privacy Policy, please contact us:",
+        "methods": {
+          "email": "privacy@finoplenia.com",
+          "phone": "+41 12 345 67 89",
+          "address": "123 Financial District, Zurich, Switzerland"
+        }
+      }
+    }
+  },
+  "terms": {
+    "hero": {
+      "title": "Terms & Conditions",
+      "description": "Please read these terms and conditions carefully before using our services."
+    },
+    "lastUpdated": "Last updated: December 29, 2024",
+    "sections": {
+      "introduction": {
+        "title": "Introduction",
+        "content": "These terms and conditions outline the rules and regulations for the use of Finoplenia's website and services. By accessing this website, we assume you accept these terms and conditions in full. Do not continue to use Finoplenia's website if you do not accept all of the terms and conditions stated on this page."
+      },
+      "definitions": {
+        "title": "Definitions",
+        "content": "The following terminology applies to these Terms and Conditions, Privacy Statement and Disclaimer Notice:",
+        "items": [
+          {
+            "term": "Client, You and Your",
+            "definition": "Refers to you, the person accessing this website and accepting the Company's terms and conditions."
+          },
+          {
+            "term": "The Company, Ourselves, We, Our and Us",
+            "definition": "Refers to Finoplenia."
+          },
+          {
+            "term": "Party, Parties",
+            "definition": "Refers to both the Client and ourselves, or either the Client or ourselves."
+          },
+          {
+            "term": "Services",
+            "definition": "Refers to the financial services and products offered by Finoplenia."
+          }
+        ]
+      },
+      "services": {
+        "title": "Services",
+        "content": "Finoplenia provides financial services including but not limited to:",
+        "items": [
+          "Investment advisory services",
+          "Insurance solutions",
+          "Retirement planning",
+          "Tax planning",
+          "Corporate advisory services"
+        ],
+        "disclaimer": "The services provided by Finoplenia are subject to applicable laws and regulations. We reserve the right to modify or discontinue any service without prior notice."
+      },
+      "license": {
+        "title": "License to Use Website",
+        "content": "Unless otherwise stated, Finoplenia and/or its licensors own the intellectual property rights for all material on this website. All intellectual property rights are reserved. You may view and/or print pages from the website for your own personal use subject to restrictions set in these terms and conditions.",
+        "restrictions": {
+          "title": "You must not:",
+          "items": [
+            "Republish material from this website",
+            "Sell, rent or sub-license material from this website",
+            "Reproduce, duplicate or copy material from this website",
+            "Redistribute content from this website"
+          ]
+        }
+      },
+      "userAccounts": {
+        "title": "User Accounts",
+        "content": "When you create an account with us, you guarantee that:",
+        "items": [
+          "The information you provide is accurate and complete",
+          "You will maintain the accuracy of such information",
+          "You are legally capable of entering into binding contracts",
+          "You are at least 18 years old"
+        ]
+      },
+      "liability": {
+        "title": "Disclaimer and Limitation of Liability",
+        "content": "The information on this website is provided on an 'as is' basis. To the fullest extent permitted by law, Finoplenia:",
+        "items": [
+          "Excludes all representations and warranties relating to this website and its contents",
+          "Excludes all liability for damages arising out of or in connection with your use of this website",
+          "Is not responsible for any actions taken as a result of your reliance on any information provided on this website"
+        ]
+      },
+      "indemnification": {
+        "title": "Indemnification",
+        "content": "You agree to indemnify and hold Finoplenia harmless from any demands, loss, liability, claims or expenses made against them by any third party due to or arising out of or in connection with your use of the website."
+      },
+      "termination": {
+        "title": "Termination",
+        "content": "We may terminate or suspend access to our services immediately, without prior notice or liability, for any reason whatsoever, including without limitation if you breach the Terms."
+      },
+      "changes": {
+        "title": "Changes to Terms",
+        "content": "We reserve the right to modify these terms at any time. We will notify you of any changes by posting the new Terms on this page and updating the 'last updated' date."
+      },
+      "governing": {
+        "title": "Governing Law",
+        "content": "These Terms shall be governed and construed in accordance with the laws of Switzerland, without regard to its conflict of law provisions."
+      },
+      "contact": {
+        "title": "Contact Us",
+        "content": "If you have any questions about these Terms, please contact us:",
+        "methods": {
+          "email": "legal@finoplenia.com",
+          "phone": "+41 12 345 67 89",
+          "address": "123 Financial District, Zurich, Switzerland"
+        }
+      }
+    }
+  }
+}

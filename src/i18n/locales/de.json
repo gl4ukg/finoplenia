@@ -1,0 +1,547 @@
+{
+  "common": {
+    "getStarted": "Jetzt Starten",
+    "learnMore": "Mehr Erfahren",
+    "contact": "Kontakt",
+    "about": "Über uns",
+    "blog": "Blog",
+    "calculator": "Versicherungsrechner",
+    "contactUs": "Kontaktieren Sie uns",
+    "faq": "FAQ",
+    "privacy": "Datenschutzerklärung",
+    "terms": "Allgemeine Geschäftsbedingungen"
+  },
+  "contact": {
+    "hero": {
+      "title": "Kontakt",
+      "description": "Haben Sie Fragen oder möchten Sie mehr über unsere Dienstleistungen erfahren? Kontaktieren Sie uns."
+    },
+    "info": {
+      "title": "Kontaktieren Sie uns",
+      "description": "Wir sind hier, um Ihnen zu helfen und Ihre Fragen zu beantworten. Wir freuen uns darauf, von Ihnen zu hören.",
+      "address": {
+        "label": "Adresse",
+        "line1": "123 Finanzdistrikt",
+        "line2": "Zürich, Schweiz"
+      },
+      "email": {
+        "label": "E-Mail",
+        "value": "kontakt@finoplenia.com"
+      },
+      "phone": {
+        "label": "Telefon",
+        "value": "+41 12 345 67 89"
+      }
+    },
+    "form": {
+      "name": "Name",
+      "email": "E-Mail",
+      "phone": "Telefon",
+      "subject": "Betreff",
+      "message": "Nachricht",
+      "subjects": {
+        "general": "Allgemeine Anfrage",
+        "private": "Private Dienstleistungen",
+        "corporate": "Unternehmensdienstleistungen",
+        "careers": "Karrieremöglichkeiten"
+      },
+      "submit": {
+        "sending": "Wird gesendet...",
+        "send": "Nachricht senden"
+      },
+      "success": "Vielen Dank für Ihre Nachricht! Wir werden uns in Kürze bei Ihnen melden."
+    }
+  },
+  "cookies": {
+    "title": "Cookie-Einstellungen",
+    "description": "Wir verwenden Cookies, um Ihr Surferlebnis zu verbessern und unseren Verkehr zu analysieren.",
+    "essential": {
+      "title": "Essentielle Cookies",
+      "description": "Erforderlich für die ordnungsgemäße Funktion der Website."
+    },
+    "analytics": {
+      "title": "Analyse-Cookies",
+      "description": "Helfen uns zu verstehen, wie Besucher mit unserer Website interagieren."
+    },
+    "marketing": {
+      "title": "Marketing-Cookies",
+      "description": "Werden verwendet, um personalisierte Werbung zu liefern."
+    },
+    "actions": {
+      "customize": "Anpassen",
+      "acceptAll": "Alle akzeptieren",
+      "rejectAll": "Alle ablehnen",
+      "save": "Einstellungen speichern"
+    },
+    "privacyPolicy": "Datenschutzerklärung"
+  },
+  "calculator": {
+    "hero": {
+      "title": "Versicherungsrechner",
+      "subtitle": "Erhalten Sie sofort ein Angebot für Ihren Versicherungsbedarf"
+    },
+    "steps": {
+      "selectInsurance": "Versicherungsart wählen",
+      "enterDetails": "Ihre Details eingeben",
+      "result": "Ihr Angebot"
+    },
+    "buttons": {
+      "next": "Weiter",
+      "back": "Zurück",
+      "calculate": "Berechnen",
+      "restart": "Neu starten"
+    },
+    "form": {
+      "age": "Ihr Alter",
+      "occupation": "Beruf",
+      "preExistingConditions": "Vorerkrankungen",
+      "coverageAmount": "Versicherungssumme (€)",
+      "estimatedPrice": "Geschätzter Monatsbeitrag",
+      "yes": "Ja",
+      "no": "Nein"
+    },
+    "insuranceTypes": {
+      "life": {
+        "title": "Lebensversicherung",
+        "description": "Schützen Sie die finanzielle Zukunft Ihrer Angehörigen mit einer umfassenden Lebensversicherung."
+      },
+      "health": {
+        "title": "Krankenversicherung",
+        "description": "Erhalten Sie Zugang zu qualitativ hochwertiger Gesundheitsversorgung mit unseren flexiblen Krankenversicherungsplänen."
+      },
+      "property": {
+        "title": "Sachversicherung",
+        "description": "Schützen Sie Ihr Eigentum vor Schäden, Diebstahl und Naturkatastrophen."
+      },
+      "liability": {
+        "title": "Haftpflichtversicherung",
+        "description": "Schützen Sie sich vor Ansprüchen Dritter und Rechtskosten."
+      }
+    }
+  },
+  "blog": {
+    "hero": {
+      "title": "Blog",
+      "description": "Bleiben Sie informiert mit unseren neuesten Erkenntnissen, Nachrichten und Expertenanalysen zu Finanzen und Investitionen."
+    },
+    "posts": [
+      {
+        "id": 1,
+        "title": "Investitionsstrategien im Jahr 2024 verstehen",
+        "excerpt": "Entdecken Sie die wichtigsten Investitionstrends und Strategien, die die Finanzlandschaft im Jahr 2024 prägen.",
+        "date": "15. März 2024",
+        "category": "Investment",
+        "imageUrl": "/images/blog/investment.jpg",
+        "author": "Sarah Johnson",
+        "readTime": "5 Min. Lesezeit"
+      },
+      {
+        "id": 2,
+        "title": "Die Zukunft des Digital Banking",
+        "excerpt": "Erfahren Sie, wie die digitale Transformation den Bankensektor revolutioniert und was das für Kunden bedeutet.",
+        "date": "10. März 2024",
+        "category": "Digital Banking",
+        "imageUrl": "/images/blog/digital-banking.jpg",
+        "author": "Michael Chen",
+        "readTime": "4 Min. Lesezeit"
+      },
+      {
+        "id": 3,
+        "title": "Nachhaltige Finanzen: Ein wachsender Trend",
+        "excerpt": "Lernen Sie mehr über die steigende Bedeutung nachhaltiger Finanzen und deren Einfluss auf Investitionsentscheidungen.",
+        "date": "5. März 2024",
+        "category": "Nachhaltigkeit",
+        "imageUrl": "/images/blog/sustainable-finance.jpg",
+        "author": "Emma Wilson",
+        "readTime": "6 Min. Lesezeit"
+      }
+    ]
+  },
+  "cta": {
+    "title": "Bereit loszulegen?",
+    "description": "Kontaktieren Sie uns noch heute, um zu besprechen, wie wir Ihnen bei der Erreichung Ihrer finanziellen Ziele helfen können."
+  },
+  "about": {
+    "hero": {
+      "title": "Über Finoplenia",
+      "description": "Wir sind ein führender Finanzdienstleister, der sich dafür einsetzt, unseren Kunden durch fachkundige Beratung und innovative Lösungen bei der Erreichung ihrer finanziellen Ziele zu helfen."
+    },
+    "values": {
+      "title": "Unsere Werte",
+      "list": {
+        "integrity": {
+          "title": "Integrität",
+          "description": "Wir halten in allen unseren Geschäftsbeziehungen höchste Integritätsstandards ein."
+        },
+        "excellence": {
+          "title": "Exzellenz",
+          "description": "Wir streben bei jedem Service, den wir anbieten, nach Exzellenz."
+        },
+        "innovation": {
+          "title": "Innovation",
+          "description": "Wir entwickeln uns kontinuierlich weiter, um sich verändernde Finanzbedürfnisse zu erfüllen."
+        },
+        "customerFocus": {
+          "title": "Kundenorientierung",
+          "description": "Der Erfolg unserer Kunden steht im Mittelpunkt all unseres Handelns."
+        }
+      }
+    },
+    "history": {
+      "title": "Unsere Geschichte",
+      "description": "Von unserer Gründung bis heute setzen wir uns für Exzellenz in Finanzdienstleistungen ein.",
+      "timeline": {
+        "2010": {
+          "title": "Gründung",
+          "description": "Finoplenia wurde mit der Vision gegründet, umfassende Finanzdienstleistungen für Privat- und Firmenkunden anzubieten."
+        },
+        "2013": {
+          "title": "Digitale Transformation",
+          "description": "Einführung unserer digitalen Plattform, um Finanzdienstleistungen für unsere Kunden zugänglicher zu machen."
+        },
+        "2015": {
+          "title": "Internationale Expansion",
+          "description": "Erweiterung unserer Dienstleistungen auf internationale Märkte mit Fokus auf grenzüberschreitendes Vermögensmanagement."
+        },
+        "2018": {
+          "title": "Start der Unternehmensberatung",
+          "description": "Einführung umfassender Beratungsdienstleistungen zur Unterstützung von Unternehmen auf ihrem Wachstumskurs."
+        },
+        "2020": {
+          "title": "Fokus auf Nachhaltigkeit",
+          "description": "Integration von ESG-Prinzipien in unsere Anlagestrategien und Unternehmensabläufe."
+        },
+        "2023": {
+          "title": "Innovations-Hub",
+          "description": "Etablierung unseres Innovations-Hubs zur Entwicklung zukunftsweisender Finanzlösungen."
+        }
+      }
+    }
+  },
+  "home": {
+    "hero": {
+      "title": "Ihre finanzielle Zukunft beginnt hier",
+      "subtitle": "Professionelle Finanzberatung, Versicherungslösungen und Vermögensverwaltung für Privatkunden und Unternehmen."
+    },
+    "privateServices": {
+      "title": "Private Dienstleistungen",
+      "subtitle": "Umfassende Finanzdienstleistungen, maßgeschneidert auf Ihre persönlichen Bedürfnisse.",
+      "services": {
+        "wealth": {
+          "title": "Vermögensverwaltung",
+          "description": "Vermögensaufbau und -schutz mit personalisierten Anlagestrategien."
+        },
+        "insurance": {
+          "title": "Versicherungslösungen",
+          "description": "Umfassender Versicherungsschutz für alle Lebensbereiche."
+        },
+        "retirement": {
+          "title": "Altersvorsorge",
+          "description": "Sichern Sie Ihre Zukunft mit unserer professionellen Altersvorsorgeplanung."
+        },
+        "tax": {
+          "title": "Steuerberatung",
+          "description": "Professionelle Steuerplanung und Compliance-Services für Privatpersonen."
+        }
+      }
+    },
+    "corporateServices": {
+      "title": "Unternehmensdienstleistungen",
+      "subtitle": "Strategische Finanzlösungen für Unternehmen.",
+      "services": {
+        "tax": {
+          "title": "Unternehmenssteuerberatung",
+          "description": "Strategische Steuerplanung und Compliance für Unternehmen."
+        },
+        "advisory": {
+          "title": "Strategieberatung",
+          "description": "Professionelle Beratung für Unternehmenswachstum und -transformation."
+        }
+      }
+    }
+  },
+  "faq": {
+    "hero": {
+      "title": "Häufig gestellte Fragen",
+      "description": "Finden Sie Antworten auf häufige Fragen zu unseren Dienstleistungen und wie wir Ihnen helfen können."
+    },
+    "categories": {
+      "general": {
+        "title": "Allgemeine Fragen",
+        "questions": [
+          {
+            "question": "Was ist Finoplenia?",
+            "answer": "Finoplenia ist ein führender Finanzdienstleister, der umfassende Lösungen für Privatpersonen und Unternehmen anbietet. Wir sind spezialisiert auf Vermögensverwaltung, Versicherungslösungen, Altersvorsorge und Unternehmensberatung."
+          },
+          {
+            "question": "Wie kann ich mit Finoplenia beginnen?",
+            "answer": "Der Einstieg ist einfach. Sie können uns entweder direkt über unser Kontaktformular kontaktieren, uns anrufen oder unser Büro besuchen. Unser Team wird Sie durch den Prozess führen und Ihnen helfen, die richtigen Lösungen für Ihre Bedürfnisse zu finden."
+          },
+          {
+            "question": "In welchen Gebieten sind Sie tätig?",
+            "answer": "Wir betreuen hauptsächlich Kunden in der Schweiz und den angrenzenden europäischen Ländern. Für bestimmte Dienstleistungen arbeiten wir jedoch auch mit internationalen Kunden zusammen, vorbehaltlich lokaler Vorschriften."
+          }
+        ]
+      },
+      "services": {
+        "title": "Unsere Dienstleistungen",
+        "questions": [
+          {
+            "question": "Welche Arten von Versicherungen bieten Sie an?",
+            "answer": "Wir bieten eine breite Palette von Versicherungslösungen an, darunter Lebensversicherungen, Krankenversicherungen, Sachversicherungen und Haftpflichtversicherungen. Jede kann an Ihre spezifischen Bedürfnisse angepasst werden."
+          },
+          {
+            "question": "Bieten Sie Anlageberatung an?",
+            "answer": "Ja, wir bieten umfassende Anlageberatung, die auf Ihre finanziellen Ziele, Risikobereitschaft und Ihren Zeithorizont abgestimmt ist. Unsere Experten können Ihnen helfen, ein diversifiziertes Anlageportfolio aufzubauen und zu verwalten."
+          },
+          {
+            "question": "Welche Altersvorsorge-Dienstleistungen bieten Sie an?",
+            "answer": "Unsere Altersvorsorge-Dienstleistungen umfassen Pensionsanalyse, Strategien zur Altersvorsorge, steuereffiziente Planung und laufende Portfolioverwaltung, um Ihnen zu helfen, Ihre Ruhestandsziele zu erreichen."
+          }
+        ]
+      },
+      "corporate": {
+        "title": "Unternehmensdienstleistungen",
+        "questions": [
+          {
+            "question": "Welche Unternehmensberatungsdienste bieten Sie an?",
+            "answer": "Wir bieten strategische Beratung, Steuerplanung, Risikomanagement und Finanzberatung für Unternehmen jeder Größe. Unser Team kann sowohl bei der täglichen Geschäftstätigkeit als auch bei der langfristigen strategischen Planung unterstützen."
+          },
+          {
+            "question": "Können Sie bei internationalen Geschäftstätigkeiten helfen?",
+            "answer": "Ja, wir unterstützen Unternehmen bei ihren internationalen Aktivitäten, einschließlich grenzüberschreitender Transaktionen, regulatorischer Compliance und internationaler Steuerplanung."
+          },
+          {
+            "question": "Arbeiten Sie mit Startups zusammen?",
+            "answer": "Auf jeden Fall! Wir haben spezialisierte Dienstleistungen für Startups, einschließlich Finanzplanung, Finanzierungsstrategie und Wachstumsberatung."
+          }
+        ]
+      }
+    },
+    "support": {
+      "title": "Noch Fragen?",
+      "description": "Können Sie die gesuchte Antwort nicht finden? Kontaktieren Sie bitte unser Support-Team.",
+      "contactButton": "Support kontaktieren"
+    }
+  },
+  "privacy": {
+    "hero": {
+      "title": "Datenschutzerklärung",
+      "description": "Erfahren Sie, wie wir Ihre persönlichen Daten schützen und verarbeiten."
+    },
+    "lastUpdated": "Zuletzt aktualisiert: 29. Dezember 2024",
+    "sections": {
+      "introduction": {
+        "title": "Einführung",
+        "content": "Bei Finoplenia nehmen wir Ihre Privatsphäre ernst. Diese Datenschutzerklärung erläutert, wie wir Ihre Informationen sammeln, verwenden, offenlegen und schützen, wenn Sie unsere Website besuchen oder unsere Dienstleistungen nutzen. Bitte lesen Sie diese Datenschutzerklärung sorgfältig durch. Wenn Sie mit den Bedingungen dieser Datenschutzerklärung nicht einverstanden sind, greifen Sie bitte nicht auf die Website zu."
+      },
+      "collection": {
+        "title": "Informationen, die wir sammeln",
+        "content": "Wir sammeln Informationen, die Sie uns direkt zur Verfügung stellen, wenn Sie:",
+        "items": [
+          "Ein Konto erstellen",
+          "Ein Formular ausfüllen",
+          "Sich für unseren Newsletter anmelden",
+          "Uns kontaktieren",
+          "Unsere Dienstleistungen nutzen"
+        ],
+        "dataTypes": {
+          "title": "Arten von gesammelten Daten",
+          "personal": {
+            "title": "Persönliche Daten",
+            "content": "Bei der Nutzung unseres Dienstes können wir Sie bitten, uns bestimmte personenbezogene Daten zur Verfügung zu stellen, die zur Kontaktaufnahme oder Identifizierung verwendet werden können. Dazu können gehören:",
+            "items": [
+              "Name und Kontaktdaten",
+              "E-Mail-Adresse",
+              "Telefonnummer",
+              "Adresse",
+              "Finanzinformationen",
+              "Ausweisdokumente"
+            ]
+          },
+          "usage": {
+            "title": "Nutzungsdaten",
+            "content": "Wir können auch Informationen darüber sammeln, wie Sie auf unsere Website zugreifen und diese nutzen, einschließlich:",
+            "items": [
+              "Browser-Typ und -Version",
+              "Zeitpunkt und Datum Ihres Besuchs",
+              "Auf Seiten verbrachte Zeit",
+              "Eindeutige Gerätekennungen",
+              "Andere Diagnosedaten"
+            ]
+          }
+        }
+      },
+      "use": {
+        "title": "Wie wir Ihre Informationen verwenden",
+        "content": "Wir verwenden die gesammelten Daten für verschiedene Zwecke:",
+        "items": [
+          "Um unseren Service bereitzustellen und zu pflegen",
+          "Um Sie über Änderungen unseres Services zu informieren",
+          "Um Kundenservice zu bieten",
+          "Um Analysen oder wertvolle Informationen zu sammeln",
+          "Um technische Probleme zu erkennen, zu verhindern und zu beheben",
+          "Um rechtlichen Verpflichtungen nachzukommen"
+        ]
+      },
+      "sharing": {
+        "title": "Informationsaustausch und Offenlegung",
+        "content": "Wir verkaufen oder vermieten Ihre persönlichen Informationen nicht an Dritte. Wir können Ihre Informationen teilen mit:",
+        "items": [
+          "Dienstleistern, die uns bei unseren Geschäftstätigkeiten unterstützen",
+          "Professionellen Beratern einschließlich Anwälten und Wirtschaftsprüfern",
+          "Aufsichtsbehörden, wenn gesetzlich vorgeschrieben",
+          "Geschäftspartnern mit Ihrer Zustimmung"
+        ]
+      },
+      "security": {
+        "title": "Datensicherheit",
+        "content": "Wir implementieren angemessene technische und organisatorische Maßnahmen, um die Sicherheit Ihrer persönlichen Informationen zu gewährleisten, einschließlich:",
+        "items": [
+          "Verschlüsselung der Daten während der Übertragung und Speicherung",
+          "Regelmäßige Sicherheitsbewertungen",
+          "Zugriffskontrollen und Authentifizierung",
+          "Regelmäßige Mitarbeiterschulungen zum Datenschutz",
+          "Verfahren zur Reaktion auf Vorfälle"
+        ]
+      },
+      "rights": {
+        "title": "Ihre Rechte",
+        "content": "Gemäß den geltenden Datenschutzgesetzen haben Sie bestimmte Rechte in Bezug auf Ihre personenbezogenen Daten:",
+        "items": [
+          "Recht auf Zugang zu Ihren Daten",
+          "Recht auf Berichtigung ungenauer Daten",
+          "Recht auf Löschung ('Recht auf Vergessenwerden')",
+          "Recht auf Einschränkung der Verarbeitung",
+          "Recht auf Datenübertragbarkeit",
+          "Recht auf Widerspruch gegen die Verarbeitung"
+        ]
+      },
+      "cookies": {
+        "title": "Cookies und Tracking",
+        "content": "Wir verwenden Cookies und ähnliche Tracking-Technologien, um Aktivitäten auf unserem Service zu verfolgen und bestimmte Informationen zu speichern. Sie können Ihren Browser anweisen, alle Cookies abzulehnen oder anzuzeigen, wenn ein Cookie gesendet wird."
+      },
+      "children": {
+        "title": "Datenschutz für Kinder",
+        "content": "Unser Service richtet sich nicht an Personen unter 18 Jahren. Wir sammeln wissentlich keine personenbezogenen Daten von Personen unter 18 Jahren."
+      },
+      "changes": {
+        "title": "Änderungen dieser Datenschutzerklärung",
+        "content": "Wir können unsere Datenschutzerklärung von Zeit zu Zeit aktualisieren. Wir werden Sie über alle Änderungen informieren, indem wir die neue Datenschutzerklärung auf dieser Seite veröffentlichen und das Datum der 'letzten Aktualisierung' aktualisieren."
+      },
+      "contact": {
+        "title": "Kontaktieren Sie uns",
+        "content": "Wenn Sie Fragen zu dieser Datenschutzerklärung haben, kontaktieren Sie uns bitte:",
+        "methods": {
+          "email": "datenschutz@finoplenia.com",
+          "phone": "+41 12 345 67 89",
+          "address": "123 Finanzdistrikt, Zürich, Schweiz"
+        }
+      }
+    }
+  },
+  "terms": {
+    "hero": {
+      "title": "Allgemeine Geschäftsbedingungen",
+      "description": "Bitte lesen Sie diese Allgemeinen Geschäftsbedingungen sorgfältig durch, bevor Sie unsere Dienstleistungen nutzen."
+    },
+    "lastUpdated": "Zuletzt aktualisiert: 29. Dezember 2024",
+    "sections": {
+      "introduction": {
+        "title": "Einführung",
+        "content": "Diese Allgemeinen Geschäftsbedingungen regeln die Nutzung der Website und Dienstleistungen von Finoplenia. Mit dem Zugriff auf diese Website gehen wir davon aus, dass Sie diese Geschäftsbedingungen vollständig akzeptieren. Nutzen Sie die Website von Finoplenia nicht weiter, wenn Sie nicht alle auf dieser Seite aufgeführten Geschäftsbedingungen akzeptieren."
+      },
+      "definitions": {
+        "title": "Definitionen",
+        "content": "Die folgende Terminologie gilt für diese Allgemeinen Geschäftsbedingungen, Datenschutzerklärung und Haftungsausschluss:",
+        "items": [
+          {
+            "term": "Kunde, Sie und Ihr",
+            "definition": "Bezieht sich auf Sie, die Person, die diese Website nutzt und die Geschäftsbedingungen des Unternehmens akzeptiert."
+          },
+          {
+            "term": "Das Unternehmen, Wir, Uns und Unser",
+            "definition": "Bezieht sich auf Finoplenia."
+          },
+          {
+            "term": "Partei, Parteien",
+            "definition": "Bezieht sich sowohl auf den Kunden als auch auf uns selbst oder entweder auf den Kunden oder uns selbst."
+          },
+          {
+            "term": "Dienstleistungen",
+            "definition": "Bezieht sich auf die von Finoplenia angebotenen Finanzdienstleistungen und Produkte."
+          }
+        ]
+      },
+      "services": {
+        "title": "Dienstleistungen",
+        "content": "Finoplenia bietet Finanzdienstleistungen an, einschließlich, aber nicht beschränkt auf:",
+        "items": [
+          "Anlageberatung",
+          "Versicherungslösungen",
+          "Altersvorsorgeplanung",
+          "Steuerplanung",
+          "Unternehmensberatung"
+        ],
+        "disclaimer": "Die von Finoplenia erbrachten Dienstleistungen unterliegen den geltenden Gesetzen und Vorschriften. Wir behalten uns das Recht vor, jede Dienstleistung ohne vorherige Ankündigung zu ändern oder einzustellen."
+      },
+      "license": {
+        "title": "Lizenz zur Nutzung der Website",
+        "content": "Sofern nicht anders angegeben, besitzen Finoplenia und/oder ihre Lizenzgeber die geistigen Eigentumsrechte für das gesamte Material auf dieser Website. Alle geistigen Eigentumsrechte sind vorbehalten. Sie können Seiten von der Website für Ihren persönlichen Gebrauch ansehen und/oder ausdrucken, vorbehaltlich der in diesen Geschäftsbedingungen festgelegten Einschränkungen.",
+        "restrictions": {
+          "title": "Sie dürfen nicht:",
+          "items": [
+            "Material von dieser Website neu veröffentlichen",
+            "Material von dieser Website verkaufen, vermieten oder unterlizenzieren",
+            "Material von dieser Website reproduzieren, duplizieren oder kopieren",
+            "Inhalte von dieser Website weiterverbreiten"
+          ]
+        }
+      },
+      "userAccounts": {
+        "title": "Benutzerkonten",
+        "content": "Wenn Sie ein Konto bei uns erstellen, garantieren Sie, dass:",
+        "items": [
+          "Die von Ihnen angegebenen Informationen korrekt und vollständig sind",
+          "Sie die Richtigkeit dieser Informationen aufrechterhalten werden",
+          "Sie rechtlich in der Lage sind, bindende Verträge einzugehen",
+          "Sie mindestens 18 Jahre alt sind"
+        ]
+      },
+      "liability": {
+        "title": "Haftungsausschluss und Haftungsbeschränkung",
+        "content": "Die Informationen auf dieser Website werden 'wie besehen' zur Verfügung gestellt. Im größtmöglichen gesetzlich zulässigen Umfang:",
+        "items": [
+          "Schließt Finoplenia alle Zusicherungen und Gewährleistungen in Bezug auf diese Website und deren Inhalte aus",
+          "Schließt Finoplenia jegliche Haftung für Schäden aus, die sich aus oder im Zusammenhang mit Ihrer Nutzung dieser Website ergeben",
+          "Ist nicht verantwortlich für Handlungen, die aufgrund Ihres Vertrauens auf die auf dieser Website bereitgestellten Informationen ergriffen werden"
+        ]
+      },
+      "indemnification": {
+        "title": "Schadloshaltung",
+        "content": "Sie verpflichten sich, Finoplenia von jeglichen Forderungen, Verlusten, Haftungen, Ansprüchen oder Ausgaben freizustellen und schadlos zu halten, die von Dritten aufgrund oder im Zusammenhang mit Ihrer Nutzung der Website gegen sie geltend gemacht werden."
+      },
+      "termination": {
+        "title": "Kündigung",
+        "content": "Wir können den Zugang zu unseren Dienstleistungen sofort und ohne vorherige Ankündigung oder Haftung aus beliebigem Grund kündigen oder aussetzen, einschließlich und ohne Einschränkung, wenn Sie gegen die Geschäftsbedingungen verstoßen."
+      },
+      "changes": {
+        "title": "Änderungen der Geschäftsbedingungen",
+        "content": "Wir behalten uns das Recht vor, diese Geschäftsbedingungen jederzeit zu ändern. Wir werden Sie über Änderungen informieren, indem wir die neuen Geschäftsbedingungen auf dieser Seite veröffentlichen und das Datum der 'letzten Aktualisierung' aktualisieren."
+      },
+      "governing": {
+        "title": "Geltendes Recht",
+        "content": "Diese Geschäftsbedingungen unterliegen den Gesetzen der Schweiz und werden in Übereinstimmung mit diesen ausgelegt, ohne Berücksichtigung von Kollisionsnormen."
+      },
+      "contact": {
+        "title": "Kontaktieren Sie uns",
+        "content": "Wenn Sie Fragen zu diesen Geschäftsbedingungen haben, kontaktieren Sie uns bitte:",
+        "methods": {
+          "email": "legal@finoplenia.com",
+          "phone": "+41 12 345 67 89",
+          "address": "123 Finanzdistrikt, Zürich, Schweiz"
+        }
+      }
+    }
+  }
+}
