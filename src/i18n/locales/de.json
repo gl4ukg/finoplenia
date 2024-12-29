@@ -1,15 +1,16 @@
 {
   "common": {
-    "getStarted": "Jetzt Starten",
-    "learnMore": "Mehr Erfahren",
+    "getStarted": "Loslegen",
+    "learnMore": "Mehr erfahren",
     "contact": "Kontakt",
     "about": "Über uns",
     "blog": "Blog",
     "calculator": "Versicherungsrechner",
     "contactUs": "Kontaktieren Sie uns",
     "faq": "FAQ",
-    "privacy": "Datenschutzerklärung",
-    "terms": "Allgemeine Geschäftsbedingungen"
+    "privacy": "Datenschutz",
+    "terms": "AGB",
+    "corporate": "Unternehmensdienstleistungen"
   },
   "contact": {
     "hero": {
@@ -542,6 +543,386 @@
           "address": "123 Finanzdistrikt, Zürich, Schweiz"
         }
       }
+    }
+  },
+  "corporate": {
+    "hero": {
+      "title": "Unternehmensdienstleistungen",
+      "description": "Umfassende Finanzlösungen für Unternehmen jeder Größe"
+    },
+    "services": {
+      "title": "Unsere Unternehmensdienstleistungen",
+      "description": "Wir bieten eine breite Palette von Dienstleistungen, um Ihr Unternehmen erfolgreich zu machen",
+      "items": [
+        {
+          "title": "Beratungsdienstleistungen",
+          "description": "Strategische Unternehmensberatung und Finanzberatung",
+          "link": "/corporate/advisory"
+        },
+        {
+          "title": "Steuerdienstleistungen",
+          "description": "Unternehmenssteuerplanung und Compliance",
+          "link": "/corporate/tax"
+        },
+        {
+          "title": "Risikomanagement",
+          "description": "Umfassende Risikobewertung und Risikominderungsstrategien",
+          "link": "/corporate/risk"
+        }
+      ]
+    },
+    "advisory": {
+      "hero": {
+        "title": "Unternehmensberatung",
+        "description": "Expertenwissen für Ihre Geschäftsentscheidungen"
+      },
+      "services": {
+        "title": "Beratungsdienstleistungen",
+        "description": "Unsere Beratungsdienste helfen Ihnen, fundierte Entscheidungen zu treffen",
+        "items": [
+          {
+            "title": "Strategische Planung",
+            "description": "Entwicklung und Umsetzung langfristiger Geschäftsstrategien"
+          },
+          {
+            "title": "M&A-Beratung",
+            "description": "Strategie und Durchführung von Fusionen und Übernahmen"
+          },
+          {
+            "title": "Finanzplanung",
+            "description": "Unternehmensfinanzplanung und -analyse"
+          }
+        ]
+      },
+      "cta": {
+        "title": "Bereit, Ihr Unternehmen zu transformieren?",
+        "description": "Kontaktieren Sie uns, um zu besprechen, wie wir Ihr Unternehmen beim Wachstum unterstützen können",
+        "button": "Loslegen"
+      }
+    },
+    "tax": {
+      "hero": {
+        "title": "Steuerberatung für Unternehmen",
+        "description": "Optimieren Sie Ihre Steuerstrategie und stellen Sie die Compliance sicher"
+      },
+      "services": {
+        "title": "Steuerdienstleistungen",
+        "description": "Umfassende Steuerlösungen für Ihr Unternehmen",
+        "items": [
+          {
+            "title": "Steuerplanung",
+            "description": "Strategische Steuerplanung und -optimierung"
+          },
+          {
+            "title": "Compliance",
+            "description": "Steuer-Compliance und Berichterstattung"
+          },
+          {
+            "title": "Internationale Steuern",
+            "description": "Grenzüberschreitende Steuerberatung und -planung"
+          }
+        ]
+      },
+      "cta": {
+        "title": "Optimieren Sie Ihre Steuerstrategie",
+        "description": "Lassen Sie uns Ihnen helfen, komplexe Steuervorschriften zu navigieren",
+        "button": "Kontaktieren Sie uns"
+      }
+    }
+  },
+  "private": {
+    "hero": {
+      "title": "Private Banking",
+      "description": "Maßgeschneiderte Finanzlösungen für Ihre persönliche Vermögensverwaltung"
+    },
+    "services": {
+      "title": "Unsere Private Banking Dienstleistungen",
+      "description": "Umfassende Lösungen für Ihre finanzielle Zukunft",
+      "items": [
+        {
+          "title": "Vermögensverwaltung",
+          "description": "Personalisierte Vermögensverwaltungsstrategien",
+          "link": "/private/wealth"
+        },
+        {
+          "title": "Versicherungslösungen",
+          "description": "Umfassender Versicherungsschutz für Ihre Bedürfnisse",
+          "link": "/private/insurance"
+        },
+        {
+          "title": "Immobilieninvestment",
+          "description": "Immobilieninvestitionsmöglichkeiten",
+          "link": "/private/property"
+        },
+        {
+          "title": "Altersvorsorge",
+          "description": "Sichern Sie Ihre Zukunft mit unseren Vorsorgelösungen",
+          "link": "/private/retirement"
+        },
+        {
+          "title": "Steuerplanung",
+          "description": "Optimieren Sie Ihre Steuerstrategie",
+          "link": "/private/tax"
+        }
+      ]
+    },
+    "wealth": {
+      "hero": {
+        "title": "Vermögensverwaltung",
+        "description": "Professionelle Beratung zur Erhaltung und Vermehrung Ihres Vermögens"
+      },
+      "services": {
+        "title": "Vermögensverwaltungsservices",
+        "description": "Umfassende Vermögensverwaltungslösungen nach Ihren Bedürfnissen",
+        "items": [
+          {
+            "title": "Portfoliomanagement",
+            "description": "Professionelle Verwaltung Ihres Investmentportfolios"
+          },
+          {
+            "title": "Nachlassplanung",
+            "description": "Sichern Sie Ihr Vermächtnis für zukünftige Generationen"
+          },
+          {
+            "title": "Anlageberatung",
+            "description": "Strategische Anlageberatung und Investitionsmöglichkeiten"
+          }
+        ]
+      }
+    },
+    "insurance": {
+      "hero": {
+        "title": "Versicherungslösungen",
+        "description": "Schützen Sie, was Ihnen am wichtigsten ist, mit unseren umfassenden Versicherungslösungen"
+      },
+      "services": {
+        "title": "Versicherungsdienstleistungen",
+        "description": "Maßgeschneiderte Versicherungslösungen für Ihren Schutzbedarf",
+        "items": [
+          {
+            "title": "Lebensversicherung",
+            "description": "Sichern Sie die finanzielle Zukunft Ihrer Familie"
+          },
+          {
+            "title": "Krankenversicherung",
+            "description": "Umfassende Krankenversicherungslösungen"
+          },
+          {
+            "title": "Sachversicherung",
+            "description": "Schützen Sie Ihre wertvollen Vermögenswerte"
+          }
+        ]
+      }
+    },
+    "property": {
+      "hero": {
+        "title": "Immobilieninvestment",
+        "description": "Strategische Immobilieninvestitionslösungen"
+      },
+      "services": {
+        "title": "Immobiliendienstleistungen",
+        "description": "Umfassende Immobilieninvestitionslösungen",
+        "items": [
+          {
+            "title": "Investmentimmobilien",
+            "description": "Identifizierung und Erwerb rentabler Immobilieninvestments"
+          },
+          {
+            "title": "Immobilienverwaltung",
+            "description": "Professionelle Verwaltung Ihres Immobilienportfolios"
+          },
+          {
+            "title": "Immobilienberatung",
+            "description": "Expertenberatung zu Immobilieninvestitionen"
+          }
+        ]
+      }
+    },
+    "retirement": {
+      "hero": {
+        "title": "Altersvorsorge",
+        "description": "Sichern Sie Ihre Zukunft mit unseren Vorsorgelösungen"
+      },
+      "services": {
+        "title": "Vorsorgedienstleistungen",
+        "description": "Umfassende Altersvorsorgelösungen",
+        "items": [
+          {
+            "title": "Rentenplanung",
+            "description": "Optimieren Sie Ihre Rentenstrategie"
+          },
+          {
+            "title": "Altersvorsorge",
+            "description": "Bauen Sie Ihr Altersvermögen auf"
+          },
+          {
+            "title": "Renteneinkommen",
+            "description": "Schaffen Sie nachhaltige Einkommensströme im Ruhestand"
+          }
+        ]
+      }
+    },
+    "tax": {
+      "hero": {
+        "title": "Private Steuerplanung",
+        "description": "Optimieren Sie Ihre Steuerstrategie mit Expertenberatung"
+      },
+      "services": {
+        "title": "Steuerplanungsservices",
+        "description": "Umfassende Steuerplanungslösungen",
+        "items": [
+          {
+            "title": "Persönliche Steuerplanung",
+            "description": "Optimieren Sie Ihre persönliche Steuersituation"
+          },
+          {
+            "title": "Erbschaftssteuerplanung",
+            "description": "Minimieren Sie die Erbschaftssteuerbelastung"
+          },
+          {
+            "title": "Internationale Steuern",
+            "description": "Navigieren Sie durch internationale Steueranforderungen"
+          }
+        ]
+      }
+    }
+  },
+  "navigation": {
+    "main": [
+      {
+        "name": "Über uns",
+        "href": "/about"
+      },
+      {
+        "name": "Private Banking",
+        "href": "/private",
+        "submenu": [
+          {
+            "name": "Vermögensverwaltung",
+            "href": "/private/wealth",
+            "description": "Umfassende Vermögensverwaltungslösungen"
+          },
+          {
+            "name": "Versicherungslösungen",
+            "href": "/private/insurance",
+            "description": "Maßgeschneiderte Versicherungsabdeckung für Ihre Bedürfnisse"
+          },
+          {
+            "name": "Immobilieninvestment",
+            "href": "/private/property",
+            "description": "Strategische Immobilieninvestmentdienste"
+          },
+          {
+            "name": "Ruhestandsplanung",
+            "href": "/private/retirement",
+            "description": "Sichern Sie Ihre Zukunft mit Ruhestandsplanung"
+          },
+          {
+            "name": "Steuerplanung",
+            "href": "/private/tax",
+            "description": "Optimieren Sie Ihre Steuerstrategie"
+          }
+        ]
+      },
+      {
+        "name": "Firmenkunden",
+        "href": "/corporate",
+        "submenu": [
+          {
+            "name": "Geschäftskredite",
+            "href": "/corporate/loans",
+            "description": "Finanzierungslösungen für Ihr Unternehmen"
+          },
+          {
+            "name": "Handelsfinanzierung",
+            "href": "/corporate/trade",
+            "description": "Internationale Handels- und Finanzdienstleistungen"
+          },
+          {
+            "name": "Treasury-Services",
+            "href": "/corporate/treasury",
+            "description": "Effiziente Treasury-Management-Lösungen"
+          }
+        ]
+      },
+      {
+        "name": "Kontakt",
+        "href": "/contact"
+      }
+    ],
+    "callToAction": {
+      "text": "Konto eröffnen",
+      "href": "/open-account"
+    }
+  },
+  "footer": {
+    "company": {
+      "title": "Unternehmen",
+      "links": [
+        {
+          "name": "Über uns",
+          "href": "/about"
+        },
+        {
+          "name": "Karriere",
+          "href": "/careers"
+        },
+        {
+          "name": "Kontakt",
+          "href": "/contact"
+        }
+      ]
+    },
+    "services": {
+      "title": "Dienstleistungen",
+      "links": [
+        {
+          "name": "Private Banking",
+          "href": "/private"
+        },
+        {
+          "name": "Firmenkunden",
+          "href": "/corporate"
+        },
+        {
+          "name": "Vermögensverwaltung",
+          "href": "/private/wealth"
+        }
+      ]
+    },
+    "legal": {
+      "title": "Rechtliches",
+      "links": [
+        {
+          "name": "Datenschutz",
+          "href": "/privacy"
+        },
+        {
+          "name": "Nutzungsbedingungen",
+          "href": "/terms"
+        },
+        {
+          "name": "Cookie-Richtlinie",
+          "href": "/cookies"
+        }
+      ]
+    },
+    "social": {
+      "title": "Social Media",
+      "links": [
+        {
+          "name": "LinkedIn",
+          "href": "https://linkedin.com"
+        },
+        {
+          "name": "Twitter",
+          "href": "https://twitter.com"
+        },
+        {
+          "name": "Instagram",
+          "href": "https://instagram.com"
+        }
+      ]
     }
   }
 }

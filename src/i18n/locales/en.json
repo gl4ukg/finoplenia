@@ -9,7 +9,8 @@
     "contactUs": "Contact Us",
     "faq": "FAQ",
     "privacy": "Privacy Policy",
-    "terms": "Terms & Conditions"
+    "terms": "Terms & Conditions",
+    "corporate": "Corporate Services"
   },
   "contact": {
     "hero": {
@@ -542,6 +543,386 @@
           "address": "123 Financial District, Zurich, Switzerland"
         }
       }
+    }
+  },
+  "corporate": {
+    "hero": {
+      "title": "Corporate Services",
+      "description": "Comprehensive financial solutions for businesses of all sizes"
+    },
+    "services": {
+      "title": "Our Corporate Services",
+      "description": "We offer a wide range of services to help your business thrive",
+      "items": [
+        {
+          "title": "Advisory Services",
+          "description": "Strategic business consulting and financial advisory",
+          "link": "/corporate/advisory"
+        },
+        {
+          "title": "Tax Services",
+          "description": "Corporate tax planning and compliance",
+          "link": "/corporate/tax"
+        },
+        {
+          "title": "Risk Management",
+          "description": "Comprehensive risk assessment and mitigation strategies",
+          "link": "/corporate/risk"
+        }
+      ]
+    },
+    "advisory": {
+      "hero": {
+        "title": "Corporate Advisory",
+        "description": "Expert guidance for your business decisions"
+      },
+      "services": {
+        "title": "Advisory Services",
+        "description": "Our advisory services help you make informed decisions",
+        "items": [
+          {
+            "title": "Strategic Planning",
+            "description": "Long-term business strategy development and implementation"
+          },
+          {
+            "title": "M&A Advisory",
+            "description": "Mergers and acquisitions strategy and execution"
+          },
+          {
+            "title": "Financial Planning",
+            "description": "Corporate financial planning and analysis"
+          }
+        ]
+      },
+      "cta": {
+        "title": "Ready to Transform Your Business?",
+        "description": "Contact us to discuss how we can help your business grow",
+        "button": "Get Started"
+      }
+    },
+    "tax": {
+      "hero": {
+        "title": "Corporate Tax Services",
+        "description": "Optimize your tax strategy and ensure compliance"
+      },
+      "services": {
+        "title": "Tax Services",
+        "description": "Comprehensive tax solutions for your business",
+        "items": [
+          {
+            "title": "Tax Planning",
+            "description": "Strategic tax planning and optimization"
+          },
+          {
+            "title": "Compliance",
+            "description": "Tax compliance and reporting services"
+          },
+          {
+            "title": "International Tax",
+            "description": "Cross-border tax advisory and planning"
+          }
+        ]
+      },
+      "cta": {
+        "title": "Optimize Your Tax Strategy",
+        "description": "Let us help you navigate complex tax regulations",
+        "button": "Contact Us"
+      }
+    }
+  },
+  "private": {
+    "hero": {
+      "title": "Private Banking",
+      "description": "Tailored financial solutions for your personal wealth management needs"
+    },
+    "services": {
+      "title": "Our Private Banking Services",
+      "description": "Comprehensive solutions for your financial future",
+      "items": [
+        {
+          "title": "Wealth Management",
+          "description": "Personalized wealth management strategies",
+          "link": "/private/wealth"
+        },
+        {
+          "title": "Insurance Solutions",
+          "description": "Comprehensive insurance coverage for your needs",
+          "link": "/private/insurance"
+        },
+        {
+          "title": "Property Investment",
+          "description": "Real estate investment opportunities",
+          "link": "/private/property"
+        },
+        {
+          "title": "Retirement Planning",
+          "description": "Secure your future with our retirement solutions",
+          "link": "/private/retirement"
+        },
+        {
+          "title": "Tax Planning",
+          "description": "Optimize your tax strategy",
+          "link": "/private/tax"
+        }
+      ]
+    },
+    "wealth": {
+      "hero": {
+        "title": "Wealth Management",
+        "description": "Expert guidance for preserving and growing your wealth"
+      },
+      "services": {
+        "title": "Wealth Management Services",
+        "description": "Comprehensive wealth management solutions tailored to your needs",
+        "items": [
+          {
+            "title": "Portfolio Management",
+            "description": "Professional management of your investment portfolio"
+          },
+          {
+            "title": "Estate Planning",
+            "description": "Secure your legacy for future generations"
+          },
+          {
+            "title": "Investment Advisory",
+            "description": "Strategic investment guidance and opportunities"
+          }
+        ]
+      }
+    },
+    "insurance": {
+      "hero": {
+        "title": "Insurance Solutions",
+        "description": "Protect what matters most with our comprehensive insurance solutions"
+      },
+      "services": {
+        "title": "Insurance Services",
+        "description": "Tailored insurance solutions for your protection needs",
+        "items": [
+          {
+            "title": "Life Insurance",
+            "description": "Secure your family's financial future"
+          },
+          {
+            "title": "Health Insurance",
+            "description": "Comprehensive health coverage solutions"
+          },
+          {
+            "title": "Property Insurance",
+            "description": "Protect your valuable assets"
+          }
+        ]
+      }
+    },
+    "property": {
+      "hero": {
+        "title": "Property Investment",
+        "description": "Strategic real estate investment solutions"
+      },
+      "services": {
+        "title": "Property Services",
+        "description": "Comprehensive property investment solutions",
+        "items": [
+          {
+            "title": "Investment Properties",
+            "description": "Identify and acquire profitable real estate investments"
+          },
+          {
+            "title": "Property Management",
+            "description": "Professional management of your property portfolio"
+          },
+          {
+            "title": "Real Estate Advisory",
+            "description": "Expert guidance on real estate investments"
+          }
+        ]
+      }
+    },
+    "retirement": {
+      "hero": {
+        "title": "Retirement Planning",
+        "description": "Secure your future with our retirement planning solutions"
+      },
+      "services": {
+        "title": "Retirement Services",
+        "description": "Comprehensive retirement planning solutions",
+        "items": [
+          {
+            "title": "Pension Planning",
+            "description": "Optimize your pension strategy"
+          },
+          {
+            "title": "Retirement Savings",
+            "description": "Build your retirement nest egg"
+          },
+          {
+            "title": "Retirement Income",
+            "description": "Create sustainable retirement income streams"
+          }
+        ]
+      }
+    },
+    "tax": {
+      "hero": {
+        "title": "Private Tax Planning",
+        "description": "Optimize your tax strategy with expert guidance"
+      },
+      "services": {
+        "title": "Tax Planning Services",
+        "description": "Comprehensive tax planning solutions",
+        "items": [
+          {
+            "title": "Personal Tax Planning",
+            "description": "Optimize your personal tax situation"
+          },
+          {
+            "title": "Estate Tax Planning",
+            "description": "Minimize estate tax burden"
+          },
+          {
+            "title": "International Tax",
+            "description": "Navigate international tax requirements"
+          }
+        ]
+      }
+    }
+  },
+  "navigation": {
+    "main": [
+      {
+        "name": "About",
+        "href": "/about"
+      },
+      {
+        "name": "Private Banking",
+        "href": "/private",
+        "submenu": [
+          {
+            "name": "Wealth Management",
+            "href": "/private/wealth",
+            "description": "Comprehensive wealth management solutions"
+          },
+          {
+            "name": "Insurance Solutions",
+            "href": "/private/insurance",
+            "description": "Tailored insurance coverage for your needs"
+          },
+          {
+            "name": "Property Investment",
+            "href": "/private/property",
+            "description": "Strategic property investment services"
+          },
+          {
+            "name": "Retirement Planning",
+            "href": "/private/retirement",
+            "description": "Secure your future with retirement planning"
+          },
+          {
+            "name": "Tax Planning",
+            "href": "/private/tax",
+            "description": "Optimize your tax strategy"
+          }
+        ]
+      },
+      {
+        "name": "Corporate Banking",
+        "href": "/corporate",
+        "submenu": [
+          {
+            "name": "Business Loans",
+            "href": "/corporate/loans",
+            "description": "Financing solutions for your business"
+          },
+          {
+            "name": "Trade Finance",
+            "href": "/corporate/trade",
+            "description": "International trade and finance services"
+          },
+          {
+            "name": "Treasury Services",
+            "href": "/corporate/treasury",
+            "description": "Efficient treasury management solutions"
+          }
+        ]
+      },
+      {
+        "name": "Contact",
+        "href": "/contact"
+      }
+    ],
+    "callToAction": {
+      "text": "Open Account",
+      "href": "/open-account"
+    }
+  },
+  "footer": {
+    "company": {
+      "title": "Company",
+      "links": [
+        {
+          "name": "About",
+          "href": "/about"
+        },
+        {
+          "name": "Careers",
+          "href": "/careers"
+        },
+        {
+          "name": "Contact",
+          "href": "/contact"
+        }
+      ]
+    },
+    "services": {
+      "title": "Services",
+      "links": [
+        {
+          "name": "Private Banking",
+          "href": "/private"
+        },
+        {
+          "name": "Corporate Banking",
+          "href": "/corporate"
+        },
+        {
+          "name": "Wealth Management",
+          "href": "/private/wealth"
+        }
+      ]
+    },
+    "legal": {
+      "title": "Legal",
+      "links": [
+        {
+          "name": "Privacy Policy",
+          "href": "/privacy"
+        },
+        {
+          "name": "Terms of Service",
+          "href": "/terms"
+        },
+        {
+          "name": "Cookie Policy",
+          "href": "/cookies"
+        }
+      ]
+    },
+    "social": {
+      "title": "Social",
+      "links": [
+        {
+          "name": "LinkedIn",
+          "href": "https://linkedin.com"
+        },
+        {
+          "name": "Twitter",
+          "href": "https://twitter.com"
+        },
+        {
+          "name": "Instagram",
+          "href": "https://instagram.com"
+        }
+      ]
     }
   }
 }

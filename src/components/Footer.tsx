@@ -2,79 +2,43 @@
 
 import Link from 'next/link';
 import { FaFacebook, FaTwitter, FaLinkedin, FaInstagram } from 'react-icons/fa';
-import { usePathname } from 'next/navigation';
+import { useFooter } from '@/hooks/useFooter';
 
 export function Footer() {
-  const pathname = usePathname();
-  const lang = pathname.startsWith('/en') ? 'en' : 'de';
-
-  const navigation = {
-    solutions: [
-      { name: lang === 'de' ? 'Versicherung' : 'Insurance', href: `/${lang}/private/insurance` },
-      { name: lang === 'de' ? 'Altersvorsorge' : 'Retirement Planning', href: `/${lang}/private/retirement` },
-      { name: lang === 'de' ? 'Vermögensberatung' : 'Wealth Advice', href: `/${lang}/private/wealth` },
-      { name: lang === 'de' ? 'Steuerberatung' : 'Tax Advisory', href: `/${lang}/private/tax` },
-      { name: lang === 'de' ? 'Versicherungsrechner' : 'Insurance Calculator', href: `/${lang}/calculator` },
-    ],
-    company: [
-      { name: lang === 'de' ? 'Über uns' : 'About', href: `/${lang}/about` },
-      { name: lang === 'de' ? 'Blog' : 'Blog', href: `/${lang}/blog` },
-      { name: lang === 'de' ? 'Karriere' : 'Careers', href: `/${lang}/careers` },
-      { name: lang === 'de' ? 'Kontakt' : 'Contact', href: `/${lang}/contact` },
-    ],
-    legal: [
-      { name: lang === 'de' ? 'Datenschutz' : 'Privacy', href: `/${lang}/privacy` },
-      { name: lang === 'de' ? 'AGB' : 'Terms', href: `/${lang}/terms` },
-    ],
-    social: [
-      {
-        name: 'Facebook',
-        href: '#',
-        icon: FaFacebook,
-      },
-      {
-        name: 'Twitter',
-        href: '#',
-        icon: FaTwitter,
-      },
-      {
-        name: 'LinkedIn',
-        href: '#',
-        icon: FaLinkedin,
-      },
-      {
-        name: 'Instagram',
-        href: '#',
-        icon: FaInstagram,
-      },
-    ],
-  };
+  const { footer, locale } = useFooter();
+  const { company, services, legal, social } = footer;
 
   return (
-    <footer className="bg-primary" aria-labelledby="footer-heading">
+    <footer className="bg-gray-900" aria-labelledby="footer-heading">
       <h2 id="footer-heading" className="sr-only">
         Footer
       </h2>
-      <div className="container py-12 md:py-16">
+      <div className="container pb-8 pt-16 sm:pt-24">
         <div className="xl:grid xl:grid-cols-3 xl:gap-8">
           <div className="space-y-8">
-            <Link href={`/${lang}`} className="text-2xl font-bold text-white">
-              Finoplenia
+            <Link href={`/${locale}`}>
+              <span className="sr-only">Finoplenia</span>
+              <img className="h-8 w-auto" src="/logo-white.svg" alt="" />
             </Link>
-            <p className="text-sm leading-6 text-white/80">
-              {lang === 'de'
+            <p className="text-sm leading-6 text-gray-400">
+              {locale === 'de'
                 ? 'Ihre vertrauenswürdige Finanzberatung für eine sichere Zukunft.'
                 : 'Your trusted financial advisory for a secure future.'}
             </p>
             <div className="flex space-x-6">
-              {navigation.social.map((item) => (
+              {social.links.map((item) => (
                 <Link
                   key={item.name}
                   href={item.href}
                   className="text-gray-400 hover:text-gray-500"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <span className="sr-only">{item.name}</span>
-                  <item.icon className="h-6 w-6" aria-hidden="true" />
+                  {item.name === 'Facebook' && <FaFacebook className="h-6 w-6" aria-hidden="true" />}
+                  {item.name === 'Twitter' && <FaTwitter className="h-6 w-6" aria-hidden="true" />}
+                  {item.name === 'LinkedIn' && <FaLinkedin className="h-6 w-6" aria-hidden="true" />}
+                  {item.name === 'Instagram' && <FaInstagram className="h-6 w-6" aria-hidden="true" />}
                 </Link>
               ))}
             </div>
@@ -83,14 +47,14 @@ export function Footer() {
             <div className="md:grid md:grid-cols-2 md:gap-8">
               <div>
                 <h3 className="text-sm font-semibold leading-6 text-white">
-                  {lang === 'de' ? 'Lösungen' : 'Solutions'}
+                  {company.title}
                 </h3>
                 <ul role="list" className="mt-6 space-y-4">
-                  {navigation.solutions.map((item) => (
+                  {company.links.map((item) => (
                     <li key={item.name}>
                       <Link
-                        href={item.href}
-                        className="text-sm leading-6 text-white/80 hover:text-white"
+                        href={`/${locale}${item.href}`}
+                        className="text-sm leading-6 text-gray-300 hover:text-white"
                       >
                         {item.name}
                       </Link>
@@ -100,14 +64,14 @@ export function Footer() {
               </div>
               <div className="mt-10 md:mt-0">
                 <h3 className="text-sm font-semibold leading-6 text-white">
-                  {lang === 'de' ? 'Unternehmen' : 'Company'}
+                  {services.title}
                 </h3>
                 <ul role="list" className="mt-6 space-y-4">
-                  {navigation.company.map((item) => (
+                  {services.links.map((item) => (
                     <li key={item.name}>
                       <Link
-                        href={item.href}
-                        className="text-sm leading-6 text-white/80 hover:text-white"
+                        href={`/${locale}${item.href}`}
+                        className="text-sm leading-6 text-gray-300 hover:text-white"
                       >
                         {item.name}
                       </Link>
@@ -119,14 +83,14 @@ export function Footer() {
             <div className="md:grid md:grid-cols-2 md:gap-8">
               <div>
                 <h3 className="text-sm font-semibold leading-6 text-white">
-                  {lang === 'de' ? 'Rechtliches' : 'Legal'}
+                  {legal.title}
                 </h3>
                 <ul role="list" className="mt-6 space-y-4">
-                  {navigation.legal.map((item) => (
+                  {legal.links.map((item) => (
                     <li key={item.name}>
                       <Link
-                        href={item.href}
-                        className="text-sm leading-6 text-white/80 hover:text-white"
+                        href={`/${locale}${item.href}`}
+                        className="text-sm leading-6 text-gray-300 hover:text-white"
                       >
                         {item.name}
                       </Link>
@@ -136,14 +100,16 @@ export function Footer() {
               </div>
               <div className="mt-10 md:mt-0">
                 <h3 className="text-sm font-semibold leading-6 text-white">
-                  {lang === 'de' ? 'Social Media' : 'Social Media'}
+                  {social.title}
                 </h3>
                 <ul role="list" className="mt-6 space-y-4">
-                  {navigation.social.map((item) => (
+                  {social.links.map((item) => (
                     <li key={item.name}>
                       <Link
                         href={item.href}
-                        className="text-sm leading-6 text-white/80 hover:text-white"
+                        className="text-sm leading-6 text-gray-300 hover:text-white"
+                        target="_blank"
+                        rel="noopener noreferrer"
                       >
                         {item.name}
                       </Link>
@@ -154,9 +120,9 @@ export function Footer() {
             </div>
           </div>
         </div>
-        <div className="mt-12 border-t border-gray-900/10 pt-8">
-          <p className="text-xs leading-5 text-gray-500">
-            &copy; {new Date().getFullYear()} Finoplenia. {lang === 'de' ? 'Alle Rechte vorbehalten.' : 'All rights reserved.'}
+        <div className="mt-16 border-t border-white/10 pt-8 sm:mt-20 lg:mt-24">
+          <p className="text-xs leading-5 text-gray-400">
+            &copy; {new Date().getFullYear()} Finoplenia. {locale === 'de' ? 'Alle Rechte vorbehalten.' : 'All rights reserved.'}
           </p>
         </div>
       </div>

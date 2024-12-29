@@ -4,12 +4,10 @@ import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useCookieConsent } from '@/contexts/CookieContext';
 import Link from 'next/link';
-import { useTranslation } from '@/hooks/useTranslation';
 
 export function CookieConsent() {
   const [showCustomize, setShowCustomize] = useState(false);
   const { preferences, updatePreferences, hasConsented, acceptAll, rejectAll } = useCookieConsent();
-  const { t, locale } = useTranslation();
   
   const [localPreferences, setLocalPreferences] = useState({
     essential: true,
@@ -34,10 +32,10 @@ export function CookieConsent() {
         <div className="flex flex-col gap-4">
           <div>
             <h3 className="text-lg font-semibold text-gray-900">
-              {t('cookies.title')}
+              Cookies
             </h3>
             <p className="mt-1 text-gray-600">
-              {t('cookies.description')}
+              We use cookies to improve your experience on our website.
             </p>
           </div>
 
@@ -52,10 +50,10 @@ export function CookieConsent() {
                 <div className="flex items-center justify-between">
                   <div>
                     <h4 className="font-medium text-gray-900">
-                      {t('cookies.essential.title')}
+                      Essential Cookies
                     </h4>
                     <p className="text-sm text-gray-600">
-                      {t('cookies.essential.description')}
+                      These cookies are necessary for the website to function.
                     </p>
                   </div>
                   <input
@@ -69,10 +67,10 @@ export function CookieConsent() {
                 <div className="flex items-center justify-between">
                   <div>
                     <h4 className="font-medium text-gray-900">
-                      {t('cookies.analytics.title')}
+                      Analytics Cookies
                     </h4>
                     <p className="text-sm text-gray-600">
-                      {t('cookies.analytics.description')}
+                      These cookies help us understand how you interact with our website.
                     </p>
                   </div>
                   <input
@@ -91,10 +89,10 @@ export function CookieConsent() {
                 <div className="flex items-center justify-between">
                   <div>
                     <h4 className="font-medium text-gray-900">
-                      {t('cookies.marketing.title')}
+                      Marketing Cookies
                     </h4>
                     <p className="text-sm text-gray-600">
-                      {t('cookies.marketing.description')}
+                      These cookies help us deliver targeted advertising.
                     </p>
                   </div>
                   <input
@@ -115,8 +113,8 @@ export function CookieConsent() {
 
           <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
             <div className="flex items-center gap-2 text-sm text-gray-600">
-              <Link href={`/${locale}/privacy`} className="hover:text-primary">
-                {t('cookies.privacyPolicy')}
+              <Link href="/privacy" className="hover:text-primary">
+                Privacy Policy
               </Link>
             </div>
             <div className="flex flex-wrap items-center gap-4">
@@ -126,13 +124,13 @@ export function CookieConsent() {
                     onClick={() => setShowCustomize(true)}
                     className="btn btn-outline"
                   >
-                    {t('cookies.actions.customize')}
+                    Customize
                   </button>
                   <button onClick={rejectAll} className="btn btn-outline">
-                    {t('cookies.actions.rejectAll')}
+                    Reject All
                   </button>
                   <button onClick={acceptAll} className="btn btn-secondary">
-                    {t('cookies.actions.acceptAll')}
+                    Accept All
                   </button>
                 </>
               ) : (
@@ -141,10 +139,10 @@ export function CookieConsent() {
                     onClick={() => setShowCustomize(false)}
                     className="btn btn-outline"
                   >
-                    {t('cookies.actions.customize')}
+                    Customize
                   </button>
                   <button onClick={handleSave} className="btn btn-secondary">
-                    {t('cookies.actions.save')}
+                    Save
                   </button>
                 </>
               )}

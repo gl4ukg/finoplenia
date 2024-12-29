@@ -12,15 +12,15 @@ interface Props {
 
 export default async function Blog({ params: { locale } }: Props) {
   const dict = await getDictionary(locale);
-  const { title, description, posts } = dict.blog;
+  const { hero, posts } = dict.blog;
 
   return (
     <main className="flex min-h-screen flex-col">
       <Navigation />
       <BlogContent 
         blogPosts={posts}
-        title={title}
-        description={description}
+        title={hero.title}
+        description={hero.description}
       />
       <Footer />
     </main>

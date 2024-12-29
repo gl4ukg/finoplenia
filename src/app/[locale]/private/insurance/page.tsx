@@ -1,150 +1,89 @@
-import { Navigation } from '../../../../components/Navigation';
-import { Footer } from '../../../../components/Footer';
-import { HeroSection } from '../../../../components/HeroSection';
-import { BenefitsSection } from '../../../../components/BenefitsSection';
-import { ServicesSection } from '../../../../components/ServicesSection';
-import { ProcessSection } from '../../../../components/ProcessSection';
-import { CTASection } from '../../../../components/CTASection';
+import { Navigation } from '@/components/Navigation';
+import { Footer } from '@/components/Footer';
+import { getDictionary } from '@/i18n/server';
+import type { Locale } from '@/i18n/settings';
 import Link from 'next/link';
 
-const insuranceServices = [
-  {
-    title: 'Lebensversicherung',
-    services: [
-      'Risikolebensversicherung',
-      'Kapitallebensversicherung',
-      'Fondsgebundene Lebensversicherung',
-      'Variable Lebensversicherung',
-      'Gruppenlebensversicherung',
-    ],
-  },
-  {
-    title: 'Krankenversicherung',
-    services: [
-      'Private Krankenversicherung',
-      'Zusatzversicherung',
-      'Zahnversicherung',
-      'Sehhilfeversicherung',
-      'Pflegeversicherung',
-    ],
-  },
-  {
-    title: 'Sachversicherung',
-    services: [
-      'Hausratversicherung',
-      'Mietversicherung',
-      'Kfz-Versicherung',
-      'Wertsachenversicherung',
-      'Elementarschadenversicherung',
-    ],
-  },
-];
+interface Props {
+  params: {
+    locale: Locale;
+  };
+}
 
-const benefits = [
-  {
-    title: 'Umfassender Schutz',
-    description: 'Maßgeschneiderte Versicherungslösungen für alle Lebensbereiche.',
-  },
-  {
-    title: 'Professionelle Beratung',
-    description: 'Fachkundige Beratung von erfahrenen Versicherungsspezialisten.',
-  },
-  {
-    title: 'Wettbewerbsfähige Tarife',
-    description: 'Zugang zu den besten Versicherungstarifen führender Anbieter.',
-  },
-  {
-    title: 'Schadenunterstützung',
-    description: 'Umfassende Unterstützung im Schadenfall.',
-  },
-];
+export default async function PrivateInsurance({ params: { locale } }: Props) {
+  const dict = await getDictionary(locale);
+  const { hero, services } = dict.private.insurance;
 
-const process = [
-  {
-    title: 'Erstanalyse',
-    description: 'Wir evaluieren Ihren Versicherungsbedarf und bestehende Versicherungen.',
-    icon: (
-      <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
-      </svg>
-    ),
-  },
-  {
-    title: 'Versicherungsanalyse',
-    description: 'Wir analysieren verschiedene Versicherungsoptionen und Anbieter.',
-    icon: (
-      <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
-      </svg>
-    ),
-  },
-  {
-    title: 'Versicherungsauswahl',
-    description: 'Wir helfen Ihnen bei der Auswahl der passenden Versicherungspolicen.',
-    icon: (
-      <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-      </svg>
-    ),
-  },
-  {
-    title: 'Laufende Betreuung',
-    description: 'Wir bieten kontinuierliche Unterstützung und Policenüberprüfungen.',
-    icon: (
-      <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-      </svg>
-    ),
-  },
-];
-
-export default function InsurancePage() {
   return (
     <main className="flex min-h-screen flex-col">
       <Navigation />
+      
+      {/* Hero Section */}
+      <section className="relative pt-32 pb-16 sm:pt-40 sm:pb-24 lg:pb-32 bg-gradient-to-b from-primary/5 to-white">
+        <div className="container">
+          <div className="mx-auto max-w-3xl text-center">
+            <h1 className="text-4xl font-bold tracking-tight text-primary sm:text-6xl">
+              {hero.title}
+            </h1>
+            <p className="mt-6 text-lg leading-8 text-gray-600">
+              {hero.description}
+            </p>
+          </div>
+        </div>
+      </section>
 
-      <HeroSection
-        title="Versicherungsdienstleistungen"
-        description="Umfassende Versicherungslösungen zum Schutz dessen, was Ihnen am wichtigsten ist. Wir helfen Ihnen, den richtigen Schutz für Ihre individuellen Bedürfnisse zu finden."
-        primaryButtonText="Jetzt starten"
-        secondaryButtonText="Unsere Services"
-        primaryButtonHref="/de/contact"
-        secondaryButtonHref="#services"
-      />
+      {/* Services Section */}
+      <section className="py-16 sm:py-24">
+        <div className="container">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
+              {services.title}
+            </h2>
+            <p className="mt-4 text-lg text-gray-600">
+              {services.description}
+            </p>
+          </div>
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+            {services.items.map((service, index) => (
+              <div
+                key={index}
+                className="bg-white p-8 rounded-2xl shadow-lg"
+              >
+                <h3 className="text-xl font-semibold mb-4 text-primary">
+                  {service.title}
+                </h3>
+                <p className="text-gray-600">
+                  {service.description}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
 
-      <BenefitsSection
-        title="Warum unsere Versicherungsdienstleistungen?"
-        benefits={benefits}
-      />
-
-      <ServicesSection
-        title="Unsere Versicherungsdienstleistungen"
-        services={insuranceServices}
-      />
-
-      <ProcessSection
-        title="Unser Prozess"
-        description="Wir folgen einem strukturierten Ansatz, um sicherzustellen, dass Sie den besten Versicherungsschutz für Ihre Bedürfnisse erhalten."
-        steps={process}
-      />
-
-      <div className="mt-10 flex items-center justify-center gap-x-6">
-        <Link href="/de/contact" className="btn btn-primary">
-          Kontakt
-        </Link>
-        <Link href="/de/calculator" className="btn btn-primary">
-          Prämie Berechnen
-        </Link>
-      </div>
-
-      <CTASection
-        title="Bereit für Ihre sichere Zukunft?"
-        description="Kontaktieren Sie uns noch heute für eine persönliche Versicherungsberatung und erfahren Sie, wie wir Ihnen beim Schutz dessen helfen können, was Ihnen am wichtigsten ist."
-        primaryButtonText="Beratung vereinbaren"
-        secondaryButtonText="Kontakt aufnehmen"
-        primaryButtonHref="/de/contact"
-        secondaryButtonHref="/de/contact"
-      />
+      {/* CTA Section */}
+      <section className="py-16 sm:py-24">
+        <div className="container">
+          <div className="relative isolate overflow-hidden bg-primary px-6 py-24 shadow-2xl sm:rounded-3xl sm:px-24">
+            <div className="mx-auto max-w-2xl text-center">
+              <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+                Ready to protect your future?
+              </h2>
+              <p className="mx-auto mt-6 max-w-xl text-lg leading-8 text-gray-300">
+                Contact our insurance experts today to find the right coverage for you.
+              </p>
+              <div className="mt-10">
+                <Link
+                  href={`/${locale}/contact`}
+                  className="btn bg-white text-primary hover:bg-gray-100"
+                >
+                  Contact Us
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <Footer />
     </main>
