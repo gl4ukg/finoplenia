@@ -61,12 +61,12 @@ export function Testimonials({ testimonials, isGerman = false }: TestimonialsPro
                 transition={{ duration: 0.5 }}
               >
                 <div className="text-center relative h-24 w-24 mx-auto mb-8">
-                  {/* <Image
+                  <Image
                     src={testimonials[activeIndex].image}
                     alt={testimonials[activeIndex].name}
                     fill
                     className="rounded-full object-cover"
-                  /> */}
+                  />
                 </div>
                 <blockquote>
                   <p className="text-xl font-semibold leading-8 text-gray-900 sm:text-2xl sm:leading-9">

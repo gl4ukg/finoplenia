@@ -230,19 +230,23 @@
       "services": {
         "wealth": {
           "title": "Wealth Management",
-          "description": "Build and protect your wealth with personalized investment strategies."
+          "description": "Build and protect your wealth with personalized investment strategies.",
+          "image": "https://i.pinimg.com/736x/55/65/6f/55656f08a0da30cd96e359e8a36fe303.jpg"
         },
         "insurance": {
           "title": "Insurance Solutions",
-          "description": "Comprehensive insurance coverage for all aspects of life."
+          "description": "Comprehensive insurance coverage for all aspects of life.",
+          "image": "https://i.pinimg.com/736x/9c/d2/8e/9cd28e2eda897b3271b18fb8d4ae84cd.jpg"
         },
         "retirement": {
           "title": "Retirement Planning",
-          "description": "Secure your future with our professional retirement planning services."
+          "description": "Secure your future with our professional retirement planning services.",
+          "image": "https://i.pinimg.com/736x/55/65/6f/55656f08a0da30cd96e359e8a36fe303.jpg"
         },
         "tax": {
           "title": "Tax Advisory",
-          "description": "Professional tax planning and compliance services for individuals."
+          "description": "Professional tax planning and compliance services for individuals.",
+          "image": "https://i.pinimg.com/736x/9c/d2/8e/9cd28e2eda897b3271b18fb8d4ae84cd.jpg"
         }
       }
     },
@@ -252,11 +256,13 @@
       "services": {
         "tax": {
           "title": "Corporate Tax Advisory",
-          "description": "Strategic tax planning and compliance for businesses."
+          "description": "Strategic tax planning and compliance for businesses.",
+          "image": "https://i.pinimg.com/736x/06/26/d4/0626d4117f0af312fee0de333058062c.jpg"
         },
         "advisory": {
           "title": "Strategy Consulting",
-          "description": "Professional consulting for business growth and transformation."
+          "description": "Professional consulting for business growth and transformation.",
+          "image": "https://i.pinimg.com/736x/06/26/d4/0626d4117f0af312fee0de333058062c.jpg"
         }
       }
     }

@@ -230,19 +230,23 @@
       "services": {
         "wealth": {
           "title": "Vermögensverwaltung",
-          "description": "Vermögensaufbau und -schutz mit personalisierten Anlagestrategien."
+          "description": "Vermögensaufbau und -schutz mit personalisierten Anlagestrategien.",
+          "image": "https://i.pinimg.com/736x/55/65/6f/55656f08a0da30cd96e359e8a36fe303.jpg"
         },
         "insurance": {
           "title": "Versicherungslösungen",
-          "description": "Umfassender Versicherungsschutz für alle Lebensbereiche."
+          "description": "Umfassender Versicherungsschutz für alle Lebensbereiche.",
+          "image": "https://i.pinimg.com/736x/9c/d2/8e/9cd28e2eda897b3271b18fb8d4ae84cd.jpg"
         },
         "retirement": {
           "title": "Altersvorsorge",
-          "description": "Sichern Sie Ihre Zukunft mit unserer professionellen Altersvorsorgeplanung."
+          "description": "Sichern Sie Ihre Zukunft mit unserer professionellen Altersvorsorgeplanung.",
+          "image": "https://i.pinimg.com/736x/55/65/6f/55656f08a0da30cd96e359e8a36fe303.jpg"
         },
         "tax": {
           "title": "Steuerberatung",
-          "description": "Professionelle Steuerplanung und Compliance-Services für Privatpersonen."
+          "description": "Professionelle Steuerplanung und Compliance-Services für Privatpersonen.",
+          "image": "https://i.pinimg.com/736x/9c/d2/8e/9cd28e2eda897b3271b18fb8d4ae84cd.jpg"
         }
       }
     },
@@ -252,11 +256,13 @@
       "services": {
         "tax": {
           "title": "Unternehmenssteuerberatung",
-          "description": "Strategische Steuerplanung und Compliance für Unternehmen."
+          "description": "Strategische Steuerplanung und Compliance für Unternehmen.",
+          "image": "https://i.pinimg.com/736x/06/26/d4/0626d4117f0af312fee0de333058062c.jpg"
         },
         "advisory": {
           "title": "Strategieberatung",
-          "description": "Professionelle Beratung für Unternehmenswachstum und -transformation."
+          "description": "Professionelle Beratung für Unternehmenswachstum und -transformation.",
+          "image": "https://i.pinimg.com/736x/06/26/d4/0626d4117f0af312fee0de333058062c.jpg"
         }
       }
     }

@@ -6,10 +6,21 @@ import { Navigation } from '@/components/Navigation';
 import { Footer } from '@/components/Footer';
 import { Testimonials } from '@/components/Testimonials';
 import { useRef } from 'react';
+import Image from 'next/image';
 
 interface Service {
   title: string;
   description: string;
+  image: string;
+}
+
+interface Testimonial {
+  id: number;
+  name: string;
+  role: string;
+  company: string;
+  image: string;
+  quote: string;
 }
 
 interface Dictionary {
@@ -17,7 +28,6 @@ interface Dictionary {
     hero: {
       title: string;
       subtitle: string;
-      cta: string;
     };
     privateServices: {
       title: string;
@@ -40,7 +50,7 @@ interface Dictionary {
 interface HomeClientProps {
   dict: Dictionary;
   locale: string;
-  testimonials: any[];
+  testimonials: Testimonial[];
 }
 
 const fadeInUp = {
@@ -223,6 +233,16 @@ export default function HomeClient({ dict, locale, testimonials }: HomeClientPro
                   className="relative flex flex-col gap-6 rounded-2xl bg-white p-8 shadow-sm ring-1 ring-gray-200 hover:shadow-md transition-shadow duration-300"
                 >
                   <div className="flex flex-col">
+                    <div className="relative h-48 w-full mb-6 overflow-hidden rounded-lg bg-gray-100">
+                      <Image
+                        src={service.image}
+                        alt={service.title}
+                        fill
+                        className="object-cover transition-transform duration-300 hover:scale-105"
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                        priority={key === 'wealth' || key === 'insurance'}
+                      />
+                    </div>
                     <h3 className="text-lg font-semibold leading-8 tracking-tight text-gray-900">
                       {service.title}
                     </h3>
@@ -278,6 +298,14 @@ export default function HomeClient({ dict, locale, testimonials }: HomeClientPro
                   className="relative flex flex-col gap-6 rounded-2xl bg-white p-8 shadow-sm ring-1 ring-gray-200 hover:shadow-md transition-shadow duration-300"
                 >
                   <div className="flex flex-col">
+                    <div className="relative h-48 w-full mb-6 overflow-hidden rounded-lg">
+                      <Image
+                        src={service.image}
+                        alt={service.title}
+                        fill
+                        className="object-cover transition-transform duration-300 hover:scale-105"
+                      />
+                    </div>
                     <h3 className="text-lg font-semibold leading-8 tracking-tight text-gray-900">
                       {service.title}
                     </h3>
