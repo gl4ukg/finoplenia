@@ -7,6 +7,7 @@ import { Footer } from '@/components/Footer';
 import { Testimonials } from '@/components/Testimonials';
 import { useRef } from 'react';
 import Image from 'next/image';
+import { useState, useEffect } from 'react';
 
 interface Service {
   title: string;
@@ -79,10 +80,21 @@ export default function HomeClient({ dict, locale, testimonials }: HomeClientPro
   const corporateServicesRef = useRef(null);
   const ctaRef = useRef(null);
 
-  const isHeroInView = useInView(heroRef, { once: true, amount: 0.3 });
-  const isPrivateServicesInView = useInView(privateServicesRef, { once: true, amount: 0.3 });
-  const isCorporateServicesInView = useInView(corporateServicesRef, { once: true, amount: 0.3 });
+  const isHeroInView = useInView(heroRef);
+  const isPrivateServicesInView = useInView(privateServicesRef);
+  const isCorporateServicesInView = useInView(corporateServicesRef);
+  const [scrollY, setScrollY] = useState(0);
+
   const isCtaInView = useInView(ctaRef, { once: true, amount: 0.3 });
+  
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollY(window.scrollY);
+    };
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   return (
     <main className="flex min-h-screen flex-col">
@@ -94,8 +106,41 @@ export default function HomeClient({ dict, locale, testimonials }: HomeClientPro
         initial="hidden"
         animate={isHeroInView ? "visible" : "hidden"}
         variants={staggerContainer}
-        className="relative pt-28 pb-16 sm:pt-28 sm:pb-24 lg:pb-28"
+        className="relative pt-28 pb-16 sm:pt-28 sm:pb-24 lg:pb-28 overflow-hidden"
       >
+        {/* Background SVG Pattern */}
+        <div className="absolute inset-0 -z-10 overflow-hidden">
+          <motion.svg
+            className="absolute left-[max(50%,25rem)] top-0 h-[64rem] w-[128rem] -translate-x-1/2 stroke-gray-200 [mask-image:radial-gradient(64rem_64rem_at_top,white,transparent)]"
+            style={{
+              transform: `translateX(-50%) translateY(${scrollY * 0.1}px) rotate(${scrollY * 0.02}deg)`,
+            }}
+            aria-hidden="true"
+          >
+            <defs>
+              <pattern
+                id="e813992c-7d03-4cc4-a2bd-151760b470a0"
+                width={200}
+                height={200}
+                x="50%"
+                y={-1}
+                patternUnits="userSpaceOnUse"
+              >
+                <path d="M100 200V.5M.5 .5H200" fill="none" />
+              </pattern>
+            </defs>
+            <svg x="50%" y={-1} className="overflow-visible fill-gray-50">
+              <path
+                d="M-100.5 0h201v201h-201Z M699.5 0h201v201h-201Z M499.5 400h201v201h-201Z M-300.5 600h201v201h-201Z"
+                strokeWidth={0}
+              />
+            </svg>
+            <rect width="100%" height="100%" strokeWidth={0} fill="url(#e813992c-7d03-4cc4-a2bd-151760b470a0)" />
+          </motion.svg>
+          <div className="absolute -z-10 top-0 right-0 w-[50%] h-[100%] bg-gradient-to-bl from-primary/5 via-primary/2 to-transparent" />
+          <div className="absolute -z-10 bottom-0 left-0 w-[50%] h-[50%] bg-gradient-to-tr from-primary/5 via-primary/2 to-transparent" />
+        </div>
+
         <div className="bg-white">
           <div className="relative isolate overflow-hidden bg-gradient-to-b from-primary/20">
             <div className="mx-auto max-w-7xl pb-24 pt-10 sm:pb-32 lg:grid lg:grid-cols-2 lg:gap-x-8 lg:px-8 lg:py-20">
@@ -204,8 +249,37 @@ export default function HomeClient({ dict, locale, testimonials }: HomeClientPro
         initial="hidden"
         animate={isPrivateServicesInView ? "visible" : "hidden"}
         variants={staggerContainer}
-        className="py-16 sm:py-24 bg-gray-50"
+        className="relative py-16 sm:py-24 bg-gray-50 overflow-hidden"
       >
+        {/* Background Circles */}
+        <motion.div 
+          className="absolute inset-0 -z-10"
+          style={{
+            transform: `translateY(${scrollY * 0.05}px)`,
+          }}
+        >
+          <svg
+            className="absolute right-full translate-y-1/4 translate-x-1/4 transform lg:translate-x-1/2"
+            width={404}
+            height={784}
+            fill="none"
+            viewBox="0 0 404 784"
+          >
+            <defs>
+              <pattern
+                id="8b1b5f72-e944-4457-af67-0c6d15a99f38"
+                x={0}
+                y={0}
+                width={20}
+                height={20}
+                patternUnits="userSpaceOnUse"
+              >
+                <rect x={0} y={0} width={4} height={4} className="text-gray-100" fill="currentColor" />
+              </pattern>
+            </defs>
+            <rect width={404} height={784} fill="url(#8b1b5f72-e944-4457-af67-0c6d15a99f38)" />
+          </svg>
+        </motion.div>
         <div className="container">
           <div className="mx-auto max-w-2xl text-center">
             <motion.h2 
@@ -269,8 +343,28 @@ export default function HomeClient({ dict, locale, testimonials }: HomeClientPro
         initial="hidden"
         animate={isCorporateServicesInView ? "visible" : "hidden"}
         variants={staggerContainer}
-        className="py-16 sm:py-24"
+        className="relative py-16 sm:py-24 overflow-hidden"
       >
+        {/* Background Blobs */}
+        <motion.div 
+          className="absolute inset-0 -z-10"
+          style={{
+            transform: `translateY(${scrollY * -0.05}px)`,
+          }}
+        >
+          <svg
+            className="absolute left-[calc(50%-4rem)] top-10 h-[32rem] w-[32rem] -translate-x-1/2 [mask-image:radial-gradient(closest-side,white,transparent)]"
+            aria-hidden="true"
+          >
+            <circle cx="512" cy="512" r="512" fill="url(#gradient)" fillOpacity="0.7" />
+            <defs>
+              <radialGradient id="gradient">
+                <stop stopColor="#7775D6" />
+                <stop offset="1" stopColor="#E935C1" />
+              </radialGradient>
+            </defs>
+          </svg>
+        </motion.div>
         <div className="container">
           <div className="mx-auto max-w-2xl text-center">
             <motion.h2 
