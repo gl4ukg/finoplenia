@@ -109,7 +109,7 @@ export default function HomeClient({ dict, locale, testimonials }: HomeClientPro
         className="relative pt-28 pb-16 sm:pt-28 sm:pb-24 lg:pb-28 overflow-hidden"
       >
         {/* Background SVG Pattern */}
-        <div className="absolute inset-0 -z-10 overflow-hidden">
+        <div className="absolute inset-0 z-10 overflow-hidden">
           <motion.svg
             className="absolute left-[max(50%,25rem)] top-0 h-[64rem] w-[128rem] -translate-x-1/2 stroke-gray-200 [mask-image:radial-gradient(64rem_64rem_at_top,white,transparent)]"
             style={{
@@ -137,8 +137,8 @@ export default function HomeClient({ dict, locale, testimonials }: HomeClientPro
             </svg>
             <rect width="100%" height="100%" strokeWidth={0} fill="url(#e813992c-7d03-4cc4-a2bd-151760b470a0)" />
           </motion.svg>
-          <div className="absolute -z-10 top-0 right-0 w-[50%] h-[100%] bg-gradient-to-bl from-primary/5 via-primary/2 to-transparent" />
-          <div className="absolute -z-10 bottom-0 left-0 w-[50%] h-[50%] bg-gradient-to-tr from-primary/5 via-primary/2 to-transparent" />
+          <div className="absolute z-10 top-0 right-0 w-[50%] h-[100%] bg-gradient-to-bl from-primary/5 via-primary/2 to-transparent" />
+          <div className="absolute z-10 bottom-0 left-0 w-[50%] h-[50%] bg-gradient-to-tr from-primary/5 via-primary/2 to-transparent" />
         </div>
 
         <div className="bg-white">
@@ -237,7 +237,7 @@ export default function HomeClient({ dict, locale, testimonials }: HomeClientPro
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 1, delay: 0.8 }}
-              className="absolute inset-x-0 bottom-0 -z-10 h-24 bg-gradient-to-t from-white sm:h-32"
+              className="absolute inset-x-0 bottom-0 z-10 h-24 bg-gradient-to-t from-white sm:h-32"
             />
           </div>
         </div>
@@ -251,9 +251,88 @@ export default function HomeClient({ dict, locale, testimonials }: HomeClientPro
         variants={staggerContainer}
         className="relative py-16 sm:py-24 bg-gray-50 overflow-hidden"
       >
+        {/* Floating Icons */}
+        <div className="absolute inset-0 z-10">
+          {/* Bank Icon */}
+          <motion.div
+            className="absolute top-20 left-[10%] text-primary/20"
+            style={{
+              transform: `translate(${scrollY * 0.1}px, ${scrollY * -0.05}px)`,
+            }}
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={1.5}
+              stroke="currentColor"
+              className="w-16 h-16"
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0 0 12 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75Z" />
+            </svg>
+          </motion.div>
+
+          {/* Wallet Icon */}
+          <motion.div
+            className="absolute top-40 right-[15%] text-primary/10"
+            style={{
+              transform: `translate(${scrollY * -0.08}px, ${scrollY * 0.06}px) rotate(${scrollY * 0.02}deg)`,
+            }}
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={1.5}
+              stroke="currentColor"
+              className="w-16 h-16"
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" d="M21 12a2.25 2.25 0 0 0-2.25-2.25H15a3 3 0 1 1-6 0H5.25A2.25 2.25 0 0 0 3 12m18 0v6a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 18v-6m18 0V9M3 12V9m18 0a2.25 2.25 0 0 0-2.25-2.25H5.25A2.25 2.25 0 0 0 3 9m18 0V6a2.25 2.25 0 0 0-2.25-2.25H5.25A2.25 2.25 0 0 0 3 6v3" />
+            </svg>
+          </motion.div>
+
+          {/* Document Icon */}
+          <motion.div
+            className="absolute bottom-20 left-[33%] text-primary/15"
+            style={{
+              transform: `translate(${scrollY * -0.12}px, ${scrollY * -0.08}px) rotate(${scrollY * -0.03}deg)`,
+            }}
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={1.5}
+              stroke="currentColor"
+              className="w-16 h-16"
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m2.25 0H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z" />
+            </svg>
+          </motion.div>
+
+          {/* Lock Icon */}
+          <motion.div
+            className="absolute bottom-40 right-[25%] text-primary/20"
+            style={{
+              transform: `translate(${scrollY * 0.15}px, ${scrollY * 0.1}px) rotate(${scrollY * 0.04}deg)`,
+            }}
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={1.5}
+              stroke="currentColor"
+              className="w-20 h-20"
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 1 0-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 0 0 2.25-2.25v-6.75a2.25 2.25 0 0 0-2.25-2.25H6.75a2.25 2.25 0 0 0-2.25 2.25v6.75a2.25 2.25 0 0 0 2.25 2.25Z" />
+            </svg>
+          </motion.div>
+        </div>
+
         {/* Background Circles */}
         <motion.div 
-          className="absolute inset-0 -z-10"
+          className="absolute inset-0 z-10"
           style={{
             transform: `translateY(${scrollY * 0.05}px)`,
           }}
@@ -304,7 +383,7 @@ export default function HomeClient({ dict, locale, testimonials }: HomeClientPro
                 <motion.div 
                   key={key}
                   variants={fadeInUp}
-                  className="relative flex flex-col gap-6 rounded-2xl bg-white p-8 shadow-sm ring-1 ring-gray-200 hover:shadow-md transition-shadow duration-300"
+                  className="z-20 relative flex flex-col gap-6 rounded-2xl bg-white p-8 shadow-sm ring-1 ring-gray-200 hover:shadow-md transition-shadow duration-300"
                 >
                   <div className="flex flex-col">
                     <div className="relative h-48 w-full mb-6 overflow-hidden rounded-lg bg-gray-100">
@@ -347,7 +426,7 @@ export default function HomeClient({ dict, locale, testimonials }: HomeClientPro
       >
         {/* Background Blobs */}
         <motion.div 
-          className="absolute inset-0 -z-10"
+          className="absolute inset-0 z-10"
           style={{
             transform: `translateY(${scrollY * -0.05}px)`,
           }}
@@ -421,6 +500,7 @@ export default function HomeClient({ dict, locale, testimonials }: HomeClientPro
       </motion.section>
 
       <Testimonials testimonials={testimonials} />
+   
 
       {/* CTA Section */}
       <motion.section 
