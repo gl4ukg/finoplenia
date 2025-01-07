@@ -30,9 +30,9 @@ export function Timeline({ events, isGerman = false }: TimelineProps) {
   }, []);
 
   return (
-    <div className="relative container mx-auto w-full">
+    <div className="relative container mx-auto w-full overflow-hidden">
       {/* Floating Icons */}
-      <div className="absolute inset-0 z-10">
+      <div className="absolute inset-0 z-10 hidden md:block">
         {/* Clock Icon */}
         <motion.div
           className="absolute top-[-80px] left-[10%] text-primary/20"
@@ -116,17 +116,17 @@ export function Timeline({ events, isGerman = false }: TimelineProps) {
       {events.map((event, index) => (
         <div
           key={event.year}
-          className="relative flex md:flex-row flex-col w-full mb-8 md:mb-16"
+          className="relative z-20 flex md:flex-row flex-col w-full mb-8 md:mb-16"
         >
           {/* Year indicator - centered for desktop, left for mobile */}
-          <div className="absolute w-6 h-6 md:left-1/2 left-4 transform md:-translate-x-1/2 -translate-x-1/2">
+          <div className="absolute w-9 h-9 md:left-1/2 left-0.5 transform md:-translate-x-1/2 -translate-x-1/2">
             <motion.div
               initial={{ opacity: 0, scale: 0 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
             >
-              <div className="w-6 h-6 bg-primary rounded-full flex items-center justify-center">
+              <div className="w-9 h-9 bg-primary rounded-full flex items-center justify-center">
                 <span className="text-xs font-semibold text-white">{event.year}</span>
               </div>
             </motion.div>

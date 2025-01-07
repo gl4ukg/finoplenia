@@ -97,7 +97,7 @@ export default function HomeClient({ dict, locale, testimonials }: HomeClientPro
   }, []);
 
   return (
-    <main className="flex min-h-screen flex-col">
+    <main className="flex min-h-screen overflow-hidden flex-col">
       <Navigation />
 
       {/* Hero Section */}
@@ -109,7 +109,7 @@ export default function HomeClient({ dict, locale, testimonials }: HomeClientPro
         className="relative pt-28 pb-16 sm:pt-28 sm:pb-24 lg:pb-28 overflow-hidden"
       >
         {/* Background SVG Pattern */}
-        <div className="absolute inset-0 z-10 overflow-hidden">
+        <div className="absolute inset-0 z-10 hidden md:block overflow-hidden">
           <motion.svg
             className="absolute left-[max(50%,25rem)] top-0 h-[64rem] w-[128rem] -translate-x-1/2 stroke-gray-200 [mask-image:radial-gradient(64rem_64rem_at_top,white,transparent)]"
             style={{
@@ -141,7 +141,7 @@ export default function HomeClient({ dict, locale, testimonials }: HomeClientPro
           <div className="absolute z-10 bottom-0 left-0 w-[50%] h-[50%] bg-gradient-to-tr from-primary/5 via-primary/2 to-transparent" />
         </div>
 
-        <div className="bg-white">
+        <div className="relative z-20">
           <div className="relative isolate overflow-hidden bg-gradient-to-b from-primary/20">
             <div className="mx-auto max-w-7xl pb-24 pt-10 sm:pb-32 lg:grid lg:grid-cols-2 lg:gap-x-8 lg:px-8 lg:py-20">
               <motion.div
@@ -172,23 +172,23 @@ export default function HomeClient({ dict, locale, testimonials }: HomeClientPro
                       initial={{ opacity: 0, y: 20 }}
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ duration: 0.6, delay: 0.6 }}
-                      className="mt-10 flex items-center gap-x-6"
+                      className="mt-10 flex flex-wrap items-center gap-6"
                     >
-                      <motion.div
-                        whileHover={{ scale: 1.05 }}
-                        whileTap={{ scale: 0.95 }}
-                      >
-                        <Link href={`/${locale}/contact`} className="btn btn-secondary">
-                          {dict.common.getStarted}
-                        </Link>
-                      </motion.div>
-                      
                       <motion.div
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
                       >
                         <Link href={`/${locale}/calculator`} className="btn btn-secondary">
                           {dict.common.calculator}
+                        </Link>
+                      </motion.div>
+                    
+                      <motion.div
+                        whileHover={{ scale: 1.05 }}
+                        whileTap={{ scale: 0.95 }}
+                      >
+                        <Link href={`/${locale}/contact`} className="btn btn-secondary">
+                          {dict.common.getStarted}
                         </Link>
                       </motion.div>
                       
@@ -252,7 +252,7 @@ export default function HomeClient({ dict, locale, testimonials }: HomeClientPro
         className="relative py-16 sm:py-24 bg-gray-50 overflow-hidden"
       >
         {/* Floating Icons */}
-        <div className="absolute inset-0 z-10">
+        <div className="absolute inset-0 z-10 hidden md:block">
           {/* Bank Icon */}
           <motion.div
             className="absolute top-20 left-[10%] text-primary/20"
@@ -332,7 +332,7 @@ export default function HomeClient({ dict, locale, testimonials }: HomeClientPro
 
         {/* Background Circles */}
         <motion.div 
-          className="absolute inset-0 z-10"
+          className="absolute inset-0 z-10 hidden md:block"
           style={{
             transform: `translateY(${scrollY * 0.05}px)`,
           }}
@@ -426,7 +426,7 @@ export default function HomeClient({ dict, locale, testimonials }: HomeClientPro
       >
         {/* Background Blobs */}
         <motion.div 
-          className="absolute inset-0 z-10"
+          className="absolute inset-0 z-10 hidden md:block"
           style={{
             transform: `translateY(${scrollY * -0.05}px)`,
           }}
@@ -444,11 +444,11 @@ export default function HomeClient({ dict, locale, testimonials }: HomeClientPro
             </defs>
           </svg>
         </motion.div>
-        <div className="container">
+        <div className="container relative z-20">
           <div className="mx-auto max-w-2xl text-center">
             <motion.h2 
               variants={fadeInUp}
-              className="text-3xl font-bold tracking-tight text-primary sm:text-4xl"
+              className="text-3xl font-bold tracking-tight text-primary sm:text-4xl break-words"
             >
               {dict.home.corporateServices.title}
             </motion.h2>

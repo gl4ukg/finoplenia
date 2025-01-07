@@ -48,7 +48,7 @@ export function Testimonials({ testimonials, isGerman = false }: TestimonialsPro
       <div className="absolute inset-0 z-10">
         {/* Chart Icon */}
         <motion.div
-          className="absolute top-20 left-[10%] text-primary/20"
+          className="absolute top-20 left-[40%] text-primary/20"
           style={{
             transform: `translate(${scrollY * 0.1}px, ${scrollY * -0.05}px)`,
           }}
@@ -123,7 +123,7 @@ export function Testimonials({ testimonials, isGerman = false }: TestimonialsPro
         </motion.div>
       </div>
 
-      <div className="container">
+      <div className="container relative z-20">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}

@@ -33,13 +33,14 @@ export function ValuesSection({ title, values }: ValuesSectionProps) {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
+              className="flex"
             >
-              <div className="relative flex flex-col gap-6 rounded-2xl bg-white p-8 shadow-lg ring-1 ring-gray-200">
-                <div className="flex flex-col">
+              <div className="relative flex flex-col gap-6 rounded-2xl bg-white p-8 shadow-lg ring-1 ring-gray-200 flex-grow">
+                <div className="flex flex-col h-full">
                   <h3 className="text-lg font-semibold leading-8 tracking-tight text-primary">
                     {value.title}
                   </h3>
-                  <p className="mt-2 text-base leading-7 text-gray-600">
+                  <p className="mt-2 text-base leading-7 text-gray-600 flex-grow">
                     {value.description}
                   </p>
                 </div>
