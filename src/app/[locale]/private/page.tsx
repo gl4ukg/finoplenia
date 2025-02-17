@@ -10,7 +10,6 @@ interface Props {
 
 export default async function Private({ params: { locale } }: Props) {
   const dict = await getDictionary(locale);
-  const { hero } = dict.private;
 
-  return <PrivateClient hero={hero} />;
+  return <PrivateClient dict={dict} />;
 }

@@ -1,267 +1,256 @@
 {
   "common": {
-    "getStarted": "Loslegen",
-    "learnMore": "Mehr erfahren",
-    "contact": "Kontakt",
-    "about": "Über uns",
-    "blog": "Blog",
-    "calculator": "Versicherungsrechner",
-    "contactUs": "Kontaktieren Sie uns",
+    "getStarted": "Get Started",
+    "learnMore": "Learn More",
+    "contact": "Contact",
+    "about": "About",
+    "career": "Career",
+    "calculator": "Insurance Calculator",
+    "contactUs": "Contact Us",
     "faq": "FAQ",
-    "privacy": "Datenschutz",
-    "terms": "AGB",
-    "corporate": "Unternehmensdienstleistungen"
+    "privacy": "Privacy Policy",
+    "terms": "Terms & Conditions",
+    "corporate": "Corporate Services"
   },
   "contact": {
     "hero": {
-      "title": "Kontakt",
-      "description": "Haben Sie Fragen oder möchten Sie mehr über unsere Dienstleistungen erfahren? Kontaktieren Sie uns."
+      "title": "Contact",
+      "description": "Have questions or want to learn more about our services? Get in touch with us."
     },
     "info": {
-      "title": "Kontaktieren Sie uns",
-      "description": "Wir sind hier, um Ihnen zu helfen und Ihre Fragen zu beantworten. Wir freuen uns darauf, von Ihnen zu hören.",
+      "title": "Contact Us",
+      "description": "We're here to help and answer any questions you might have. We look forward to hearing from you.",
       "address": {
-        "label": "Adresse",
-        "line1": "123 Finanzdistrikt",
-        "line2": "Zürich, Schweiz"
+        "label": "Address",
+        "line1": "123 Financial District",
+        "line2": "Zurich, Switzerland"
       },
       "email": {
-        "label": "E-Mail",
-        "value": "kontakt@finoplenia.com"
+        "label": "Email",
+        "value": "contact@finoplenia.com"
       },
       "phone": {
-        "label": "Telefon",
+        "label": "Phone",
         "value": "+41 12 345 67 89"
       }
     },
     "form": {
       "name": "Name",
-      "email": "E-Mail",
-      "phone": "Telefon",
-      "subject": "Betreff",
-      "message": "Nachricht",
+      "email": "Email",
+      "phone": "Phone",
+      "subject": "Subject",
+      "message": "Message",
       "subjects": {
-        "general": "Allgemeine Anfrage",
-        "private": "Private Dienstleistungen",
-        "corporate": "Unternehmensdienstleistungen",
-        "careers": "Karrieremöglichkeiten"
+        "general": "General Inquiry",
+        "private": "Private Services",
+        "corporate": "Corporate Services",
+        "careers": "Career Opportunities"
       },
       "submit": {
-        "sending": "Wird gesendet...",
-        "send": "Nachricht senden"
+        "sending": "Sending...",
+        "send": "Send Message"
       },
-      "success": "Vielen Dank für Ihre Nachricht! Wir werden uns in Kürze bei Ihnen melden."
+      "success": "Thank you for your message! We will get back to you shortly."
     }
   },
   "cookies": {
-    "title": "Cookie-Einstellungen",
-    "description": "Wir verwenden Cookies, um Ihr Surferlebnis zu verbessern und unseren Verkehr zu analysieren.",
+    "title": "Cookie Settings",
+    "description": "We use cookies to enhance your browsing experience and analyze our traffic.",
     "essential": {
-      "title": "Essentielle Cookies",
-      "description": "Erforderlich für die ordnungsgemäße Funktion der Website."
+      "title": "Essential Cookies",
+      "description": "Required for the website to function properly."
     },
     "analytics": {
-      "title": "Analyse-Cookies",
-      "description": "Helfen uns zu verstehen, wie Besucher mit unserer Website interagieren."
+      "title": "Analytics Cookies",
+      "description": "Help us understand how visitors interact with our website."
     },
     "marketing": {
-      "title": "Marketing-Cookies",
-      "description": "Werden verwendet, um personalisierte Werbung zu liefern."
+      "title": "Marketing Cookies",
+      "description": "Used to deliver personalized advertisements."
     },
     "actions": {
-      "customize": "Anpassen",
-      "acceptAll": "Alle akzeptieren",
-      "rejectAll": "Alle ablehnen",
-      "save": "Einstellungen speichern"
+      "customize": "Customize",
+      "acceptAll": "Accept All",
+      "rejectAll": "Reject All",
+      "save": "Save Preferences"
     },
-    "privacyPolicy": "Datenschutzerklärung"
+    "privacyPolicy": "Privacy Policy"
   },
   "calculator": {
     "hero": {
-      "title": "Versicherungsrechner",
-      "subtitle": "Erhalten Sie sofort ein Angebot für Ihren Versicherungsbedarf"
+      "title": "Insurance Calculator",
+      "subtitle": "Get an instant quote for your insurance needs"
     },
     "steps": {
-      "selectInsurance": "Versicherungsart wählen",
-      "enterDetails": "Ihre Details eingeben",
-      "result": "Ihr Angebot"
+      "selectInsurance": "Select Insurance Type",
+      "enterDetails": "Enter Your Details",
+      "result": "Your Quote"
     },
     "buttons": {
-      "next": "Weiter",
-      "back": "Zurück",
-      "calculate": "Berechnen",
-      "restart": "Neu starten"
+      "next": "Next",
+      "back": "Back",
+      "calculate": "Calculate",
+      "restart": "Start Over"
     },
     "form": {
-      "age": "Ihr Alter",
-      "occupation": "Beruf",
-      "preExistingConditions": "Vorerkrankungen",
-      "coverageAmount": "Versicherungssumme (€)",
-      "estimatedPrice": "Geschätzter Monatsbeitrag",
-      "yes": "Ja",
-      "no": "Nein"
+      "age": "Your Age",
+      "occupation": "Occupation",
+      "preExistingConditions": "Pre-existing Conditions",
+      "coverageAmount": "Coverage Amount (€)",
+      "estimatedPrice": "Estimated Monthly Premium",
+      "yes": "Yes",
+      "no": "No"
     },
     "insuranceTypes": {
       "life": {
-        "title": "Lebensversicherung",
-        "description": "Schützen Sie die finanzielle Zukunft Ihrer Angehörigen mit einer umfassenden Lebensversicherung."
+        "title": "Life Insurance",
+        "description": "Protect your loved ones' financial future with comprehensive life insurance coverage."
       },
       "health": {
-        "title": "Krankenversicherung",
-        "description": "Erhalten Sie Zugang zu qualitativ hochwertiger Gesundheitsversorgung mit unseren flexiblen Krankenversicherungsplänen."
+        "title": "Health Insurance",
+        "description": "Get access to quality healthcare with our flexible health insurance plans."
       },
       "property": {
-        "title": "Sachversicherung",
-        "description": "Schützen Sie Ihr Eigentum vor Schäden, Diebstahl und Naturkatastrophen."
+        "title": "Property Insurance",
+        "description": "Safeguard your property against damage, theft, and natural disasters."
       },
       "liability": {
-        "title": "Haftpflichtversicherung",
-        "description": "Schützen Sie sich vor Ansprüchen Dritter und Rechtskosten."
+        "title": "Liability Insurance",
+        "description": "Protect yourself against third-party claims and legal expenses."
       }
     }
   },
-  "blog": {
+  "career": {
     "hero": {
-      "title": "Blog",
-      "description": "Bleiben Sie informiert mit unseren neuesten Erkenntnissen, Nachrichten und Expertenanalysen zu Finanzen und Investitionen."
+      "title": "Career",
+      "description": "<strong>Write your success story with us!</strong> </br></br> Become part of our team and accompany our customers on their way to the best insurance solution. Exciting challenges, a supportive work environment and the opportunity to really make a difference await you. Start your career now!"
     },
     "posts": [
       {
         "id": 1,
-        "title": "Investitionsstrategien im Jahr 2024 verstehen",
-        "excerpt": "Entdecken Sie die wichtigsten Investitionstrends und Strategien, die die Finanzlandschaft im Jahr 2024 prägen.",
-        "date": "15. März 2024",
-        "category": "Investment",
-        "imageUrl": "/images/blog/investment.jpg",
-        "author": "Sarah Johnson",
-        "readTime": "5 Min. Lesezeit"
+        "title": "Sales Agent",
+        "shortText": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+        "bigText": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s Lorem Ipsum is simply dummy text of the printing and typesetting industry. </br></br> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500sLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500sLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500sLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500sLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500sLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
       },
       {
         "id": 2,
-        "title": "Die Zukunft des Digital Banking",
-        "excerpt": "Erfahren Sie, wie die digitale Transformation den Bankensektor revolutioniert und was das für Kunden bedeutet.",
-        "date": "10. März 2024",
-        "category": "Digital Banking",
-        "imageUrl": "/images/blog/digital-banking.jpg",
-        "author": "Michael Chen",
-        "readTime": "4 Min. Lesezeit"
+        "title": "HR Manager",
+        "shortText": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+        "bigText": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s Lorem Ipsum is simply dummy text of the printing and typesetting industry. </br></br> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500sLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500sLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500sLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500sLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500sLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
       },
       {
         "id": 3,
-        "title": "Nachhaltige Finanzen: Ein wachsender Trend",
-        "excerpt": "Lernen Sie mehr über die steigende Bedeutung nachhaltiger Finanzen und deren Einfluss auf Investitionsentscheidungen.",
-        "date": "5. März 2024",
-        "category": "Nachhaltigkeit",
-        "imageUrl": "/images/blog/sustainable-finance.jpg",
-        "author": "Emma Wilson",
-        "readTime": "6 Min. Lesezeit"
+        "title": "Marketing Manager",
+        "shortText": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+        "bigText": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s Lorem Ipsum is simply dummy text of the printing and typesetting industry. </br></br> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500sLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500sLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500sLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500sLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500sLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
       }
     ]
   },
   "cta": {
-    "title": "Bereit loszulegen?",
-    "description": "Kontaktieren Sie uns noch heute, um zu besprechen, wie wir Ihnen bei der Erreichung Ihrer finanziellen Ziele helfen können."
+    "title": "Ready to Get Started?",
+    "description": "Contact us today to discuss how we can help you achieve your financial goals.",
+    "button": "Contact Us"
   },
   "about": {
     "hero": {
-      "title": "Über Finoplenia",
-      "description": "Wir sind ein führender Finanzdienstleister, der sich dafür einsetzt, unseren Kunden durch fachkundige Beratung und innovative Lösungen bei der Erreichung ihrer finanziellen Ziele zu helfen."
+      "title": "About Finoplenia",
+      "description": "We are a leading financial services provider committed to helping our clients achieve their financial goals through expert advice and innovative solutions."
     },
     "values": {
-      "title": "Unsere Werte",
+      "title": "Our Values",
       "list": {
         "integrity": {
-          "title": "Integrität",
-          "description": "Wir halten in allen unseren Geschäftsbeziehungen höchste Integritätsstandards ein."
+          "title": "Integrity",
+          "description": "We maintain the highest standards of integrity in all our business relationships."
         },
         "excellence": {
-          "title": "Exzellenz",
-          "description": "Wir streben bei jedem Service, den wir anbieten, nach Exzellenz."
+          "title": "Excellence",
+          "description": "We strive for excellence in every service we provide."
         },
         "innovation": {
           "title": "Innovation",
-          "description": "Wir entwickeln uns kontinuierlich weiter, um sich verändernde Finanzbedürfnisse zu erfüllen."
+          "description": "We continuously evolve to meet changing financial needs."
         },
         "customerFocus": {
-          "title": "Kundenorientierung",
-          "description": "Der Erfolg unserer Kunden steht im Mittelpunkt all unseres Handelns."
+          "title": "Customer Focus",
+          "description": "Our clients' success is at the heart of everything we do."
         }
       }
     },
     "history": {
-      "title": "Unsere Geschichte",
-      "description": "Von unserer Gründung bis heute setzen wir uns für Exzellenz in Finanzdienstleistungen ein.",
+      "title": "Our History",
+      "description": "From our founding to today, we are committed to excellence in financial services.",
       "timeline": {
         "2010": {
-          "title": "Gründung",
-          "description": "Finoplenia wurde mit der Vision gegründet, umfassende Finanzdienstleistungen für Privat- und Firmenkunden anzubieten."
+          "title": "Foundation",
+          "description": "Finoplenia was founded with the vision of providing comprehensive financial services for private and corporate clients."
         },
         "2013": {
-          "title": "Digitale Transformation",
-          "description": "Einführung unserer digitalen Plattform, um Finanzdienstleistungen für unsere Kunden zugänglicher zu machen."
+          "title": "Digital Transformation",
+          "description": "Introduction of our digital platform to make financial services more accessible to our clients."
         },
         "2015": {
-          "title": "Internationale Expansion",
-          "description": "Erweiterung unserer Dienstleistungen auf internationale Märkte mit Fokus auf grenzüberschreitendes Vermögensmanagement."
+          "title": "International Expansion",
+          "description": "Extended our services to international markets with a focus on cross-border wealth management."
         },
         "2018": {
-          "title": "Start der Unternehmensberatung",
-          "description": "Einführung umfassender Beratungsdienstleistungen zur Unterstützung von Unternehmen auf ihrem Wachstumskurs."
+          "title": "Corporate Advisory Launch",
+          "description": "Introduction of comprehensive consulting services to support companies on their growth path."
         },
         "2020": {
-          "title": "Fokus auf Nachhaltigkeit",
-          "description": "Integration von ESG-Prinzipien in unsere Anlagestrategien und Unternehmensabläufe."
+          "title": "Sustainability Focus",
+          "description": "Integration of ESG principles into our investment strategies and corporate processes."
         },
         "2023": {
-          "title": "Innovations-Hub",
-          "description": "Etablierung unseres Innovations-Hubs zur Entwicklung zukunftsweisender Finanzlösungen."
+          "title": "Innovation Hub",
+          "description": "Establishment of our innovation hub for developing future-oriented financial solutions."
         }
       }
     }
   },
   "home": {
     "hero": {
-      "title": "Ihre finanzielle Zukunft beginnt hier",
-      "subtitle": "Professionelle Finanzberatung, Versicherungslösungen und Vermögensverwaltung für Privatkunden und Unternehmen."
+      "title": "Your Financial Future Starts Here",
+      "subtitle": "Professional financial advisory, insurance solutions, and wealth management for private individuals and corporations."
     },
     "privateServices": {
-      "title": "Private Dienstleistungen",
-      "subtitle": "Umfassende Finanzdienstleistungen, maßgeschneidert auf Ihre persönlichen Bedürfnisse.",
+      "title": "Private Services",
+      "subtitle": "Comprehensive financial services tailored to your personal needs.",
       "services": {
         "wealth": {
-          "title": "Vermögensverwaltung",
-          "description": "Vermögensaufbau und -schutz mit personalisierten Anlagestrategien.",
+          "title": "Wealth Management",
+          "description": "Build and protect your wealth with personalized investment strategies.",
           "image": "https://i.pinimg.com/736x/55/65/6f/55656f08a0da30cd96e359e8a36fe303.jpg"
         },
         "insurance": {
-          "title": "Versicherungslösungen",
-          "description": "Umfassender Versicherungsschutz für alle Lebensbereiche.",
+          "title": "Insurance Solutions",
+          "description": "Comprehensive insurance coverage for all aspects of life.",
           "image": "https://i.pinimg.com/736x/9c/d2/8e/9cd28e2eda897b3271b18fb8d4ae84cd.jpg"
         },
         "retirement": {
-          "title": "Altersvorsorge",
-          "description": "Sichern Sie Ihre Zukunft mit unserer professionellen Altersvorsorgeplanung.",
+          "title": "Retirement Planning",
+          "description": "Secure your future with our professional retirement planning services.",
           "image": "https://i.pinimg.com/736x/55/65/6f/55656f08a0da30cd96e359e8a36fe303.jpg"
         },
         "tax": {
-          "title": "Steuerberatung",
-          "description": "Professionelle Steuerplanung und Compliance-Services für Privatpersonen.",
+          "title": "Tax Advisory",
+          "description": "Professional tax planning and compliance services for individuals.",
           "image": "https://i.pinimg.com/736x/9c/d2/8e/9cd28e2eda897b3271b18fb8d4ae84cd.jpg"
         }
       }
     },
     "corporateServices": {
-      "title": "Unternehmensdienstleistungen",
-      "subtitle": "Strategische Finanzlösungen für Unternehmen.",
+      "title": "Corporate Services",
+      "subtitle": "Strategic financial solutions for businesses.",
       "services": {
         "tax": {
-          "title": "Unternehmenssteuerberatung",
-          "description": "Strategische Steuerplanung und Compliance für Unternehmen.",
+          "title": "Corporate Tax Advisory",
+          "description": "Strategic tax planning and compliance for businesses.",
           "image": "https://i.pinimg.com/736x/06/26/d4/0626d4117f0af312fee0de333058062c.jpg"
         },
         "advisory": {
-          "title": "Strategieberatung",
-          "description": "Professionelle Beratung für Unternehmenswachstum und -transformation.",
+          "title": "Strategy Consulting",
+          "description": "Professional consulting for business growth and transformation.",
           "image": "https://i.pinimg.com/736x/06/26/d4/0626d4117f0af312fee0de333058062c.jpg"
         }
       }
@@ -269,534 +258,393 @@
   },
   "faq": {
     "hero": {
-      "title": "Häufig gestellte Fragen",
-      "description": "Finden Sie Antworten auf häufige Fragen zu unseren Dienstleistungen und wie wir Ihnen helfen können."
+      "title": "Frequently Asked Questions",
+      "description": "Find answers to common questions about our services and how we can help you."
     },
     "categories": {
       "general": {
-        "title": "Allgemeine Fragen",
+        "title": "General Questions",
         "questions": [
           {
-            "question": "Was ist Finoplenia?",
-            "answer": "Finoplenia ist ein führender Finanzdienstleister, der umfassende Lösungen für Privatpersonen und Unternehmen anbietet. Wir sind spezialisiert auf Vermögensverwaltung, Versicherungslösungen, Altersvorsorge und Unternehmensberatung."
+            "question": "What is Finoplenia?",
+            "answer": "Finoplenia is a leading financial services provider offering comprehensive solutions for private individuals and businesses. We specialize in wealth management, insurance solutions, retirement planning, and corporate advisory services."
           },
           {
-            "question": "Wie kann ich mit Finoplenia beginnen?",
-            "answer": "Der Einstieg ist einfach. Sie können uns entweder direkt über unser Kontaktformular kontaktieren, uns anrufen oder unser Büro besuchen. Unser Team wird Sie durch den Prozess führen und Ihnen helfen, die richtigen Lösungen für Ihre Bedürfnisse zu finden."
+            "question": "How can I get started with Finoplenia?",
+            "answer": "Getting started is easy. You can either contact us directly through our contact form, call us, or visit our office. Our team will guide you through the process and help you find the right solutions for your needs."
           },
           {
-            "question": "In welchen Gebieten sind Sie tätig?",
-            "answer": "Wir betreuen hauptsächlich Kunden in der Schweiz und den angrenzenden europäischen Ländern. Für bestimmte Dienstleistungen arbeiten wir jedoch auch mit internationalen Kunden zusammen, vorbehaltlich lokaler Vorschriften."
+            "question": "What areas do you serve?",
+            "answer": "We primarily serve clients in Switzerland and neighboring European countries. However, we also work with international clients for specific services, subject to local regulations."
           }
         ]
       },
       "services": {
-        "title": "Unsere Dienstleistungen",
+        "title": "Our Services",
         "questions": [
           {
-            "question": "Welche Arten von Versicherungen bieten Sie an?",
-            "answer": "Wir bieten eine breite Palette von Versicherungslösungen an, darunter Lebensversicherungen, Krankenversicherungen, Sachversicherungen und Haftpflichtversicherungen. Jede kann an Ihre spezifischen Bedürfnisse angepasst werden."
+            "question": "What types of insurance do you offer?",
+            "answer": "We offer a wide range of insurance solutions including life insurance, health insurance, property insurance, and liability insurance. Each can be customized to meet your specific needs."
           },
           {
-            "question": "Bieten Sie Anlageberatung an?",
-            "answer": "Ja, wir bieten umfassende Anlageberatung, die auf Ihre finanziellen Ziele, Risikobereitschaft und Ihren Zeithorizont abgestimmt ist. Unsere Experten können Ihnen helfen, ein diversifiziertes Anlageportfolio aufzubauen und zu verwalten."
+            "question": "Do you provide investment advice?",
+            "answer": "Yes, we provide comprehensive investment advice tailored to your financial goals, risk tolerance, and time horizon. Our experts can help you build and manage a diversified investment portfolio."
           },
           {
-            "question": "Welche Altersvorsorge-Dienstleistungen bieten Sie an?",
-            "answer": "Unsere Altersvorsorge-Dienstleistungen umfassen Pensionsanalyse, Strategien zur Altersvorsorge, steuereffiziente Planung und laufende Portfolioverwaltung, um Ihnen zu helfen, Ihre Ruhestandsziele zu erreichen."
+            "question": "What retirement planning services do you offer?",
+            "answer": "Our retirement planning services include pension analysis, retirement savings strategies, tax-efficient planning, and ongoing portfolio management to help you achieve your retirement goals."
           }
         ]
       },
       "corporate": {
-        "title": "Unternehmensdienstleistungen",
+        "title": "Corporate Services",
         "questions": [
           {
-            "question": "Welche Unternehmensberatungsdienste bieten Sie an?",
-            "answer": "Wir bieten strategische Beratung, Steuerplanung, Risikomanagement und Finanzberatung für Unternehmen jeder Größe. Unser Team kann sowohl bei der täglichen Geschäftstätigkeit als auch bei der langfristigen strategischen Planung unterstützen."
+            "question": "What corporate advisory services do you provide?",
+            "answer": "We offer strategic consulting, tax planning, risk management, and financial advisory services for businesses of all sizes. Our team can help with both day-to-day operations and long-term strategic planning."
           },
           {
-            "question": "Können Sie bei internationalen Geschäftstätigkeiten helfen?",
-            "answer": "Ja, wir unterstützen Unternehmen bei ihren internationalen Aktivitäten, einschließlich grenzüberschreitender Transaktionen, regulatorischer Compliance und internationaler Steuerplanung."
+            "question": "Can you help with international business operations?",
+            "answer": "Yes, we assist companies with their international operations, including cross-border transactions, regulatory compliance, and international tax planning."
           },
           {
-            "question": "Arbeiten Sie mit Startups zusammen?",
-            "answer": "Auf jeden Fall! Wir haben spezialisierte Dienstleistungen für Startups, einschließlich Finanzplanung, Finanzierungsstrategie und Wachstumsberatung."
+            "question": "Do you work with startups?",
+            "answer": "Absolutely! We have specialized services for startups, including financial planning, funding strategy, and growth advisory services."
           }
         ]
       }
     },
     "support": {
-      "title": "Noch Fragen?",
-      "description": "Können Sie die gesuchte Antwort nicht finden? Kontaktieren Sie bitte unser Support-Team.",
-      "contactButton": "Support kontaktieren"
+      "title": "Still have questions?",
+      "description": "Can't find the answer you're looking for? Please contact our support team.",
+      "contactButton": "Contact Support"
     }
   },
   "privacy": {
     "hero": {
-      "title": "Datenschutzerklärung",
-      "description": "Erfahren Sie, wie wir Ihre persönlichen Daten schützen und verarbeiten."
+      "title": "Privacy Policy",
+      "description": "Learn how we protect and handle your personal information."
     },
-    "lastUpdated": "Zuletzt aktualisiert: 29. Dezember 2024",
+    "lastUpdated": "Last updated: December 29, 2024",
     "sections": {
       "introduction": {
-        "title": "Einführung",
-        "content": "Bei Finoplenia nehmen wir Ihre Privatsphäre ernst. Diese Datenschutzerklärung erläutert, wie wir Ihre Informationen sammeln, verwenden, offenlegen und schützen, wenn Sie unsere Website besuchen oder unsere Dienstleistungen nutzen. Bitte lesen Sie diese Datenschutzerklärung sorgfältig durch. Wenn Sie mit den Bedingungen dieser Datenschutzerklärung nicht einverstanden sind, greifen Sie bitte nicht auf die Website zu."
+        "title": "Introduction",
+        "content": "At Finoplenia, we take your privacy seriously. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or use our services. Please read this privacy policy carefully. If you do not agree with the terms of this privacy policy, please do not access the site."
       },
       "collection": {
-        "title": "Informationen, die wir sammeln",
-        "content": "Wir sammeln Informationen, die Sie uns direkt zur Verfügung stellen, wenn Sie:",
+        "title": "Information We Collect",
+        "content": "We collect information that you provide directly to us when you:",
         "items": [
-          "Ein Konto erstellen",
-          "Ein Formular ausfüllen",
-          "Sich für unseren Newsletter anmelden",
-          "Uns kontaktieren",
-          "Unsere Dienstleistungen nutzen"
+          "Register for an account",
+          "Fill out a form",
+          "Sign up for our newsletter",
+          "Contact us",
+          "Use our services"
         ],
         "dataTypes": {
-          "title": "Arten von gesammelten Daten",
+          "title": "Types of Data Collected",
           "personal": {
-            "title": "Persönliche Daten",
-            "content": "Bei der Nutzung unseres Dienstes können wir Sie bitten, uns bestimmte personenbezogene Daten zur Verfügung zu stellen, die zur Kontaktaufnahme oder Identifizierung verwendet werden können. Dazu können gehören:",
+            "title": "Personal Data",
+            "content": "While using our service, we may ask you to provide us with certain personally identifiable information that can be used to contact or identify you. This may include:",
             "items": [
-              "Name und Kontaktdaten",
-              "E-Mail-Adresse",
-              "Telefonnummer",
-              "Adresse",
-              "Finanzinformationen",
-              "Ausweisdokumente"
+              "Name and contact details",
+              "Email address",
+              "Phone number",
+              "Address",
+              "Financial information",
+              "Identity documents"
             ]
           },
           "usage": {
-            "title": "Nutzungsdaten",
-            "content": "Wir können auch Informationen darüber sammeln, wie Sie auf unsere Website zugreifen und diese nutzen, einschließlich:",
+            "title": "Usage Data",
+            "content": "We may also collect information about how you access and use our website, including:",
             "items": [
-              "Browser-Typ und -Version",
-              "Zeitpunkt und Datum Ihres Besuchs",
-              "Auf Seiten verbrachte Zeit",
-              "Eindeutige Gerätekennungen",
-              "Andere Diagnosedaten"
+              "Browser type and version",
+              "Time and date of your visit",
+              "Time spent on pages",
+              "Unique device identifiers",
+              "Other diagnostic data"
             ]
           }
         }
       },
       "use": {
-        "title": "Wie wir Ihre Informationen verwenden",
-        "content": "Wir verwenden die gesammelten Daten für verschiedene Zwecke:",
+        "title": "How We Use Your Information",
+        "content": "We use the collected data for various purposes:",
         "items": [
-          "Um unseren Service bereitzustellen und zu pflegen",
-          "Um Sie über Änderungen unseres Services zu informieren",
-          "Um Kundenservice zu bieten",
-          "Um Analysen oder wertvolle Informationen zu sammeln",
-          "Um technische Probleme zu erkennen, zu verhindern und zu beheben",
-          "Um rechtlichen Verpflichtungen nachzukommen"
+          "To provide and maintain our service",
+          "To notify you about changes to our service",
+          "To provide customer support",
+          "To gather analysis or valuable information",
+          "To detect, prevent and address technical issues",
+          "To comply with legal obligations"
         ]
       },
       "sharing": {
-        "title": "Informationsaustausch und Offenlegung",
-        "content": "Wir verkaufen oder vermieten Ihre persönlichen Informationen nicht an Dritte. Wir können Ihre Informationen teilen mit:",
+        "title": "Information Sharing and Disclosure",
+        "content": "We do not sell or rent your personal information to third parties. We may share your information with:",
         "items": [
-          "Dienstleistern, die uns bei unseren Geschäftstätigkeiten unterstützen",
-          "Professionellen Beratern einschließlich Anwälten und Wirtschaftsprüfern",
-          "Aufsichtsbehörden, wenn gesetzlich vorgeschrieben",
-          "Geschäftspartnern mit Ihrer Zustimmung"
+          "Service providers who assist in our operations",
+          "Professional advisers including lawyers and auditors",
+          "Regulatory authorities when required by law",
+          "Business partners with your consent"
         ]
       },
       "security": {
-        "title": "Datensicherheit",
-        "content": "Wir implementieren angemessene technische und organisatorische Maßnahmen, um die Sicherheit Ihrer persönlichen Informationen zu gewährleisten, einschließlich:",
+        "title": "Data Security",
+        "content": "We implement appropriate technical and organizational measures to maintain the security of your personal information, including:",
         "items": [
-          "Verschlüsselung der Daten während der Übertragung und Speicherung",
-          "Regelmäßige Sicherheitsbewertungen",
-          "Zugriffskontrollen und Authentifizierung",
-          "Regelmäßige Mitarbeiterschulungen zum Datenschutz",
-          "Verfahren zur Reaktion auf Vorfälle"
+          "Encryption of data in transit and at rest",
+          "Regular security assessments",
+          "Access controls and authentication",
+          "Regular staff training on data protection",
+          "Incident response procedures"
         ]
       },
       "rights": {
-        "title": "Ihre Rechte",
-        "content": "Gemäß den geltenden Datenschutzgesetzen haben Sie bestimmte Rechte in Bezug auf Ihre personenbezogenen Daten:",
+        "title": "Your Rights",
+        "content": "Under applicable data protection laws, you have certain rights regarding your personal data:",
         "items": [
-          "Recht auf Zugang zu Ihren Daten",
-          "Recht auf Berichtigung ungenauer Daten",
-          "Recht auf Löschung ('Recht auf Vergessenwerden')",
-          "Recht auf Einschränkung der Verarbeitung",
-          "Recht auf Datenübertragbarkeit",
-          "Recht auf Widerspruch gegen die Verarbeitung"
+          "Right to access your data",
+          "Right to correct inaccurate data",
+          "Right to erasure ('right to be forgotten')",
+          "Right to restrict processing",
+          "Right to data portability",
+          "Right to object to processing"
         ]
       },
       "cookies": {
-        "title": "Cookies und Tracking",
-        "content": "Wir verwenden Cookies und ähnliche Tracking-Technologien, um Aktivitäten auf unserem Service zu verfolgen und bestimmte Informationen zu speichern. Sie können Ihren Browser anweisen, alle Cookies abzulehnen oder anzuzeigen, wenn ein Cookie gesendet wird."
+        "title": "Cookies and Tracking",
+        "content": "We use cookies and similar tracking technologies to track activity on our service and hold certain information. You can instruct your browser to refuse all cookies or to indicate when a cookie is being sent."
       },
       "children": {
-        "title": "Datenschutz für Kinder",
-        "content": "Unser Service richtet sich nicht an Personen unter 18 Jahren. Wir sammeln wissentlich keine personenbezogenen Daten von Personen unter 18 Jahren."
+        "title": "Children's Privacy",
+        "content": "Our service does not address anyone under the age of 18. We do not knowingly collect personally identifiable information from anyone under the age of 18."
       },
       "changes": {
-        "title": "Änderungen dieser Datenschutzerklärung",
-        "content": "Wir können unsere Datenschutzerklärung von Zeit zu Zeit aktualisieren. Wir werden Sie über alle Änderungen informieren, indem wir die neue Datenschutzerklärung auf dieser Seite veröffentlichen und das Datum der 'letzten Aktualisierung' aktualisieren."
+        "title": "Changes to This Privacy Policy",
+        "content": "We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the 'last updated' date."
       },
       "contact": {
-        "title": "Kontaktieren Sie uns",
-        "content": "Wenn Sie Fragen zu dieser Datenschutzerklärung haben, kontaktieren Sie uns bitte:",
+        "title": "Contact Us",
+        "content": "If you have any questions about this Privacy Policy, please contact us:",
         "methods": {
-          "email": "datenschutz@finoplenia.com",
+          "email": "privacy@finoplenia.com",
           "phone": "+41 12 345 67 89",
-          "address": "123 Finanzdistrikt, Zürich, Schweiz"
+          "address": "123 Financial District, Zurich, Switzerland"
         }
       }
     }
   },
   "terms": {
     "hero": {
-      "title": "Allgemeine Geschäftsbedingungen",
-      "description": "Bitte lesen Sie diese Allgemeinen Geschäftsbedingungen sorgfältig durch, bevor Sie unsere Dienstleistungen nutzen."
+      "title": "Terms & Conditions",
+      "description": "Please read these terms and conditions carefully before using our services."
     },
-    "lastUpdated": "Zuletzt aktualisiert: 29. Dezember 2024",
+    "lastUpdated": "Last updated: December 29, 2024",
     "sections": {
       "introduction": {
-        "title": "Einführung",
-        "content": "Diese Allgemeinen Geschäftsbedingungen regeln die Nutzung der Website und Dienstleistungen von Finoplenia. Mit dem Zugriff auf diese Website gehen wir davon aus, dass Sie diese Geschäftsbedingungen vollständig akzeptieren. Nutzen Sie die Website von Finoplenia nicht weiter, wenn Sie nicht alle auf dieser Seite aufgeführten Geschäftsbedingungen akzeptieren."
+        "title": "Introduction",
+        "content": "These terms and conditions outline the rules and regulations for the use of Finoplenia's website and services. By accessing this website, we assume you accept these terms and conditions in full. Do not continue to use Finoplenia's website if you do not accept all of the terms and conditions stated on this page."
       },
       "definitions": {
-        "title": "Definitionen",
-        "content": "Die folgende Terminologie gilt für diese Allgemeinen Geschäftsbedingungen, Datenschutzerklärung und Haftungsausschluss:",
+        "title": "Definitions",
+        "content": "The following terminology applies to these Terms and Conditions, Privacy Statement and Disclaimer Notice:",
         "items": [
           {
-            "term": "Kunde, Sie und Ihr",
-            "definition": "Bezieht sich auf Sie, die Person, die diese Website nutzt und die Geschäftsbedingungen des Unternehmens akzeptiert."
+            "term": "Client, You and Your",
+            "definition": "Refers to you, the person accessing this website and accepting the Company's terms and conditions."
           },
           {
-            "term": "Das Unternehmen, Wir, Uns und Unser",
-            "definition": "Bezieht sich auf Finoplenia."
+            "term": "The Company, Ourselves, We, Our and Us",
+            "definition": "Refers to Finoplenia."
           },
           {
-            "term": "Partei, Parteien",
-            "definition": "Bezieht sich sowohl auf den Kunden als auch auf uns selbst oder entweder auf den Kunden oder uns selbst."
+            "term": "Party, Parties",
+            "definition": "Refers to both the Client and ourselves, or either the Client or ourselves."
           },
           {
-            "term": "Dienstleistungen",
-            "definition": "Bezieht sich auf die von Finoplenia angebotenen Finanzdienstleistungen und Produkte."
+            "term": "Services",
+            "definition": "Refers to the financial services and products offered by Finoplenia."
           }
         ]
       },
       "services": {
-        "title": "Dienstleistungen",
-        "content": "Finoplenia bietet Finanzdienstleistungen an, einschließlich, aber nicht beschränkt auf:",
+        "title": "Services",
+        "content": "Finoplenia provides financial services including but not limited to:",
         "items": [
-          "Anlageberatung",
-          "Versicherungslösungen",
-          "Altersvorsorgeplanung",
-          "Steuerplanung",
-          "Unternehmensberatung"
+          "Investment advisory services",
+          "Insurance solutions",
+          "Retirement planning",
+          "Tax planning",
+          "Corporate advisory services"
         ],
-        "disclaimer": "Die von Finoplenia erbrachten Dienstleistungen unterliegen den geltenden Gesetzen und Vorschriften. Wir behalten uns das Recht vor, jede Dienstleistung ohne vorherige Ankündigung zu ändern oder einzustellen."
+        "disclaimer": "The services provided by Finoplenia are subject to applicable laws and regulations. We reserve the right to modify or discontinue any service without prior notice."
       },
       "license": {
-        "title": "Lizenz zur Nutzung der Website",
-        "content": "Sofern nicht anders angegeben, besitzen Finoplenia und/oder ihre Lizenzgeber die geistigen Eigentumsrechte für das gesamte Material auf dieser Website. Alle geistigen Eigentumsrechte sind vorbehalten. Sie können Seiten von der Website für Ihren persönlichen Gebrauch ansehen und/oder ausdrucken, vorbehaltlich der in diesen Geschäftsbedingungen festgelegten Einschränkungen.",
+        "title": "License to Use Website",
+        "content": "Unless otherwise stated, Finoplenia and/or its licensors own the intellectual property rights for all material on this website. All intellectual property rights are reserved. You may view and/or print pages from the website for your own personal use subject to restrictions set in these terms and conditions.",
         "restrictions": {
-          "title": "Sie dürfen nicht:",
+          "title": "You must not:",
           "items": [
-            "Material von dieser Website neu veröffentlichen",
-            "Material von dieser Website verkaufen, vermieten oder unterlizenzieren",
-            "Material von dieser Website reproduzieren, duplizieren oder kopieren",
-            "Inhalte von dieser Website weiterverbreiten"
+            "Republish material from this website",
+            "Sell, rent or sub-license material from this website",
+            "Reproduce, duplicate or copy material from this website",
+            "Redistribute content from this website"
           ]
         }
       },
       "userAccounts": {
-        "title": "Benutzerkonten",
-        "content": "Wenn Sie ein Konto bei uns erstellen, garantieren Sie, dass:",
+        "title": "User Accounts",
+        "content": "When you create an account with us, you guarantee that:",
         "items": [
-          "Die von Ihnen angegebenen Informationen korrekt und vollständig sind",
-          "Sie die Richtigkeit dieser Informationen aufrechterhalten werden",
-          "Sie rechtlich in der Lage sind, bindende Verträge einzugehen",
-          "Sie mindestens 18 Jahre alt sind"
+          "The information you provide is accurate and complete",
+          "You will maintain the accuracy of such information",
+          "You are legally capable of entering into binding contracts",
+          "You are at least 18 years old"
         ]
       },
       "liability": {
-        "title": "Haftungsausschluss und Haftungsbeschränkung",
-        "content": "Die Informationen auf dieser Website werden 'wie besehen' zur Verfügung gestellt. Im größtmöglichen gesetzlich zulässigen Umfang:",
+        "title": "Disclaimer and Limitation of Liability",
+        "content": "The information on this website is provided on an 'as is' basis. To the fullest extent permitted by law, Finoplenia:",
         "items": [
-          "Schließt Finoplenia alle Zusicherungen und Gewährleistungen in Bezug auf diese Website und deren Inhalte aus",
-          "Schließt Finoplenia jegliche Haftung für Schäden aus, die sich aus oder im Zusammenhang mit Ihrer Nutzung dieser Website ergeben",
-          "Ist nicht verantwortlich für Handlungen, die aufgrund Ihres Vertrauens auf die auf dieser Website bereitgestellten Informationen ergriffen werden"
+          "Excludes all representations and warranties relating to this website and its contents",
+          "Excludes all liability for damages arising out of or in connection with your use of this website",
+          "Is not responsible for any actions taken as a result of your reliance on any information provided on this website"
         ]
       },
       "indemnification": {
-        "title": "Schadloshaltung",
-        "content": "Sie verpflichten sich, Finoplenia von jeglichen Forderungen, Verlusten, Haftungen, Ansprüchen oder Ausgaben freizustellen und schadlos zu halten, die von Dritten aufgrund oder im Zusammenhang mit Ihrer Nutzung der Website gegen sie geltend gemacht werden."
+        "title": "Indemnification",
+        "content": "You agree to indemnify and hold Finoplenia harmless from any demands, loss, liability, claims or expenses made against them by any third party due to or arising out of or in connection with your use of the website."
       },
       "termination": {
-        "title": "Kündigung",
-        "content": "Wir können den Zugang zu unseren Dienstleistungen sofort und ohne vorherige Ankündigung oder Haftung aus beliebigem Grund kündigen oder aussetzen, einschließlich und ohne Einschränkung, wenn Sie gegen die Geschäftsbedingungen verstoßen."
+        "title": "Termination",
+        "content": "We may terminate or suspend access to our services immediately, without prior notice or liability, for any reason whatsoever, including without limitation if you breach the Terms."
       },
       "changes": {
-        "title": "Änderungen der Geschäftsbedingungen",
-        "content": "Wir behalten uns das Recht vor, diese Geschäftsbedingungen jederzeit zu ändern. Wir werden Sie über Änderungen informieren, indem wir die neuen Geschäftsbedingungen auf dieser Seite veröffentlichen und das Datum der 'letzten Aktualisierung' aktualisieren."
+        "title": "Changes to Terms",
+        "content": "We reserve the right to modify these terms at any time. We will notify you of any changes by posting the new Terms on this page and updating the 'last updated' date."
       },
       "governing": {
-        "title": "Geltendes Recht",
-        "content": "Diese Geschäftsbedingungen unterliegen den Gesetzen der Schweiz und werden in Übereinstimmung mit diesen ausgelegt, ohne Berücksichtigung von Kollisionsnormen."
+        "title": "Governing Law",
+        "content": "These Terms shall be governed and construed in accordance with the laws of Switzerland, without regard to its conflict of law provisions."
       },
       "contact": {
-        "title": "Kontaktieren Sie uns",
-        "content": "Wenn Sie Fragen zu diesen Geschäftsbedingungen haben, kontaktieren Sie uns bitte:",
+        "title": "Contact Us",
+        "content": "If you have any questions about these Terms, please contact us:",
         "methods": {
           "email": "legal@finoplenia.com",
           "phone": "+41 12 345 67 89",
-          "address": "123 Finanzdistrikt, Zürich, Schweiz"
+          "address": "123 Financial District, Zurich, Switzerland"
         }
       }
     }
   },
   "corporate": {
     "hero": {
-      "title": "Unternehmensdienstleistungen",
-      "description": "Umfassende Finanzlösungen für Unternehmen jeder Größe"
+      "title": "Corporate Services",
+      "description": "Comprehensive financial solutions for businesses of all sizes"
     },
+    "sections": [
+      {
+        "id": "beratung",
+        "title": "Beratung",
+        "description": "Unsere erfahrenen Experten entwickeln maßgeschneiderte Anlagestrategien, die Ihre finanziellen Ziele und Ihre Risikobereitschaft berücksichtigen. Wir bieten aktives Portfoliomanagement und regelmäßige Performanceüberwachung.",
+        "imageSrc": "/images/insurance.jpg",
+        "imageAlt": "Vermögensverwaltung"
+      },
+      {
+        "id": "steuern",
+        "title": "Steuern",
+        "description": "Wir erstellen einen umfassenden Finanzplan, der Ihre kurz- und langfristigen Ziele berücksichtigt. Von der Altersvorsorge bis zur Nachlassplanung - wir helfen Ihnen, die richtigen Entscheidungen zu treffen.",
+        "imageSrc": "/images/insurance.jpg",
+        "imageAlt": "Vermögensverwaltung"
+      }
+    ],
     "services": {
-      "title": "Unsere Unternehmensdienstleistungen",
-      "description": "Wir bieten eine breite Palette von Dienstleistungen, um Ihr Unternehmen erfolgreich zu machen",
+      "title": "Our Private Banking Services",
+      "description": "Comprehensive solutions for your financial future",
       "items": [
         {
-          "title": "Beratungsdienstleistungen",
-          "description": "Strategische Unternehmensberatung und Finanzberatung",
-          "link": "/corporate/advisory"
+          "title": "Pension Planning",
+          "description": "Optimize your pension strategy"
         },
         {
-          "title": "Steuerdienstleistungen",
-          "description": "Unternehmenssteuerplanung und Compliance",
-          "link": "/corporate/tax"
+          "title": "Retirement Savings",
+          "description": "Build your retirement nest egg"
         },
         {
-          "title": "Risikomanagement",
-          "description": "Umfassende Risikobewertung und Risikominderungsstrategien",
-          "link": "/corporate/risk"
+          "title": "Retirement Income",
+          "description": "Create sustainable retirement income streams"
         }
       ]
-    },
-    "advisory": {
-      "hero": {
-        "title": "Unternehmensberatung",
-        "description": "Expertenwissen für Ihre Geschäftsentscheidungen"
-      },
-      "services": {
-        "title": "Beratungsdienstleistungen",
-        "description": "Unsere Beratungsdienste helfen Ihnen, fundierte Entscheidungen zu treffen",
-        "items": [
-          {
-            "title": "Strategische Planung",
-            "description": "Entwicklung und Umsetzung langfristiger Geschäftsstrategien"
-          },
-          {
-            "title": "M&A-Beratung",
-            "description": "Strategie und Durchführung von Fusionen und Übernahmen"
-          },
-          {
-            "title": "Finanzplanung",
-            "description": "Unternehmensfinanzplanung und -analyse"
-          }
-        ]
-      },
-      "cta": {
-        "title": "Bereit, Ihr Unternehmen zu transformieren?",
-        "description": "Kontaktieren Sie uns, um zu besprechen, wie wir Ihr Unternehmen beim Wachstum unterstützen können",
-        "button": "Loslegen"
-      }
-    },
-    "tax": {
-      "hero": {
-        "title": "Steuerberatung für Unternehmen",
-        "description": "Optimieren Sie Ihre Steuerstrategie und stellen Sie die Compliance sicher"
-      },
-      "services": {
-        "title": "Steuerdienstleistungen",
-        "description": "Umfassende Steuerlösungen für Ihr Unternehmen",
-        "items": [
-          {
-            "title": "Steuerplanung",
-            "description": "Strategische Steuerplanung und -optimierung"
-          },
-          {
-            "title": "Compliance",
-            "description": "Steuer-Compliance und Berichterstattung"
-          },
-          {
-            "title": "Internationale Steuern",
-            "description": "Grenzüberschreitende Steuerberatung und -planung"
-          }
-        ]
-      },
-      "cta": {
-        "title": "Optimieren Sie Ihre Steuerstrategie",
-        "description": "Lassen Sie uns Ihnen helfen, komplexe Steuervorschriften zu navigieren",
-        "button": "Kontaktieren Sie uns"
-      }
     }
   },
   "private": {
     "hero": {
       "title": "Private Banking",
-      "description": "Maßgeschneiderte Finanzlösungen für Ihre persönliche Vermögensverwaltung"
+      "description": "Tailored financial solutions for your personal wealth management needs"
     },
+    "sections": [
+      {
+        "id": "insurance",
+        "title": "Insurance",
+        "description": "Unsere erfahrenen Experten entwickeln maßgeschneiderte Anlagestrategien, die Ihre finanziellen Ziele und Ihre Risikobereitschaft berücksichtigen. Wir bieten aktives Portfoliomanagement und regelmäßige Performanceüberwachung.",
+        "imageSrc": "/images/insurance.jpg",
+        "imageAlt": "Vermögensverwaltung"
+      },
+      {
+        "id": "retirement",
+        "title": "Retirement Planning",
+        "description": "Wir erstellen einen umfassenden Finanzplan, der Ihre kurz- und langfristigen Ziele berücksichtigt. Von der Altersvorsorge bis zur Nachlassplanung - wir helfen Ihnen, die richtigen Entscheidungen zu treffen.",
+        "imageSrc": "/images/insurance.jpg",
+        "imageAlt": "Vermögensverwaltung"
+      },
+      {
+        "id": "wealth",
+        "title": "Wealth",
+        "description": "Unser Team von Steuerexperten hilft Ihnen, Ihre Steuerlast legal zu optimieren. Wir beraten Sie zu steuereffizienten Anlagestrategien undstützen Sie bei der Strukturierung Ihres Vermögens.",
+        "imageSrc": "/images/insurance.jpg",
+        "imageAlt": "Vermögensverwaltung"
+      },
+      {
+        "id": "property",
+        "title": "Property",
+        "description": "Von der Auswahl der richtigen Immobilie bis zur Finanzierung - wirstützen Sie bei allen Aspekten Ihrer Immobilieninvestition. Profitieren Sie von unserer Expertise im Immobilienmarkt.",
+        "imageSrc": "/images/insurance.jpg",
+        "imageAlt": "Vermögensverwaltung"
+      },
+      {
+        "id": "tax",
+        "title": "Tax Planning",
+        "description": "Wir analysieren Ihren Versicherungsbedarf und entwickeln ein maßgeschneidertes Konzept für Ihre Absicherung. Unser Ziel ist es, Ihnen optimalen Schutz zu bestmöglichen Konditionen zu bieten.",
+        "imageSrc": "/images/insurance.jpg",
+        "imageAlt": "Vermögensverwaltung"
+      }
+    ],
     "services": {
-      "title": "Unsere Private Banking Dienstleistungen",
-      "description": "Umfassende Lösungen für Ihre finanzielle Zukunft",
+      "title": "Our Private Banking Services",
+      "description": "Comprehensive solutions for your financial future",
       "items": [
         {
-          "title": "Vermögensverwaltung",
-          "description": "Personalisierte Vermögensverwaltungsstrategien",
-          "link": "/private/wealth"
+          "title": "Pension Planning",
+          "description": "Optimize your pension strategy"
         },
         {
-          "title": "Versicherungslösungen",
-          "description": "Umfassender Versicherungsschutz für Ihre Bedürfnisse",
-          "link": "/private/insurance"
+          "title": "Retirement Savings",
+          "description": "Build your retirement nest egg"
         },
         {
-          "title": "Immobilieninvestment",
-          "description": "Immobilieninvestitionsmöglichkeiten",
-          "link": "/private/property"
-        },
-        {
-          "title": "Altersvorsorge",
-          "description": "Sichern Sie Ihre Zukunft mit unseren Vorsorgelösungen",
-          "link": "/private/retirement"
-        },
-        {
-          "title": "Steuerplanung",
-          "description": "Optimieren Sie Ihre Steuerstrategie",
-          "link": "/private/tax"
+          "title": "Retirement Income",
+          "description": "Create sustainable retirement income streams"
         }
       ]
-    },
-    "wealth": {
-      "hero": {
-        "title": "Vermögensverwaltung",
-        "description": "Professionelle Beratung zur Erhaltung und Vermehrung Ihres Vermögens"
-      },
-      "services": {
-        "title": "Vermögensverwaltungsservices",
-        "description": "Umfassende Vermögensverwaltungslösungen nach Ihren Bedürfnissen",
-        "items": [
-          {
-            "title": "Portfoliomanagement",
-            "description": "Professionelle Verwaltung Ihres Investmentportfolios"
-          },
-          {
-            "title": "Nachlassplanung",
-            "description": "Sichern Sie Ihr Vermächtnis für zukünftige Generationen"
-          },
-          {
-            "title": "Anlageberatung",
-            "description": "Strategische Anlageberatung und Investitionsmöglichkeiten"
-          }
-        ]
-      }
-    },
-    "insurance": {
-      "hero": {
-        "title": "Versicherungslösungen",
-        "description": "Schützen Sie, was Ihnen am wichtigsten ist, mit unseren umfassenden Versicherungslösungen"
-      },
-      "services": {
-        "title": "Versicherungsdienstleistungen",
-        "description": "Maßgeschneiderte Versicherungslösungen für Ihren Schutzbedarf",
-        "items": [
-          {
-            "title": "Lebensversicherung",
-            "description": "Sichern Sie die finanzielle Zukunft Ihrer Familie"
-          },
-          {
-            "title": "Krankenversicherung",
-            "description": "Umfassende Krankenversicherungslösungen"
-          },
-          {
-            "title": "Sachversicherung",
-            "description": "Schützen Sie Ihre wertvollen Vermögenswerte"
-          }
-        ]
-      }
-    },
-    "property": {
-      "hero": {
-        "title": "Immobilieninvestment",
-        "description": "Strategische Immobilieninvestitionslösungen"
-      },
-      "services": {
-        "title": "Immobiliendienstleistungen",
-        "description": "Umfassende Immobilieninvestitionslösungen",
-        "items": [
-          {
-            "title": "Investmentimmobilien",
-            "description": "Identifizierung und Erwerb rentabler Immobilieninvestments"
-          },
-          {
-            "title": "Immobilienverwaltung",
-            "description": "Professionelle Verwaltung Ihres Immobilienportfolios"
-          },
-          {
-            "title": "Immobilienberatung",
-            "description": "Expertenberatung zu Immobilieninvestitionen"
-          }
-        ]
-      }
-    },
-    "retirement": {
-      "hero": {
-        "title": "Altersvorsorge",
-        "description": "Sichern Sie Ihre Zukunft mit unseren Vorsorgelösungen"
-      },
-      "services": {
-        "title": "Vorsorgedienstleistungen",
-        "description": "Umfassende Altersvorsorgelösungen",
-        "items": [
-          {
-            "title": "Rentenplanung",
-            "description": "Optimieren Sie Ihre Rentenstrategie"
-          },
-          {
-            "title": "Altersvorsorge",
-            "description": "Bauen Sie Ihr Altersvermögen auf"
-          },
-          {
-            "title": "Renteneinkommen",
-            "description": "Schaffen Sie nachhaltige Einkommensströme im Ruhestand"
-          }
-        ]
-      }
-    },
-    "tax": {
-      "hero": {
-        "title": "Private Steuerplanung",
-        "description": "Optimieren Sie Ihre Steuerstrategie mit Expertenberatung"
-      },
-      "services": {
-        "title": "Steuerplanungsservices",
-        "description": "Umfassende Steuerplanungslösungen",
-        "items": [
-          {
-            "title": "Persönliche Steuerplanung",
-            "description": "Optimieren Sie Ihre persönliche Steuersituation"
-          },
-          {
-            "title": "Erbschaftssteuerplanung",
-            "description": "Minimieren Sie die Erbschaftssteuerbelastung"
-          },
-          {
-            "title": "Internationale Steuern",
-            "description": "Navigieren Sie durch internationale Steueranforderungen"
-          }
-        ]
-      }
     }
   },
   "navigation": {
     "main": [
       {
-        "name": "Über uns",
+        "name": "About",
         "href": "/about"
       },
       {
@@ -804,117 +652,117 @@
         "href": "/private",
         "submenu": [
           {
-            "name": "Vermögensverwaltung",
-            "href": "/private/wealth",
-            "description": "Umfassende Vermögensverwaltungslösungen"
+            "name": "Wealth Management",
+            "href": "/private#wealth",
+            "description": "Comprehensive wealth management solutions"
           },
           {
-            "name": "Versicherungslösungen",
-            "href": "/private/insurance",
-            "description": "Maßgeschneiderte Versicherungsabdeckung für Ihre Bedürfnisse"
+            "name": "Insurance Solutions",
+            "href": "/private#insurance",
+            "description": "Tailored insurance coverage for your needs"
           },
           {
-            "name": "Immobilieninvestment",
-            "href": "/private/property",
-            "description": "Strategische Immobilieninvestmentdienste"
+            "name": "Property Investment",
+            "href": "/private#property",
+            "description": "Strategic property investment services"
           },
           {
-            "name": "Ruhestandsplanung",
-            "href": "/private/retirement",
-            "description": "Sichern Sie Ihre Zukunft mit Ruhestandsplanung"
+            "name": "Retirement Planning",
+            "href": "/private#retirement",
+            "description": "Secure your future with retirement planning"
           },
           {
-            "name": "Steuerplanung",
-            "href": "/private/tax",
-            "description": "Optimieren Sie Ihre Steuerstrategie"
+            "name": "Tax Planning",
+            "href": "/private#tax",
+            "description": "Optimize your tax strategy"
           }
         ]
       },
       {
-        "name": "Firmenkunden",
+        "name": "Corporate Banking",
         "href": "/corporate",
         "submenu": [
           {
-            "name": "Geschäftskredite",
+            "name": "Business Loans",
             "href": "/corporate/loans",
-            "description": "Finanzierungslösungen für Ihr Unternehmen"
+            "description": "Financing solutions for your business"
           },
           {
-            "name": "Handelsfinanzierung",
+            "name": "Trade Finance",
             "href": "/corporate/trade",
-            "description": "Internationale Handels- und Finanzdienstleistungen"
+            "description": "International trade and finance services"
           },
           {
-            "name": "Treasury-Services",
+            "name": "Treasury Services",
             "href": "/corporate/treasury",
-            "description": "Effiziente Treasury-Management-Lösungen"
+            "description": "Efficient treasury management solutions"
           }
         ]
       },
       {
-        "name": "Kontakt",
+        "name": "Contact",
         "href": "/contact"
       }
     ],
     "callToAction": {
-      "text": "Konto eröffnen",
+      "text": "Open Account",
       "href": "/open-account"
     }
   },
   "footer": {
     "company": {
-      "title": "Unternehmen",
+      "title": "Company",
       "links": [
         {
-          "name": "Über uns",
+          "name": "About",
           "href": "/about"
         },
         {
-          "name": "Karriere",
+          "name": "Careers",
           "href": "/careers"
         },
         {
-          "name": "Kontakt",
+          "name": "Contact",
           "href": "/contact"
         }
       ]
     },
     "services": {
-      "title": "Dienstleistungen",
+      "title": "Services",
       "links": [
         {
           "name": "Private Banking",
           "href": "/private"
         },
         {
-          "name": "Firmenkunden",
+          "name": "Corporate Banking",
           "href": "/corporate"
         },
         {
-          "name": "Vermögensverwaltung",
+          "name": "Wealth Management",
           "href": "/private/wealth"
         }
       ]
     },
     "legal": {
-      "title": "Rechtliches",
+      "title": "Legal",
       "links": [
         {
-          "name": "Datenschutz",
+          "name": "Privacy Policy",
           "href": "/privacy"
         },
         {
-          "name": "Nutzungsbedingungen",
+          "name": "Terms of Service",
           "href": "/terms"
         },
         {
-          "name": "Cookie-Richtlinie",
+          "name": "Cookie Policy",
           "href": "/cookies"
         }
       ]
     },
     "social": {
-      "title": "Social Media",
+      "title": "Social",
       "links": [
         {
           "name": "LinkedIn",

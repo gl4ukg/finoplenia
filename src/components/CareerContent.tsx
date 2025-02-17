@@ -5,25 +5,20 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useParams } from 'next/navigation';
 
-interface BlogPost {
+interface CarerPost {
   id: number;
   title: string;
-  description?: string;
-  imageUrl: string;
-  date?: string;
-  category?: string;
-  author?: string;
-  readTime?: string;
-  excerpt?: string;
+  shortText?: string;
+  bigText?: string;
 }
 
 interface Props {
-  blogPosts: BlogPost[];
+  careerPosts: CarerPost[];
   title: string;
   description: string;
 }
 
-export function BlogContent({ blogPosts, title, description }: Props) {
+export function CareerContent({ careerPosts, title, description }: Props) {
   const params = useParams();
   const locale = params?.locale as string;
 
@@ -35,17 +30,15 @@ export function BlogContent({ blogPosts, title, description }: Props) {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className='mb-32'
+            className='mb-14'
           >
             <h1 className="text-3xl font-bold tracking-tighter mb-8 sm:text-4xl md:text-5xl lg:text-6xl/none">
               {title}
             </h1>
-            <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400 mt-4">
-              {description}
-            </p>
+            <p className="mx-auto w-3/4 text-gray-500 md:text-xl dark:text-gray-400 mt-4" dangerouslySetInnerHTML={{ __html: description }} />
           </motion.div>
           <div className="grid grid-cols-1 gap-8 mt-20 md:grid-cols-2 lg:grid-cols-3">
-            {blogPosts.map((post, index) => (
+            {careerPosts.map((post, index) => (
               <motion.div
                 key={post.id}
                 initial={{ opacity: 0, y: 20 }}
@@ -54,44 +47,16 @@ export function BlogContent({ blogPosts, title, description }: Props) {
                 className="group relative overflow-hidden rounded-lg shadow-lg"
               >
                 <Link 
-                  href={`/${locale}/blog/${post.id}`}
+                  href={`/${locale}/career/${post.id}`}
                   className="absolute inset-0 z-10"
                 >
                   <span className="sr-only">View Article</span>
                 </Link>
-                <div className="relative h-64 w-full overflow-hidden">
-                  <Image
-                    src={post?.imageUrl}
-                    alt={post.title}
-                    className="object-cover transition-transform duration-300 group-hover:scale-110"
-                    fill
-                  />
-                </div>
                 <div className="bg-white p-6">
-                  <time className="text-sm text-gray-500 dark:text-gray-400">
-                    {post.date}
-                  </time>
-                  {post.category && (
-                    <span className="ml-4 inline-block rounded-full bg-gray-100 px-3 py-1 text-sm text-gray-700">
-                      {post.category}
-                    </span>
-                  )}
                   <h3 className="mt-2 text-xl font-bold">{post.title}</h3>
                   <p className="mt-2 text-gray-500 dark:text-gray-400">
-                    {post.excerpt}
+                    {post.shortText}
                   </p>
-                  {post.author && (
-                    <div className="mt-4 flex items-center">
-                      <span className="text-sm font-medium text-gray-900">
-                        {post.author}
-                      </span>
-                      {post.readTime && (
-                        <span className="ml-2 text-sm text-gray-500">
-                          · {post.readTime}
-                        </span>
-                      )}
-                    </div>
-                  )}
                 </div>
               </motion.div>
             ))}

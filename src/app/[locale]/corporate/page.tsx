@@ -10,7 +10,6 @@ interface Props {
 
 export default async function Corporate({ params: { locale } }: Props) {
   const dict = await getDictionary(locale);
-  const { hero } = dict.corporate;
 
-  return <CorporateClient hero={hero} />;
+  return <CorporateClient dict={dict} />;
 }

@@ -39,18 +39,20 @@ export function Navigation() {
           {main.map((item) => (
             <div key={item.name} className="relative">
               {item.submenu ? (
+                <div className='flex items-center'>
                 <Link
                   href={`/${locale}${item.href}`}
                   className="flex items-center text-sm font-semibold leading-6 text-gray-900"
                 >
                   {item.name}
-                  <ChevronDownIcon
-                    onClick={() => setActiveDropdown(activeDropdown === item.name ? null : item.name)}
-                    className={`h-4 w-4 ml-2 transition-transform ${
-                      activeDropdown === item.name ? 'rotate-180' : ''
-                    }`}
-                  />
                 </Link>
+                <ChevronDownIcon
+                  onClick={() => setActiveDropdown(activeDropdown === item.name ? null : item.name)}
+                  className={`h-4 w-4 ml-2 transition-transform cursor-pointer ${
+                    activeDropdown === item.name ? 'rotate-180' : ''
+                  }`}
+                />
+                </div>
               ) : (
                 <Link
                   href={`/${locale}${item.href}`}
@@ -82,6 +84,7 @@ export function Navigation() {
                             <Link
                               href={`/${locale}${subItem.href}`}
                               className="block font-semibold text-gray-900"
+                              onClick={() => setActiveDropdown(null)}
                             >
                               {subItem.name}
                               <span className="absolute inset-0" />

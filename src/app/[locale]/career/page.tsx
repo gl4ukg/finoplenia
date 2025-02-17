@@ -1,6 +1,6 @@
 import { Navigation } from '@/components/Navigation';
 import { Footer } from '@/components/Footer';
-import { BlogContent } from '@/components/BlogContent';
+import { CareerContent } from '@/components/CareerContent';
 import { getDictionary } from '@/i18n/server';
 import type { Locale } from '@/i18n/settings';
 
@@ -10,15 +10,15 @@ interface Props {
   };
 }
 
-export default async function Blog({ params: { locale } }: Props) {
+export default async function Career({ params: { locale } }: Props) {
   const dict = await getDictionary(locale);
-  const { hero, posts } = dict.blog;
+  const { hero, posts } = dict.career;
 
   return (
     <main className="flex min-h-screen flex-col">
       <Navigation />
-      <BlogContent 
-        blogPosts={posts}
+      <CareerContent 
+        careerPosts={posts}
         title={hero.title}
         description={hero.description}
       />

@@ -6,6 +6,7 @@ const nextConfig = {
     domains: ['images.unsplash.com', 'i.pinimg.com'],
     formats: ['image/avif', 'image/webp'],
     minimumCacheTTL: 60,
+    unoptimized: true,
   },
 };
 
