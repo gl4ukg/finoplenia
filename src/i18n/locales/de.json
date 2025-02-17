@@ -122,8 +122,8 @@
   },
   "career": {
     "hero": {
-      "title": "Career",
-      "description": "<strong>Write your success story with us!</strong> </br></br> Become part of our team and accompany our customers on their way to the best insurance solution. Exciting challenges, a supportive work environment and the opportunity to really make a difference await you. Start your career now!"
+      "title": "Karriere",
+      "description": "<strong>Schreiben Sie Ihre Erfolgsgeschichte mit uns!</strong> </br></br> Werden Sie Teil unseres Teams und begleiten Sie unsere Kunden auf dem Weg zur besten Versicherungslösung. Spannende Herausforderungen, ein unterstützendes Arbeitsumfeld und die Möglichkeit, wirklich etwas zu bewegen, erwarten Sie. Starten Sie jetzt Ihre Karriere!"
     },
     "posts": [
       {
@@ -147,9 +147,9 @@
     ]
   },
   "cta": {
-    "title": "Ready to Get Started?",
-    "description": "Contact us today to discuss how we can help you achieve your financial goals.",
-    "button": "Contact Us"
+    "title": "Bereit loszulegen?",
+    "description": "Kontaktieren Sie uns noch heute, um zu besprechen, wie wir Ihnen bei der Erreichung Ihrer finanziellen Ziele helfen können.",
+    "button": "Kontaktieren Sie uns"
   },
   "about": {
     "hero": {
@@ -258,8 +258,8 @@
   },
   "faq": {
     "hero": {
-      "title": "Frequently Asked Questions",
-      "description": "Find answers to common questions about our services and how we can help you."
+      "title": "Häufig gestellte Fragen",
+      "description": "Finden Sie Antworten auf häufige Fragen zu unseren Dienstleistungen und wie wir Ihnen helfen können."
     },
     "categories": {
       "general": {
@@ -322,14 +322,14 @@
   },
   "privacy": {
     "hero": {
-      "title": "Privacy Policy",
-      "description": "Learn how we protect and handle your personal information."
+      "title": "Datenschutzerklärung",
+      "description": "Erfahren Sie, wie wir Ihre persönlichen Daten schützen und verarbeiten."
     },
-    "lastUpdated": "Last updated: December 29, 2024",
+    "lastUpdated": "Zuletzt aktualisiert: 29. Dezember 2024",
     "sections": {
       "introduction": {
-        "title": "Introduction",
-        "content": "At Finoplenia, we take your privacy seriously. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or use our services. Please read this privacy policy carefully. If you do not agree with the terms of this privacy policy, please do not access the site."
+        "title": "Einführung",
+        "content": "Bei Finoplenia nehmen wir Ihre Privatsphäre ernst. Diese Datenschutzerklärung erläutert, wie wir Ihre Informationen sammeln, verwenden, offenlegen und schützen, wenn Sie unsere Website besuchen oder unsere Dienste nutzen. Bitte lesen Sie diese Datenschutzerklärung sorgfältig durch. Wenn Sie mit den Bedingungen dieser Datenschutzerklärung nicht einverstanden sind, greifen Sie bitte nicht auf die Website zu."
       },
       "collection": {
         "title": "Information We Collect",
@@ -438,14 +438,14 @@
   },
   "terms": {
     "hero": {
-      "title": "Terms & Conditions",
-      "description": "Please read these terms and conditions carefully before using our services."
+      "title": "Allgemeine Geschäftsbedingungen",
+      "description": "Bitte lesen Sie diese Allgemeinen Geschäftsbedingungen sorgfältig durch, bevor Sie unsere Dienste nutzen."
     },
-    "lastUpdated": "Last updated: December 29, 2024",
+    "lastUpdated": "Zuletzt aktualisiert: 29. Dezember 2024",
     "sections": {
       "introduction": {
-        "title": "Introduction",
-        "content": "These terms and conditions outline the rules and regulations for the use of Finoplenia's website and services. By accessing this website, we assume you accept these terms and conditions in full. Do not continue to use Finoplenia's website if you do not accept all of the terms and conditions stated on this page."
+        "title": "Einführung",
+        "content": "Diese Allgemeinen Geschäftsbedingungen legen die Regeln und Vorschriften für die Nutzung der Website und Dienste von Finoplenia fest. Durch den Zugriff auf diese Website gehen wir davon aus, dass Sie diese Geschäftsbedingungen vollständig akzeptieren. Nutzen Sie die Website von Finoplenia nicht weiter, wenn Sie nicht alle auf dieser Seite aufgeführten Geschäftsbedingungen akzeptieren."
       },
       "definitions": {
         "title": "Definitions",
@@ -542,8 +542,8 @@
   },
   "corporate": {
     "hero": {
-      "title": "Corporate Services",
-      "description": "Comprehensive financial solutions for businesses of all sizes"
+      "title": "Unternehmensdienstleistungen",
+      "description": "Umfassende Finanzlösungen für Unternehmen jeder Größe"
     },
     "sections": [
       {
@@ -551,92 +551,92 @@
         "title": "Beratung",
         "description": "Unsere erfahrenen Experten entwickeln maßgeschneiderte Anlagestrategien, die Ihre finanziellen Ziele und Ihre Risikobereitschaft berücksichtigen. Wir bieten aktives Portfoliomanagement und regelmäßige Performanceüberwachung.",
         "imageSrc": "/images/insurance.jpg",
-        "imageAlt": "Vermögensverwaltung"
+        "imageAlt": "Beratung"
       },
       {
         "id": "steuern",
         "title": "Steuern",
         "description": "Wir erstellen einen umfassenden Finanzplan, der Ihre kurz- und langfristigen Ziele berücksichtigt. Von der Altersvorsorge bis zur Nachlassplanung - wir helfen Ihnen, die richtigen Entscheidungen zu treffen.",
         "imageSrc": "/images/insurance.jpg",
-        "imageAlt": "Vermögensverwaltung"
+        "imageAlt": "Steuerberatung"
       }
     ],
     "services": {
-      "title": "Our Private Banking Services",
-      "description": "Comprehensive solutions for your financial future",
+      "title": "Unsere Private Banking Dienstleistungen",
+      "description": "Umfassende Lösungen für Ihre finanzielle Zukunft",
       "items": [
         {
-          "title": "Pension Planning",
-          "description": "Optimize your pension strategy"
+          "title": "Pensionsplanung",
+          "description": "Optimieren Sie Ihre Pensionsstrategie"
         },
         {
-          "title": "Retirement Savings",
-          "description": "Build your retirement nest egg"
+          "title": "Altersvorsorge",
+          "description": "Bauen Sie Ihr Altersvermögen auf"
         },
         {
-          "title": "Retirement Income",
-          "description": "Create sustainable retirement income streams"
+          "title": "Renteneinkommen",
+          "description": "Schaffen Sie nachhaltige Renteneinkommensströme"
         }
       ]
     }
   },
   "private": {
     "hero": {
-      "title": "Private Banking",
-      "description": "Tailored financial solutions for your personal wealth management needs"
+      "title": "Privatkundengeschäft",
+      "description": "Maßgeschneiderte Finanzlösungen für Ihre persönliche Vermögensverwaltung"
     },
     "sections": [
       {
         "id": "insurance",
-        "title": "Insurance",
+        "title": "Versicherung",
         "description": "Unsere erfahrenen Experten entwickeln maßgeschneiderte Anlagestrategien, die Ihre finanziellen Ziele und Ihre Risikobereitschaft berücksichtigen. Wir bieten aktives Portfoliomanagement und regelmäßige Performanceüberwachung.",
         "imageSrc": "/images/insurance.jpg",
-        "imageAlt": "Vermögensverwaltung"
+        "imageAlt": "Versicherung"
       },
       {
         "id": "retirement",
-        "title": "Retirement Planning",
+        "title": "Altersvorsorge",
         "description": "Wir erstellen einen umfassenden Finanzplan, der Ihre kurz- und langfristigen Ziele berücksichtigt. Von der Altersvorsorge bis zur Nachlassplanung - wir helfen Ihnen, die richtigen Entscheidungen zu treffen.",
         "imageSrc": "/images/insurance.jpg",
-        "imageAlt": "Vermögensverwaltung"
+        "imageAlt": "Altersvorsorge"
       },
       {
         "id": "wealth",
-        "title": "Wealth",
-        "description": "Unser Team von Steuerexperten hilft Ihnen, Ihre Steuerlast legal zu optimieren. Wir beraten Sie zu steuereffizienten Anlagestrategien undstützen Sie bei der Strukturierung Ihres Vermögens.",
+        "title": "Vermögen",
+        "description": "Unser Team von Steuerexperten hilft Ihnen, Ihre Steuerlast legal zu optimieren. Wir beraten Sie zu steuereffizienten Anlagestrategien und unterstützen Sie bei der Strukturierung Ihres Vermögens.",
         "imageSrc": "/images/insurance.jpg",
         "imageAlt": "Vermögensverwaltung"
       },
       {
         "id": "property",
-        "title": "Property",
-        "description": "Von der Auswahl der richtigen Immobilie bis zur Finanzierung - wirstützen Sie bei allen Aspekten Ihrer Immobilieninvestition. Profitieren Sie von unserer Expertise im Immobilienmarkt.",
+        "title": "Immobilien",
+        "description": "Von der Auswahl der richtigen Immobilie bis zur Finanzierung - wir unterstützen Sie bei allen Aspekten Ihrer Immobilieninvestition. Profitieren Sie von unserer Expertise im Immobilienmarkt.",
         "imageSrc": "/images/insurance.jpg",
-        "imageAlt": "Vermögensverwaltung"
+        "imageAlt": "Immobilien"
       },
       {
         "id": "tax",
-        "title": "Tax Planning",
+        "title": "Steuerplanung",
         "description": "Wir analysieren Ihren Versicherungsbedarf und entwickeln ein maßgeschneidertes Konzept für Ihre Absicherung. Unser Ziel ist es, Ihnen optimalen Schutz zu bestmöglichen Konditionen zu bieten.",
         "imageSrc": "/images/insurance.jpg",
-        "imageAlt": "Vermögensverwaltung"
+        "imageAlt": "Steuerplanung"
       }
     ],
     "services": {
-      "title": "Our Private Banking Services",
-      "description": "Comprehensive solutions for your financial future",
+      "title": "Unsere Private Banking Dienstleistungen",
+      "description": "Umfassende Lösungen für Ihre finanzielle Zukunft",
       "items": [
         {
-          "title": "Pension Planning",
-          "description": "Optimize your pension strategy"
+          "title": "Pensionsplanung",
+          "description": "Optimieren Sie Ihre Pensionsstrategie"
         },
         {
-          "title": "Retirement Savings",
-          "description": "Build your retirement nest egg"
+          "title": "Altersvorsorge",
+          "description": "Bauen Sie Ihr Altersvermögen auf"
         },
         {
-          "title": "Retirement Income",
-          "description": "Create sustainable retirement income streams"
+          "title": "Renteneinkommen",
+          "description": "Schaffen Sie nachhaltige Renteneinkommensströme"
         }
       ]
     }
@@ -644,7 +644,7 @@
   "navigation": {
     "main": [
       {
-        "name": "About",
+        "name": "Über uns",
         "href": "/about"
       },
       {
@@ -652,29 +652,29 @@
         "href": "/private",
         "submenu": [
           {
-            "name": "Wealth Management",
+            "name": "Vermögensverwaltung",
             "href": "/private#wealth",
-            "description": "Comprehensive wealth management solutions"
+            "description": "Umfassende Vermögensverwaltungslösungen"
           },
           {
-            "name": "Insurance Solutions",
+            "name": "Versicherungslösungen",
             "href": "/private#insurance",
-            "description": "Tailored insurance coverage for your needs"
+            "description": "Maßgeschneiderte Versicherungsabdeckung für Ihre Bedürfnisse"
           },
           {
-            "name": "Property Investment",
+            "name": "Immobilieninvestition",
             "href": "/private#property",
-            "description": "Strategic property investment services"
+            "description": "Strategische Immobilieninvestitionsdienste"
           },
           {
-            "name": "Retirement Planning",
+            "name": "Altersvorsorge",
             "href": "/private#retirement",
-            "description": "Secure your future with retirement planning"
+            "description": "Sichern Sie Ihre Zukunft mit Altersvorsorgeplanung"
           },
           {
-            "name": "Tax Planning",
+            "name": "Steuerplanung",
             "href": "/private#tax",
-            "description": "Optimize your tax strategy"
+            "description": "Optimieren Sie Ihre Steuerstrategie"
           }
         ]
       },
@@ -700,7 +700,7 @@
         ]
       },
       {
-        "name": "Contact",
+        "name": "Kontakt",
         "href": "/contact"
       }
     ],
