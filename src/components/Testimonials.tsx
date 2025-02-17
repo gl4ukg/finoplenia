@@ -67,7 +67,7 @@ export function Testimonials({ testimonials, isGerman = false }: TestimonialsPro
 
         {/* Calculator Icon */}
         <motion.div
-          className="absolute top-40 right-[0%] text-primary/10"
+          className="absolute top-0 right-[0%] text-primary/10"
           style={{
             transform: `translate(${scrollY * -0.08}px, ${scrollY * 0.06}px) rotate(${scrollY * 0.02}deg)`,
           }}
@@ -143,7 +143,7 @@ export function Testimonials({ testimonials, isGerman = false }: TestimonialsPro
         </motion.div>
 
         <div className="relative overflow-hidden">
-          <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
+          <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 text-center">
             <div className="relative">
               <motion.div
                 key={activeIndex}
@@ -161,7 +161,7 @@ export function Testimonials({ testimonials, isGerman = false }: TestimonialsPro
                   />
                 </div>
                 <blockquote>
-                  <p className="text-xl font-semibold leading-8 text-gray-900 sm:text-2xl sm:leading-9">
+                  <p className="text-xl font-semibold leading-8 text-gray-900 sm:text-2xl sm:leading-9 px-8">
                     "{testimonials[activeIndex].quote}"
                   </p>
                   <div className="mt-8">
@@ -174,7 +174,7 @@ export function Testimonials({ testimonials, isGerman = false }: TestimonialsPro
               </motion.div>
 
               {/* Navigation Buttons */}
-              {/* <div className="absolute top-1/2 -translate-y-1/2 left-0 right-0 flex justify-between">
+              <div className="absolute top-1/2 -translate-y-1/2 left-0 right-0 flex justify-between">
                 <button
                   onClick={prevTestimonial}
                   className="p-2 rounded-full bg-white shadow-lg hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-primary"
@@ -193,7 +193,7 @@ export function Testimonials({ testimonials, isGerman = false }: TestimonialsPro
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                   </svg>
                 </button>
-              </div> */}
+              </div>
 
               {/* Dots */}
               <div className="mt-8 flex justify-center gap-2">
